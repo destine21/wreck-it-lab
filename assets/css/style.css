@@ -1,0 +1,26 @@
+a:hover {
+  text-decoration: none; }
+
+.nav-banner {
+  background-color: gray; }
+  .nav-banner ul {
+    display: flex;
+    margin: 1em 0; }
+    .nav-banner ul li {
+      list-style-type: none;
+      padding: 0 15px;
+      border-right: 1px solid black; }
+      .nav-banner ul li:last-child {
+        border-right: none; }
+
+.sidebar-banner {
+  min-height: 100vh;
+  background-color: pink; }
+  .sidebar-banner ul {
+    padding: 15px; }
+    .sidebar-banner ul li {
+      list-style-type: none;
+      margin-bottom: 1em;
+      color: #428bca; }
+
+/*# sourceMappingURL=style.css.map */
