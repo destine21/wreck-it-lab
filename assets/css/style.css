@@ -1,3 +1,6 @@
+.content-wrapper {
+  padding: 30px; }
+
 a:hover {
   text-decoration: none; }
 
@@ -17,10 +20,15 @@ a:hover {
   min-height: 100vh;
   background-color: pink; }
   .sidebar-banner ul {
-    padding: 15px; }
+    padding: 0; }
     .sidebar-banner ul li {
       list-style-type: none;
-      margin-bottom: 1em;
+      padding: 10px;
       color: #428bca; }
+      .sidebar-banner ul li:hover {
+        background-color: red; }
+
+.content-banner h1 span {
+  font-size: 0.5em; }
 
 /*# sourceMappingURL=style.css.map */

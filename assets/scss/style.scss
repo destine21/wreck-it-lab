@@ -1,3 +1,7 @@
+.content-wrapper{
+    padding: 30px;
+}
+
 a{
     &:hover{
         text-decoration: none;
@@ -24,11 +28,21 @@ a{
     min-height: 100vh;
     background-color: pink;
     ul{
-        padding: 15px;
+        padding: 0;
         li{
             list-style-type: none;
-            margin-bottom: 1em;
+            padding: 10px;
             color: #428bca;
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}
+.content-banner{
+    h1{
+        span{
+            font-size: 0.5em;
         }
     }
 }
