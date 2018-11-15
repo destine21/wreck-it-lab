@@ -5,6 +5,7 @@ $Main4 : #4E6766;
 $Main5 : #5AB1BB;
 
 $Main6 : #87C6CD;
+$grayMain : #b5b5b5;
 
 .content-wrapper{
     padding: 50px;
@@ -75,14 +76,6 @@ header{
     }
 }
 
-.content-banner{
-    h1{
-        span{
-            font-size: 0.5em;
-        }
-    }
-}
-
 .intro-page{
     >div{
         border-bottom: 1px dashed $Main5;
@@ -106,4 +99,94 @@ header{
     .second-paragraph{
     }
 
+}
+
+.content-banner{
+    h1{
+        color: $Main2;
+        text-shadow: 0px 0px 2px $Main5;
+        span{
+            font-size: 0.5em;
+            color: $grayMain;
+            text-shadow: none;
+        }
+    }
+    h4{
+        color: $Main4;
+    }
+    h5{
+        color: $Main2;
+        text-shadow: 0px 0px 1px $Main5;
+        font-size: 1.5em;
+    }
+    p{
+        color: $Main4;
+    }
+    form{
+        input{
+            margin: 0 0.5em;
+        }
+    }
+    .detail-cha{
+        >div{
+            margin-top: 3em;
+        }
+        ul.resource{
+            li{
+                a{
+                    color: $Main4;
+                }
+            }
+        }
+        ul.accordion{
+            list-style-type:none ;
+            padding: 0;
+            li{
+                margin-bottom: 0.5em;
+                border: 1px solid $Main5;
+                border-radius: 3px;
+                padding: 10px 20px;
+                h5{
+                    font-size: 1.25em;
+                    margin-bottom: 0;
+                }
+                div{
+                    margin-top: 1em;
+                    color: $Main4;
+                    font-size: 0.875em;
+                }
+            }
+        }
+    }
+}
+form{
+    label{
+        color: $Main4;
+    }
+    input{
+        border: 1px solid $Main4;
+        border-radius: 3px;
+        color: $Main4;
+        padding: 2px 8px ;
+        &:focus{
+            outline-color: $Main4;
+            
+        }
+    }
+    button{
+        border-radius: 4px;
+        background-color: $Main2;
+        border: 1px solid $Main2;
+        color: #ffffff;
+        padding: 2.5px 12px;
+    }
+
+}
+a.btn{
+    background-color: $Main2;
+    border: 1px solid $Main2;
+    &:hover{
+        background-color: #08737F;
+        border: 1px solid #08737F;
+    }
 }

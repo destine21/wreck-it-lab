@@ -9,7 +9,7 @@
                     <h4>HTTP response give informations</h4>
                 </div>
             </div>
-            <div class="detail-cha mt-3">
+            <div class="detail-cha mt-5">
                 <div>
                     <h5>Statement</h5>
                     <p>Get an administrator access to the webpage.</p>
@@ -25,7 +25,7 @@
                 </div>
                 <div>
                     <h5>2 related ressource(s)</h5>
-                    <ul>
+                    <ul class="resource"> 
                         <li><a href="#">test1</a></li>
                         <li><a href="#">test2</a></li>
                     </ul>
@@ -33,13 +33,13 @@
                 <div>
                     <ul class="accordion" id="investAccordion">
                         <li>
-                            <h2 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h2>
+                            <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                -
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vitae nemo. Repellat ipsam architecto, ut aliquam culpa eius reiciendis, molestias ipsum hic explicabo placeat quibusdam ratione ex autem delectus ea!
                             </div>    
                         </li>
                         <li>
-                            <h2 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h2>
+                            <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">
                                 -
                             </div>    

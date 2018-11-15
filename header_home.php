@@ -16,7 +16,7 @@
     <div class="d-flex">
         <div class="sidebar-banner d-block">
             <ul>
-                <a href="#"><li>Client-side Authentication </li></a>
+                <a href="score.php"><li>Client-side Authentication </li></a>
                 <a href="#"><li>Open redirect </li></a>
                 <a href="#"><li>HTTP POST request </li></a>
                 <a href="#"><li>Insecure Direct Object Reference </li></a>
