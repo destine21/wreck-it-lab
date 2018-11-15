@@ -1,8 +1,10 @@
 <?php require_once('header.php') ?>
 
     <header>
-        <img src="" alt="">
-        <h1>wreck-it-lab</h1>
+        <div class="mainHead">
+            <!-- <img src="" alt=""> -->
+            <h1>wreck-it-lab</h1>
+        </div>
         <div class="nav-banner d-flex">
             <ul>
                 <li><a href="#">Home</a></li>

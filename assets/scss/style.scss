@@ -1,5 +1,13 @@
+$Main1 : #1C1E29;
+$Main2 : #087E8B;
+$Main3 : #076872;
+$Main4 : #4E6766;
+$Main5 : #5AB1BB;
+
+$Main6 : #87C6CD;
+
 .content-wrapper{
-    padding: 30px;
+    padding: 50px;
 }
 
 a{
@@ -8,17 +16,39 @@ a{
     }
 }
 
-.nav-banner{
-    background-color: gray;
-    ul{
-        display: flex;
-        margin: 1em 0;
-        li{
-            list-style-type: none;
-            padding: 0 15px;
-            border-right: 1px solid black;
-            &:last-child{
-                border-right: none;
+header{
+    .mainHead{
+        background-color: $Main1;
+        text-align: center;
+        margin: 0;
+        padding: 1em;
+        border: 1px solid $Main2;
+        outline: 1px solid $Main2;
+        outline-offset: -7px;
+        h1{
+            color: $Main5;
+            text-shadow: 0px 0px 5px $Main2;
+        }
+    }
+    .nav-banner{
+        position: relative;
+        z-index: 2;
+        background-color: $Main2;
+        box-shadow: 0px 0px 5px $Main2;
+        ul{
+            display: flex;
+            margin: 1em 0;
+            li{
+                list-style-type: none;
+                padding: 0 15px;
+                border-right: 1px solid $Main6;
+                &:last-child{
+                    border-right: none;
+                }
+                a{
+                    color: $Main6;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -26,23 +56,54 @@ a{
 
 .sidebar-banner{
     min-height: 100vh;
-    background-color: pink;
+    background-color: #ffffff;
+    border-right: 1px solid $Main5;
+    box-shadow: 0px 0px 5px $Main5;
     ul{
-        padding: 0;
+        padding: 0em;
         li{
             list-style-type: none;
-            padding: 10px;
-            color: #428bca;
+            padding: 15px 20px;
+            color: $Main2;
+            text-shadow: 0px 0px 1px $Main5;
             &:hover{
-                background-color: red;
+                background-color: $Main5;
+                color: #ffffff;
+                text-shadow: 0px 0px 1px #ffffff;
             }
         }
     }
 }
+
 .content-banner{
     h1{
         span{
             font-size: 0.5em;
         }
     }
+}
+
+.intro-page{
+    >div{
+        border-bottom: 1px dashed $Main5;
+        margin-top: 2.5em;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    h1{
+        color: $Main2;
+        text-shadow: 0px 0px 2px $Main5;
+    }
+    p{
+        color: $Main4;
+        margin-bottom: 3em;
+    }
+
+    .first-paragraph{
+    }
+    
+    .second-paragraph{
+    }
+
 }
