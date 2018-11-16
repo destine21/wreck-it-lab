@@ -1,11 +1,11 @@
 $Main1 : #1C1E29;
 $Main2 : #087E8B;
 $Main3 : #076872;
-$Main4 : #4E6766;
+$Main4 : rgb(134, 172, 170);
 $Main5 : #5AB1BB;
 
 $Main6 : #87C6CD;
-$grayMain : #b5b5b5;
+$grayMain : #888888;
 
 .content-wrapper{
     padding: 50px;
@@ -16,51 +16,57 @@ a{
         text-decoration: none;
     }
 }
+.bg-main{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQYV2NkIBIwCqo4/SdGLSMxikBqRk3EG1IAyqMHWbnQ9eoAAAAASUVORK5CYII=);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    min-height: 100vh;
+    // background: url(../bg.jpg) bottom no-repeat;
+    // background-size: cover;
+}
 
-header{
-    .mainHead{
-        background-color: $Main1;
-        text-align: center;
-        margin: 0;
-        padding: 1em;
-        border: 1px solid $Main2;
-        outline: 1px solid $Main2;
-        outline-offset: -7px;
-        h1{
-            color: $Main5;
-            text-shadow: 0px 0px 5px $Main2;
-        }
+.mainHead{
+    background-color: $Main1;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    border: 1px solid $Main2;
+    outline: 1px solid $Main2;
+    outline-offset: -7px;
+    h1{
+        color: $Main5;
+        text-shadow: 0px 0px 5px $Main2;
     }
-    .nav-banner{
-        position: relative;
-        z-index: 2;
-        background-color: $Main2;
-        box-shadow: 0px 0px 5px $Main2;
-        ul{
-            display: flex;
-            margin: 1em 0;
-            li{
-                list-style-type: none;
-                padding: 0 15px;
-                border-right: 1px solid $Main6;
-                &:last-child{
-                    border-right: none;
-                }
-                a{
-                    color: $Main6;
-                    font-weight: bold;
-                }
+}
+.nav-banner{
+    position: relative;
+    z-index: 2;
+    background-color: $Main2;
+    box-shadow: 0px 0px 5px $Main2;
+    ul{
+        display: flex;
+        margin: 0;
+        li{
+            list-style-type: none;
+            padding: 12px 1em;
+            color: $Main6;
+            text-shadow: 0px 0px 2px $Main2;
+            font-weight: bold;
+            &:hover{
+                background-color: $Main1;
             }
         }
     }
 }
 
+
 .sidebar-banner{
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: $Main1;
     border-right: 1px solid $Main5;
     box-shadow: 0px 0px 5px $Main5;
     ul{
+        width: max-content;
         padding: 0em;
         li{
             list-style-type: none;
@@ -125,6 +131,7 @@ header{
     form{
         input{
             margin: 0 0.5em;
+            background-color: transparent;
         }
     }
     .detail-cha{
@@ -135,6 +142,7 @@ header{
             li{
                 a{
                     color: $Main4;
+                    text-decoration: underline;
                 }
             }
         }
@@ -185,8 +193,8 @@ form{
 a.btn{
     background-color: $Main2;
     border: 1px solid $Main2;
-    &:hover{
-        background-color: #08737F;
-        border: 1px solid #08737F;
+    &:hover,&.active{
+        background-color: #08737F !important;
+        border: 1px solid #08737F !important;
     }
 }

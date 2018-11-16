@@ -4,7 +4,13 @@
 a:hover {
   text-decoration: none; }
 
-header .mainHead {
+.bg-main {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQYV2NkIBIwCqo4/SdGLSMxikBqRk3EG1IAyqMHWbnQ9eoAAAAASUVORK5CYII=);
+  background-color: black;
+  width: 100%;
+  min-height: 100vh; }
+
+.mainHead {
   background-color: #1C1E29;
   text-align: center;
   margin: 0;
@@ -12,33 +18,34 @@ header .mainHead {
   border: 1px solid #087E8B;
   outline: 1px solid #087E8B;
   outline-offset: -7px; }
-  header .mainHead h1 {
+  .mainHead h1 {
     color: #5AB1BB;
     text-shadow: 0px 0px 5px #087E8B; }
-header .nav-banner {
+
+.nav-banner {
   position: relative;
   z-index: 2;
   background-color: #087E8B;
   box-shadow: 0px 0px 5px #087E8B; }
-  header .nav-banner ul {
+  .nav-banner ul {
     display: flex;
-    margin: 1em 0; }
-    header .nav-banner ul li {
+    margin: 0; }
+    .nav-banner ul li {
       list-style-type: none;
-      padding: 0 15px;
-      border-right: 1px solid #87C6CD; }
-      header .nav-banner ul li:last-child {
-        border-right: none; }
-      header .nav-banner ul li a {
-        color: #87C6CD;
-        font-weight: bold; }
+      padding: 12px 1em;
+      color: #87C6CD;
+      text-shadow: 0px 0px 2px #087E8B;
+      font-weight: bold; }
+      .nav-banner ul li:hover {
+        background-color: #1C1E29; }
 
 .sidebar-banner {
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #1C1E29;
   border-right: 1px solid #5AB1BB;
   box-shadow: 0px 0px 5px #5AB1BB; }
   .sidebar-banner ul {
+    width: max-content;
     padding: 0em; }
     .sidebar-banner ul li {
       list-style-type: none;
@@ -59,7 +66,7 @@ header .nav-banner {
   color: #087E8B;
   text-shadow: 0px 0px 2px #5AB1BB; }
 .intro-page p {
-  color: #4E6766;
+  color: #86acaa;
   margin-bottom: 3em; }
 
 .content-banner h1 {
@@ -67,22 +74,24 @@ header .nav-banner {
   text-shadow: 0px 0px 2px #5AB1BB; }
   .content-banner h1 span {
     font-size: 0.5em;
-    color: #b5b5b5;
+    color: #888888;
     text-shadow: none; }
 .content-banner h4 {
-  color: #4E6766; }
+  color: #86acaa; }
 .content-banner h5 {
   color: #087E8B;
   text-shadow: 0px 0px 1px #5AB1BB;
   font-size: 1.5em; }
 .content-banner p {
-  color: #4E6766; }
+  color: #86acaa; }
 .content-banner form input {
-  margin: 0 0.5em; }
+  margin: 0 0.5em;
+  background-color: transparent; }
 .content-banner .detail-cha > div {
   margin-top: 3em; }
 .content-banner .detail-cha ul.resource li a {
-  color: #4E6766; }
+  color: #86acaa;
+  text-decoration: underline; }
 .content-banner .detail-cha ul.accordion {
   list-style-type: none;
   padding: 0; }
@@ -96,18 +105,18 @@ header .nav-banner {
       margin-bottom: 0; }
     .content-banner .detail-cha ul.accordion li div {
       margin-top: 1em;
-      color: #4E6766;
+      color: #86acaa;
       font-size: 0.875em; }
 
 form label {
-  color: #4E6766; }
+  color: #86acaa; }
 form input {
-  border: 1px solid #4E6766;
+  border: 1px solid #86acaa;
   border-radius: 3px;
-  color: #4E6766;
+  color: #86acaa;
   padding: 2px 8px; }
   form input:focus {
-    outline-color: #4E6766; }
+    outline-color: #86acaa; }
 form button {
   border-radius: 4px;
   background-color: #087E8B;
@@ -118,8 +127,8 @@ form button {
 a.btn {
   background-color: #087E8B;
   border: 1px solid #087E8B; }
-  a.btn:hover {
-    background-color: #08737F;
-    border: 1px solid #08737F; }
+  a.btn:hover, a.btn.active {
+    background-color: #08737F !important;
+    border: 1px solid #08737F !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,13 +3,13 @@
     <header>
         <div class="mainHead">
             <!-- <img src="" alt=""> -->
-            <h1>wreck-it-lab</h1>
+            <h1>Wreck-it Lab</h1>
         </div>
         <div class="nav-banner d-flex">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">About</a></li>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Dashboard</li></a>
+                <a href="#"><li>About</li></a>
             </ul>
         </div>
     </header>
