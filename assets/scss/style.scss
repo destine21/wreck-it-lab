@@ -71,7 +71,7 @@ a{
         li{
             list-style-type: none;
             padding: 15px 20px;
-            color: $Main2;
+            color: $Main5;
             text-shadow: 0px 0px 1px $Main5;
             &:hover{
                 background-color: $Main5;
@@ -91,7 +91,7 @@ a{
         }
     }
     h1{
-        color: $Main2;
+        color: $Main5;
         text-shadow: 0px 0px 2px $Main5;
     }
     p{
@@ -109,8 +109,8 @@ a{
 
 .content-banner{
     h1{
-        color: $Main2;
-        text-shadow: 0px 0px 2px $Main5;
+        color: $Main5;
+        text-shadow: 0px 0px 3px $Main5;
         span{
             font-size: 0.5em;
             color: $grayMain;
@@ -121,8 +121,8 @@ a{
         color: $Main4;
     }
     h5{
-        color: $Main2;
-        text-shadow: 0px 0px 1px $Main5;
+        color: $Main5;
+        text-shadow: 0px 0px 2px $Main5;
         font-size: 1.5em;
     }
     p{

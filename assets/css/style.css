@@ -50,7 +50,7 @@ a:hover {
     .sidebar-banner ul li {
       list-style-type: none;
       padding: 15px 20px;
-      color: #087E8B;
+      color: #5AB1BB;
       text-shadow: 0px 0px 1px #5AB1BB; }
       .sidebar-banner ul li:hover {
         background-color: #5AB1BB;
@@ -63,15 +63,15 @@ a:hover {
   .intro-page > div:first-child {
     margin-top: 0; }
 .intro-page h1 {
-  color: #087E8B;
+  color: #5AB1BB;
   text-shadow: 0px 0px 2px #5AB1BB; }
 .intro-page p {
   color: #86acaa;
   margin-bottom: 3em; }
 
 .content-banner h1 {
-  color: #087E8B;
-  text-shadow: 0px 0px 2px #5AB1BB; }
+  color: #5AB1BB;
+  text-shadow: 0px 0px 3px #5AB1BB; }
   .content-banner h1 span {
     font-size: 0.5em;
     color: #888888;
@@ -79,8 +79,8 @@ a:hover {
 .content-banner h4 {
   color: #86acaa; }
 .content-banner h5 {
-  color: #087E8B;
-  text-shadow: 0px 0px 1px #5AB1BB;
+  color: #5AB1BB;
+  text-shadow: 0px 0px 2px #5AB1BB;
   font-size: 1.5em; }
 .content-banner p {
   color: #86acaa; }
