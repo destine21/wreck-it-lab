@@ -2,7 +2,7 @@
 $servername='localhost';    
 $dbusername='root';                
 $dbpassword='';               
-$dbname='wreck-it-lab';     
+$dbname='';     
 
 connecttodb($servername,$dbname,$dbusername,$dbpassword);
 function connecttodb($servername,$dbname,$dbusername,$dbpassword){
@@ -14,10 +14,10 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
   $db_selected =  mysqli_select_db($link,"$dbname");
   if (!$db_selected) {
 
-      $filename = 'wreck-it-lab.sql';
+      $filename = 'localhost.sql';
       $templine = '';
       $lines = file($filename);
-      foreach ($lines as $line){
+      foreach ((array)$lines as $line){
           if (substr($line, 0, 2) == '--' || $line == '')
           continue;
           $templine .= $line;
@@ -28,7 +28,7 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
        }
     echo '<script language="javascript">';
     echo 'alert("Create Database Successfully");';
-    echo 'window.location.href="login.php";';
+    echo 'window.location.href="index.php";';
     echo '</script>';
 
    }

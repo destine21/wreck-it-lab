@@ -15,9 +15,6 @@
                 <input type="password" name="psw" class="form-control mt-2" placeholder="Password">
                 <button type="submit">Login</button>
             </form>
-            <form action="createDatabase.php" >
-            <button type="submit">Create Database</button>
-            </form>
         </div>
     </div>
 <!-- </div> -->
