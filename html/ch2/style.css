@@ -1,0 +1,99 @@
+
+.contact h1{
+    color: black;
+    text-shadow: 0px 0px 2px black;
+    margin-bottom: 16px;
+    font-size:1.5em;
+}
+.contact{
+    width: 50%;
+}
+/* table{
+    margin-left: 2em;
+} */
+table i{
+    font-size: 1.125em;
+    color: #ff8e00;
+    margin-right: 0.5em;
+}
+table tr{
+    height: 30px;
+}
+table td:first-child{
+    text-align: center;
+}
+table td:last-child{
+    color: black;
+    font-size: 12px;
+}
+
+.social{
+    width: fit-content;
+    margin-left: auto;
+}
+.social div{
+    /* border-radius: 50%; */
+    font-size: 20px;
+    /* width: 40px; */
+    /* height: 40px; */
+    /* text-align: center; */
+    margin-left: 16px;
+    color: #ff8e00;
+    /* margin: 20px 10px; */
+}
+/* .social i{
+    vertical-align: bottom;
+}
+.social .fb{
+    background-color: #3968b8;
+}
+.social .tweet{
+    background-color: #00a2f8;
+}
+.social .yt{
+    background-color: red;
+} */
+
+/* card */
+.card{
+    margin: auto;
+    padding: 30px;
+    width: 500px;
+    height: 280px;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0px 0px 3px black;
+}
+.rotate-container {
+position: relative;
+}
+.rotate-container .front-card, .rotate-container .back-card {
+-webkit-transform: perspective(600px) rotateY(0deg);
+        transform: perspective(600px) rotateY(0deg);
+-webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+transition: all 0.5s linear 0s;
+}
+.rotate-container .back-card {
+    -webkit-transform: perspective(1600px) rotateY(180deg);
+            transform: perspective(1600px) rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.rotate-container .rotate-card-front {
+-webkit-transform: perspective(1600px) rotateY(-180deg);
+        transform: perspective(1600px) rotateY(-180deg);
+}
+.rotate-container .rotate-card-back {
+-webkit-transform: perspective(1600px) rotateY(0deg);
+        transform: perspective(1600px) rotateY(0deg);
+}
+.logo{
+    width: 50%;
+}
+.logo img{
+    width: 50%;
+}
+
