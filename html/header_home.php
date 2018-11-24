@@ -8,7 +8,7 @@
         <div class="nav-banner d-flex">
             <ul>
                 <a href="#"><li>Home</li></a>
-                <a href="#"><li>Dashboard</li></a>
+                <a href="resetDatabase.php"><li>Reset Database</li></a>
                 <a href="#"><li>About</li></a>
             </ul>
         </div>
