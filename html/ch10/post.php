@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // prepare and bind
-$stmt = $conn->prepare("INSERT INTO `posts` (`id`, `content`, `author`, `time`) VALUES (NULL, ?, 'tester', CURRENT_TIMESTAMP)");
+$stmt = $conn->prepare("INSERT INTO `posts` (`id`, `content`, `author`, `time`) VALUES (NULL, ?, 'beta_tester@fakebook', CURRENT_TIMESTAMP)");
 $stmt->bind_param("s", $content);
 
 // set parameters and execute

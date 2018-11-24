@@ -19,7 +19,6 @@
                 <textarea name="content" id="" cols="50" rows="5"></textarea>
                 <br>
                 <button class="btn btn-primary">Post</button>
-                <!-- INSERT INTO `posts` (`id`, `content`, `author`, `time`) VALUES (NULL, 'test by admin', 'admin', CURRENT_TIMESTAMP) -->
             </form>
         </div>
     </div>
