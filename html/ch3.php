@@ -5,7 +5,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Client-side Authentication&nbsp;<span>(15 points)</span></h1>
+                        <h1>HTTP POST Request&nbsp;<span>(15 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -17,7 +17,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch1/login1.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch3/score.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
