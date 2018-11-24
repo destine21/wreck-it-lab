@@ -1,5 +1,6 @@
 <?php require_once('header.php') ?>
 <?php require_once('header_home.php') ?>
+
     <div class="bg-main">
         <div class="content-wrapper mx-0">
             <div class="content-banner">
@@ -21,7 +22,16 @@
                     </div>
                     <div>
                         <h5>Validation</h5>
-                        <form action="">
+                        <?php
+                             if(isset($_POST["en_pass"])){
+                               $flag = $_POST["en_pass"];
+                                 if($flag == "flag{Javascr1pt_is_s0_s3cure}"){
+                                      echo '<div class="alert alert-success">Well Done!</div>';
+                                 }
+                                 else echo'<div class="alert alert-danger">Nahh Try it again.</div>';
+                             }
+                        ?>
+                        <form action="" method="POST">
                             <label for="en_pass">Enter flag :</label>
                             <input type="text" name="en_pass">
                             <button type="submit">Send</button>
