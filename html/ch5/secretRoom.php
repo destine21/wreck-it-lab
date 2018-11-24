@@ -25,7 +25,7 @@
 
 <?php
     if(!isset($_COOKIE['user'])){
-        setcookie("user", "UmFscGg6Z3Vlc3Q=", time() + (86400 * 30), "/ch5");
+        setcookie("user", "UmFscGg6Z3Vlc3Q=", time() + (86400 * 30), ".");
     }else{
         $userData = urldecode(base64_decode($_COOKIE['user']));
         $role = explode(":", $userData)[1];
