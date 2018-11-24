@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
 
     <title>Secret Room</title>
 
@@ -25,7 +25,7 @@
 
 <?php
     if(!isset($_COOKIE['user'])){
-        setcookie("user", "UmFscGg6Z3Vlc3Q=", time() + (86400 * 30), "/ch5");
+        setcookie("user", "UmFscGg6Z3Vlc3Q=", time() + (86400 * 30), ".");
     }else{
         $userData = urldecode(base64_decode($_COOKIE['user']));
         $role = explode(":", $userData)[1];
