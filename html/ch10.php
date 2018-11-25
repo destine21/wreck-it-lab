@@ -5,7 +5,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>XSS Cross Site Scripting&nbsp;<span>(15 points)</span></h1>
+                        <h1>Cross Site Scripting (XSS)&nbsp;<span>(15 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>

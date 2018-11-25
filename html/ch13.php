@@ -5,7 +5,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Privilege Escalation&nbsp;<span>(15 points)</span></h1>
+                        <h1>Insecure Deserialization&nbsp;<span>(15 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -17,14 +17,14 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch5/secretRoom.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch13/redeem.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
                         <?php
                              if(isset($_POST["en_pass"])){
                                $flag = $_POST["en_pass"];
-                                 if($flag == "flag{Co0kies_!s_So_Yummy~}"){
+                                 if($flag == "flag{0s_comm4nd_inj3ction}"){
                                       echo '<div class="alert alert-success">Well Done!</div>';
                                  }
                                  else echo'<div class="alert alert-danger">Nahh Try it again.</div>';

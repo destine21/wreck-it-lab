@@ -17,18 +17,18 @@
         <div class="sidebar-banner d-block">
             <ul>
                 <a href="ch1.php"><li>Client-side Authentication </li></a>
-                <a href="ch2.php"><li>Open redirect </li></a>
-                <a href="ch3.php"><li>HTTP POST request </li></a>
+                <a href="ch2.php"><li>Open Redirect </li></a>
+                <a href="ch3.php"><li>HTTP POST Request </li></a>
                 <a href="ch4.php"><li>Insecure Direct Object Reference </li></a>
-                <a href="ch5.php"><li>Privilege escalation (via cookie) </li></a>
-                <a href="ch6.php"><li>Directory listing </li></a>
+                <a href="ch5.php"><li>Privilege Escalation</li></a>
+                <a href="ch6.php"><li>Directory Listing </li></a>
                 <a href="ch7.php"><li>Weak Cryptography </li></a>
-                <a href="ch8.php"><li>Local file inclusion </li></a>
+                <a href="ch8.php"><li>Local File Inclusion </li></a>
                 <a href="ch9.php"><li>SQL Injection </li></a>
-                <a href="ch10.php"><li>XSS </li></a>
-                <a href="ch11.php"><li>Insecure file upload </li></a>
-                <a href="ch12.php"><li>OS command Injection </li></a>
-                <a href="ch13.php"><li>Insecure serialization </li></a>
+                <a href="ch10.php"><li>Cross Site Scripting (XSS) </li></a>
+                <a href="ch11.php"><li>Insecure File Upload </li></a>
+                <a href="ch12.php"><li>OS Command Injection </li></a>
+                <a href="ch13.php"><li>Insecure Deserialization </li></a>
             </ul>
         </div>
 
