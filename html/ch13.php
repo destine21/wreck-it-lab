@@ -24,7 +24,7 @@
                         <?php
                              if(isset($_POST["en_pass"])){
                                $flag = $_POST["en_pass"];
-                                 if($flag == "flag{0s_comm4nd_inj3ction}"){
+                                 if($flag == "flag{y0u_r_th3_seri4l_k!ller!!!}"){
                                       echo '<div class="alert alert-success">Well Done!</div>';
                                  }
                                  else echo'<div class="alert alert-danger">Nahh Try it again.</div>';
