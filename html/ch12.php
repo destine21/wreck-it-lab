@@ -5,7 +5,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Local File Inclusion&nbsp;<span>(15 points)</span></h1>
+                        <h1>Insecure File Upload&nbsp;<span>(15 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -17,14 +17,14 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch8/pages.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch11/upload.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
                         <?php
                              if(isset($_POST["en_pass"])){
                                $flag = $_POST["en_pass"];
-                                 if($flag == "flag{L0c4l_f1le_Inclus1on}"){
+                                 if($flag == "flag{0s_comm4nd_inj3ction}"){
                                       echo '<div class="alert alert-success">Well Done!</div>';
                                  }
                                  else echo'<div class="alert alert-danger">Nahh Try it again.</div>';
