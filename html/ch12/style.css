@@ -1,0 +1,38 @@
+.browser{
+    margin: 3rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    min-height: 80vh;
+}
+
+.browser-content{
+    /* padding: 1rem; */
+    border-top: 1px solid blue;
+}
+
+.bookmark-bar{
+    border-top: 1px solid blue;
+}
+
+.url-bar{
+    margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.bookmark-bar li a {
+    color: darkblue;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}

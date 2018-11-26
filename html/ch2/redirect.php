@@ -1,10 +1,10 @@
 <?php
-$url=$_GET['url'];
-
-if($url == "https://www.evil.com"){
-    echo "flag{0pen_Redir3ct}";
-}
-
-echo "<script>window.location.href = '$url';</script>"
-
+    if(isset($_GET['url'])){
+        $url=$_GET['url'];
+        echo "Redirecting...";
+        if($url == "https://www.evil.c0m"){
+            echo "flag{It's_a_0pen_Redir3ct}";
+        }
+        echo "<script>setTimeout(()=>{window.location.href = '$url';},1000)</script>";
+    }
 ?>
