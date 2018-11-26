@@ -1,7 +1,7 @@
 <?php require_once('../header_ch.php'); ?>
 <link rel="stylesheet" href="../../assets/fontAwesome/css/all.css">
 
-<div class="container mt-5 pt-5">
+<div class="container mt-5 pt-3">
     <h1>
         <?php
         if(isset($_GET['url'])){
@@ -15,12 +15,12 @@
     </h1>
     <div class="rotate-container">
         <div class="card front-card">
-            amazing
+            <img src="images/logo-front.png" alt="">
         </div>
         <div class="card back-card">
             <div class="d-flex h-100">
                 <div class="logo">
-                    <img src="images/amazon_arrows.svg" alt="">
+                    <img src="images/logo-back.png" alt="">
                 </div>
                 <div class="contact align-self-end">
                     <!-- <h1>Contact Us</h1> -->

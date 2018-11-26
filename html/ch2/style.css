@@ -96,4 +96,13 @@ transition: all 0.5s linear 0s;
 .logo img{
     width: 50%;
 }
-
+.front-card img{
+    width: 33.33%;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.front-card{
+    background-color: #464646;
+}

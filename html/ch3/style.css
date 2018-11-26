@@ -1,3 +1,6 @@
+body{
+    background-color: #102e3f;
+}
 .score{
     width: fit-content;
     margin: auto;
@@ -26,11 +29,131 @@
     margin-top: 24px;
 }
 .score input[type="submit"]{
-    width: 35%;
-    padding: 5px;
-    border-radius: 4px;
-    background-color: #087E8B;
-    border: 1px solid #087E8B;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #db3e2a;
+    border: 1px solid #4abbab;
     color: #ffffff;
 }
+form input:focus{
+    outline-color: none !important;
+}
 
+/* Slider *
+ * ====== */
+/* ## Slider main element */
+input[type='range'] {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  width: 20em;
+  height: 5em;
+  border-radius: .25em;
+  border: 0.2em solid #242424;
+  background-color: #242424;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow .2s linear;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+/* ## Orientation tweak, with [orient] attribute in degrees */
+/* > I know it's not standard, but that's the cleaner way I was thinking of. */
+input[type='range'][orient] {
+  /* > Would be cool heh :-) : */
+  transform: rotate(attr(orient));
+}
+
+input[type='range'][orient='90deg'] {
+  transform: rotate(90deg);
+}
+
+input[type='range'][orient='180deg'] {
+  transform: rotate(180deg);
+}
+
+input[type='range'][orient='270deg'] {
+  transform: rotate(270deg);
+}
+
+/* ### all vertical ranges : */
+input[type='range'][orient='90deg'], input[type='range'][orient='270deg'] {
+  margin: 8.5em -4.5em;
+  display: inline-block;
+}
+input[type='range'][orient='90deg']::-webkit-slider-thumb, input[type='range'][orient='270deg']::-webkit-slider-thumb {
+  cursor: ns-resize;
+}
+input[type='range'][orient='90deg']::-moz-range-thumb, input[type='range'][orient='270deg']::-moz-range-thumb {
+  cursor: ns-resize;
+}
+input[type='range'][orient='90deg']::-ms-thumb, input[type='range'][orient='270deg']::-ms-thumb {
+  cursor: ns-resize;
+}
+
+/* ## Slider components */
+/* ### Slider::-track */
+input[type='range']::-webkit-slider-runnable-track {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+input[type='range']::-moz-range-track {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+input[type='range']::-ms-track {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 100%;
+}
+
+/* ### Slider::-thumb */
+input[type='range']::-webkit-slider-thumb {
+  margin: .05em;
+  padding: 0;
+  height: 20em;
+  width: 1em;
+  box-sizing: border-box;
+  border: none;
+  background-color: #fbebe9;
+  box-shadow: -20em 0 0 0 #000000,-19em 0 0 0 #160604,-18em 0 0 0 #2c0c07,-17em 0 0 0 #41110b,-16em 0 0 0 #57170f,-15em 0 0 0 #6d1d12,-14em 0 0 0 #832316,-13em 0 0 0 #99291a,-12em 0 0 0 #ae2e1e,-11em 0 0 0 #c43421,-10em 0 0 0 #da3a25,-9em 0 0 0 #db3e2a, -8em 0 0 0 #de4e3b, -7em 0 0 0 #e16151, -6em 0 0 0 #e57566, -5em 0 0 0 #e9897c, -4em 0 0 0 #ed9d92, -3em 0 0 0 #f0b0a8, -2em 0 0 0 #f4c4be, -1em 0 0 0 #f8d8d3, 0em 0 0 0 #f9e6ff;
+  cursor: ew-resize;
+}
+
+/* ## Browser tweaks */
+/* ### webkit */
+input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+/* ### IE */
+input[type='range']::-ms-track {
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[type='range']::-ms-tooltip {
+  display: none;
+}
+
+.hammer{
+    position: relative;
+}
+.hammer img{
+    position: absolute;
+    width: 375px;
+    z-index: -1;
+    right: 0;
+    transform: translate(-55%,45%);
+}
+
+.wrong-score{
+    background: url(images/point-wrong.png);
+}
