@@ -16,29 +16,29 @@
          if(isset($_POST["score"])){
            $score = $_POST["score"];
              if($_POST["score"] < 100){
-                echo "<div class='wrong-score'>" ;
+                echo "<div class='wrong-score'><p>" ;
                 echo $_POST["score"] ;
-                echo "</div>" ;
+                echo "</p></div>" ;
              }else{
-                echo "<p>OH MY GOSH, <strong>";
+                echo "<div class='pass-score'><p>";
                 echo $_POST["score"];
-                echo "</strong> score! This is insane.</p> ";
-                echo "<h1>Here is your flag : <strong>Th1s_i5_H7TP_P0S7_R3que5t</strong></h1>";
+                echo "</p> ";
+                echo "<h1>Here is your flag : <strong>Th1s_i5_H7TP_P0S7_R3que5t</strong></h1> </div>";
              }
         }
     
         ?>
-      <div>
-
-
-     <input orient='270deg' type='range' min='0' value=<?php echo $score; ?> max='110' step='20' disabled/>
-     <form action="" method="post" onsubmit="document.getElementsByName('score')[0].value = Math.floor(Math.random() * 99)" class="mt-3 text-center">
-      <input type="hidden" name="score" value="-1" />
-      <input type="submit" name="generate" value="HIT!">
-    </form>
+    <div class="mt-3">
+      <input orient='270deg' type='range' min='0' value=<?php echo $score; ?> max='110' step='20' disabled/>
+      <form action="" method="post" onsubmit="document.getElementsByName('score')[0].value = Math.floor(Math.random() * 99)"
+        class="mt-3 text-center">
+        <input type="hidden" name="score" value="-1" />
+        <input type="submit" name="generate" value="HIT!">
+      </form>
     </div>
   </div>
 </div>
 
 </body>
+
 </html>

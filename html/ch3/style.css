@@ -1,6 +1,9 @@
 body{
     background-color: #102e3f;
 }
+.container{
+    position: relative;
+}
 .score{
     width: fit-content;
     margin: auto;
@@ -22,11 +25,6 @@ body{
 }
 .score li{
     color: #4E6766;
-}
-.score p{
-    color: #087E8B;
-    font-weight: bold;
-    margin-top: 24px;
 }
 .score input[type="submit"]{
     width: 75px;
@@ -155,5 +153,49 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
 }
 
 .wrong-score{
-    background: url(images/point-wrong.png);
+    background: url(images/point-wrong.png) center center;
+    background-size: cover;
+    height: 120px;
+    width: 150px;
+    position: absolute;
+    left: 18em;
+    top: 8em;
+    transform: rotate(-20deg);
+}
+.wrong-score p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+.pass-score{
+    background: url(images/point-pass.png) center center;
+    background-size: cover;
+    height: 120px;
+    width: 150px;
+    position: absolute;
+    left: 18em;
+    top: 8em;
+    transform: rotate(-20deg);
+}
+.pass-score p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+.pass-score h1{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    top: 125%;
+    left: 49%;
+    transform: translate(-50%,-50%);
 }
