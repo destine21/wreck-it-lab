@@ -13,7 +13,7 @@
       <h1>User Information</h1>
       <?php
       error_reporting(0);
-      $servername = "localhost";
+      $servername = "localhost:3306";
       $username = "root";
       $password = "";
       $dbname = "wreck-it-lab";
