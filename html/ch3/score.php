@@ -4,15 +4,13 @@
   <div class="hammer">
     <img src="images/hammer.gif" alt="">
   </div>
+  <div class="title container p-1 position-absolute text-light">
+    <h1>Beat the High Score !!!</h1>
+    <h3>High Score : 100</h3>
+  </div>
   <div class="score">
-    <!-- <h1>Beat the score</h1>
-    <h4>Try to beat the high score to win this.</h4>
-    <h6>How to play :</h6>
-    <ul class="mb-4">
-      <li>Click on the button to hope to generate a great score</li>
-      <li>Highest score is <strong>100</strong></li>
-    </ul> -->
     <?php 
+        $score = 0;
          if(isset($_POST["score"])){
            $score = $_POST["score"];
              if($_POST["score"] < 100){

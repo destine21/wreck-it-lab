@@ -1,6 +1,11 @@
 body{
     background-color: #102e3f;
 }
+
+.title{
+  text-shadow: 2px 2px red;
+}
+
 .container{
     position: relative;
 }
@@ -159,7 +164,7 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
     width: 150px;
     position: absolute;
     left: 18em;
-    top: 8em;
+    top: 14em;
     transform: rotate(-20deg);
 }
 .wrong-score p{
