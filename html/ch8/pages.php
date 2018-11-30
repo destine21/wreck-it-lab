@@ -15,7 +15,7 @@
   <h1>File</h1>&nbsp;|&nbsp;
   <a href="?page=home.php">Home</a>&nbsp;|&nbsp;
   <a href="?page=about.php">About</a>&nbsp;|&nbsp;
-  <a href="?page=contract.php">Contract</a>&nbsp;|&nbsp;
+  <a href="?page=contact.php">Contact</a>&nbsp;|&nbsp;
   
   <?php
   if(isset($_GET['page'])){
