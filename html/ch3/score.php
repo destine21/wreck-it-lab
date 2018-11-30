@@ -1,7 +1,7 @@
 <?php require_once('../header_ch.php'); ?>
 
 <div class="container">
-  <div class="title p-1 position-relative text-light">
+  <div class="title p-1 position-absolute text-light">
     <h1>Beat the High Score !!!</h1>
     <h3>High Score : 100</h3>
   </div>
@@ -13,11 +13,11 @@
             if(isset($_POST["score"])){
              $score = $_POST["score"];
                if($_POST["score"] < 100){
-                  echo "<div class='wrong-score'><p>" ;
+                  echo "<div class='wrong-score mt-5'><p>" ;
                   echo $_POST["score"] ;
                   echo "</p></div>" ;
                }else{
-                  echo "<div class='pass-score'><p>";
+                  echo "<div class='pass-score mt-5'><p>";
                   echo $_POST["score"];
                   echo "</p> ";
                   echo "<h1>Here is your flag : <strong>Th1s_i5_H7TP_P0S7_R3que5t</strong></h1> </div>";
