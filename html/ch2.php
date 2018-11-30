@@ -17,7 +17,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch2/contracts.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch2/contact.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

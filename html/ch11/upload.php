@@ -29,10 +29,10 @@
             temporibus optio!</p>
             <form action="upload.php" method="post" enctype="multipart/form-data">
             Select image to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
             <input type="submit" value="Upload Image" name="submit">
         </form>
-        <h6 style="color:red;"><i>*filename should not be longer than 20 characters</i></h6>
+        <h6 style="color:red;"><i>*filename should not be longer than 40 characters</i></h6>
         <br>
         <div class="">
         <?php
