@@ -1,0 +1,11 @@
+.container{
+    min-width: 1300px;
+}
+.gallery img{
+    width: 400px;
+}
+.img-thumbnail{
+    padding: 1.5em;
+    margin: 1em 0;
+    border: 7px solid #c77c4a;
+}
