@@ -119,7 +119,7 @@ input[type='range']::-webkit-slider-thumb {
   margin: .05em;
   padding: 0;
   height: 20em;
-  width: 1em;
+  width: 1.1em;
   box-sizing: border-box;
   border: none;
   background-color: #fbebe9;
@@ -143,13 +143,15 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
 
 .hammer{
     position: relative;
+    width: 270px;
 }
 .hammer img{
     position: absolute;
     width: 375px;
     z-index: -1;
     right: 0;
-    transform: translate(-55%,45%);
+    bottom: -30px;
+    /* transform: translate(-55%,45%); */
 }
 
 .wrong-score{
@@ -157,7 +159,7 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
     background-size: cover;
     height: 120px;
     width: 150px;
-    position: absolute;
+    /* position: absolute; */
     left: 18em;
     top: 8em;
     transform: rotate(-20deg);
@@ -176,7 +178,7 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
     background-size: cover;
     height: 120px;
     width: 150px;
-    position: absolute;
+    /* position: absolute; */
     left: 18em;
     top: 8em;
     transform: rotate(-20deg);
