@@ -1,6 +1,6 @@
 <?php require_once('../header_ch.php'); ?>
 
-<div class="container">
+<div class="container mt-4">
   <div class="title p-1 position-absolute text-light">
     <h1>Beat the High Score !!!</h1>
     <h3>High Score : 100</h3>
