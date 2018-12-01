@@ -1,3 +1,16 @@
+<?php
+        if(isset($_POST["en_pass"])){
+        $flag = $_POST["en_pass"];
+            if($flag == "flag{Javascr1pt_is_s0_s3cure}"){
+                $isPass = true;
+                $ch = 1;
+                require_once('setState.php');
+            }
+            else {
+                $isPass = false;
+            }
+        }
+?>
 <?php require_once('header.php') ?>
 <?php require_once('header_home.php') ?>
 
@@ -23,13 +36,14 @@
                     <div>
                         <h5>Validation</h5>
                         <?php
-                             if(isset($_POST["en_pass"])){
-                               $flag = $_POST["en_pass"];
-                                 if($flag == "flag{Javascr1pt_is_s0_s3cure}"){
-                                      echo '<div class="alert alert-success">Well Done!</div>';
-                                 }
-                                 else echo'<div class="alert alert-danger">Nahh Try it again.</div>';
-                             }
+                            if(isset($isPass)){
+                                if($isPass){
+                                    echo '<div class="alert alert-success">Well Done!</div>';
+                                }
+                                else {
+                                    echo'<div class="alert alert-danger">Nahh Try it again.</div>';
+                                }
+                            }
                         ?>
                         <form action="" method="POST">
                             <label for="en_pass">Enter flag :</label>
