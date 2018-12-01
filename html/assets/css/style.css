@@ -161,3 +161,6 @@ a.btn {
   background-color: #087E8B;
   border: 1px solid #087E8B;
 }
+.solution:hover, .solution.active {
+  background-color: #08737F !important;
+  border: 1px solid #08737F !important; }
