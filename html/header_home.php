@@ -8,8 +8,10 @@
         <div class="nav-banner px-5 justify-content-between d-flex">
             <ul>
                 <a href="#"><li>Home</li></a>
-                <a href="resetDatabase.php"><li>Reset Database</li></a>
                 <a href="#"><li>About</li></a>
+                <a href="newGame.php"><li>New Game</li></a>
+                <a href="resetDatabase.php"><li>Reset Database</li></a>
+                
             </ul>
             <div class="point"><strong><?php require_once('sum_score.php') ?></strong> points</div>
         </div>

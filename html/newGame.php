@@ -14,7 +14,7 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
   $db_selected =  mysqli_select_db($link,"$dbname");
   if (!$db_selected) {
 
-      $filename = 'resetChapter.sql';
+      $filename = 'localhost.sql';
       $templine = '';
       $lines = file($filename);
       foreach ((array)$lines as $line){
@@ -27,7 +27,7 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
          }
        }
     echo '<script language="javascript">';
-    echo 'alert("Create Database Successfully");';
+    echo 'alert("You just start the new game!");';
     echo 'window.location.href="index.php";';
     echo '</script>';
 
