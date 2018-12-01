@@ -10,6 +10,7 @@
                 <a href="#"><li>Home</li></a>
                 <a href="resetDatabase.php"><li>Reset Database</li></a>
                 <a href="#"><li>About</li></a>
+                <li><?php require_once('sum_score.php') ?></li>
             </ul>
         </div>
     </header>
