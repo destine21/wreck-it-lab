@@ -62,7 +62,7 @@
                             <li>
                                 <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vitae nemo. Repellat ipsam architecto, ut aliquam culpa eius reiciendis, molestias ipsum hic explicabo placeat quibusdam ratione ex autem delectus ea!
+                                - บน URL parameter นั่นอะไรอะ ชื่อไฟล์หรอ?
                                 </div>    
                             </li>
                             <li>
