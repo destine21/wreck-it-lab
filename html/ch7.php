@@ -4,7 +4,7 @@
             if($flag == "flag{EnCl2ypt_1s_4wes0m3}"){
                 $isPass = true;
                 $ch = 7;
-                require_once('database/setstate.php');
+                require_once('database/setState.php');
             }
             else {
                 $isPass = false;

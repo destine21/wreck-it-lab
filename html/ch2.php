@@ -4,7 +4,7 @@
             if($flag == "flag{It's_a_0pen_Redir3ct}"){
                 $isPass = true;
                 $ch = 2;
-                require_once('database/setstate.php');
+                require_once('database/setState.php');
             }
             else {
                 $isPass = false;
