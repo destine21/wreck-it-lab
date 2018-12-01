@@ -9,11 +9,10 @@
             <ul>
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>About</li></a>
-                <a href="newGame.php"><li>New Game</li></a>
-                <a href="resetDatabase.php"><li>Reset Database</li></a>
-                
+                <a href="database/newGame.php"><li>New Game</li></a>
+                <a href="database/resetDatabase.php"><li>Reset Database</li></a>
             </ul>
-            <div class="point"><strong><?php require_once('sum_score.php') ?></strong> points</div>
+            <div class="point"><strong><?php require_once('database/sumScore.php') ?></strong> points</div>
         </div>
     </header>
     <div class="d-flex">

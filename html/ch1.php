@@ -4,7 +4,7 @@
             if($flag == "flag{Javascr1pt_is_s0_s3cure}"){
                 $isPass = true;
                 $ch = 1;
-                require_once('setState.php');
+                require_once('database/setstate.php');
             }
             else {
                 $isPass = false;
