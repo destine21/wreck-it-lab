@@ -1,5 +1,5 @@
 <?php
-$servername='localhost';    
+$servername='localhost:3306';    
 $dbusername='root';                
 $dbpassword='';               
 $dbname='';     
@@ -14,7 +14,7 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
   $db_selected =  mysqli_select_db($link,"$dbname");
   if (!$db_selected) {
 
-      $filename = 'localhost.sql';
+      $filename = 'database.sql';
       $templine = '';
       $lines = file($filename);
       foreach ((array)$lines as $line){
@@ -28,7 +28,7 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
        }
     echo '<script language="javascript">';
     echo 'alert("You just start the new game!");';
-    echo 'window.location.href="index.php";';
+    echo 'window.location.href="/index.php";';
     echo '</script>';
 
    }
