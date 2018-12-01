@@ -10,11 +10,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$sum = 0 ;
+
 $sql = "SELECT sum(score) As Sum_score from score WHERE state=1";
 $query = $conn->query($sql);
 $records = mysqli_fetch_array($query);
-$sum = $records['Sum_score'];
+
+if($records['Sum_score'] != 0){
+    $sum = $records['Sum_score'];
+}
+else $sum=0;
 echo $sum;
 $conn->close();
 ?>
