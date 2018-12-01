@@ -4,7 +4,7 @@
             if($flag == "flag{Co0kies_!s_So_Yummy~}"){
                 $isPass = true;
                 $ch = 5;
-                require_once('setState.php');
+                require_once('database/setstate.php');
             }
             else {
                 $isPass = false;
