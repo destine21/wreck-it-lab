@@ -5,13 +5,13 @@
             <!-- <img src="" alt=""> -->
             <h1 class="f-bit">Wreck-it Lab</h1>
         </div>
-        <div class="nav-banner d-flex">
+        <div class="nav-banner px-5 justify-content-between d-flex">
             <ul>
                 <a href="#"><li>Home</li></a>
                 <a href="resetDatabase.php"><li>Reset Database</li></a>
                 <a href="#"><li>About</li></a>
-                <li><?php require_once('sum_score.php') ?></li>
             </ul>
+            <div class="point"><strong><?php require_once('sum_score.php') ?></strong> points</div>
         </div>
     </header>
     <div class="d-flex">

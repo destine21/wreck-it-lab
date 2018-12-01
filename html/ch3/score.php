@@ -20,7 +20,7 @@
                   echo "<div class='pass-score mt-5'><p>";
                   echo $_POST["score"];
                   echo "</p> ";
-                  echo "<h1>Here is your flag : <strong>Th1s_i5_H7TP_P0S7_R3que5t</strong></h1> </div>";
+                  echo "<h1>Here is your flag : <strong>flag{Th1s_i5_H7TP_P0S7_R3que5t}</strong></h1> </div>";
                }
           }
       

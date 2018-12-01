@@ -1,7 +1,7 @@
 <?php
         if(isset($_POST["en_pass"])){
         $flag = $_POST["en_pass"];
-            if($flag == "flag{Javascr1pt_is_s0_s3cure}"){
+            if($flag == "flag{L0c4l_f1le_Inclus1on}"){
                 $isPass = true;
                 $ch = 8;
                 require_once('setState.php');

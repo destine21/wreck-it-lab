@@ -46,8 +46,9 @@ a:hover {
   box-shadow: 0px 0px 5px #087E8B; }
   .nav-banner ul {
     display: flex;
+    padding: 0;
     margin: 0; }
-    .nav-banner ul li {
+    .nav-banner ul li,.point {
       list-style-type: none;
       padding: 12px 1em;
       color: #87C6CD;
