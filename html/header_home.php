@@ -3,7 +3,7 @@
     <header>
         <div class="mainHead">
             <!-- <img src="" alt=""> -->
-            <h1>Wreck-it Lab</h1>
+            <h1 class="f-bit">Wreck-it Lab</h1>
         </div>
         <div class="nav-banner d-flex">
             <ul>

@@ -13,7 +13,7 @@
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-    <title>WRECK-IT-LAB</title>
+    <title>WRECK-IT LAB</title>
 </head>
 <body>
 
