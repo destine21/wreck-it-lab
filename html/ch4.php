@@ -38,6 +38,7 @@
                             if(isset($isPass)){
                                 if($isPass){
                                     echo '<div class="alert alert-success">Well Done!</div>';
+
                                 }
                                 else {
                                     echo'<div class="alert alert-danger">Nahh Try it again.</div>';
