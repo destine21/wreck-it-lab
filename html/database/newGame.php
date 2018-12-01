@@ -28,7 +28,7 @@ function connecttodb($servername,$dbname,$dbusername,$dbpassword){
        }
     echo '<script language="javascript">';
     echo 'alert("You just start the new game!");';
-    echo 'window.location.href="/index.php";';
+    echo 'window.location.href="../index.php";';
     echo '</script>';
 
    }

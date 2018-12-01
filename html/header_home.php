@@ -1,5 +1,5 @@
 <?php require_once('header.php') ?>
-<?php require_once('checker.php');?>
+<?php require_once('database/checker.php');?>
 <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
     <header>
         <div class="mainHead">
