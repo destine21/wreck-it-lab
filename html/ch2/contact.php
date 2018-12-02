@@ -1,5 +1,5 @@
 <?php require_once('../header_ch.php'); ?>
-<link rel="stylesheet" href="../../assets/fontAwesome/css/all.css">
+<link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
 
 <div class="container mt-5 pt-3">
 
