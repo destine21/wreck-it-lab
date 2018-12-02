@@ -8,7 +8,7 @@
         </div>
         <div class="nav-banner px-5 justify-content-between d-flex">
             <ul>
-                <a href="../index.php"><li>Home</li></a>
+                <a href="index.php"><li>Home</li></a>
                 <a href="#"><li>Tools</li></a>
                 <a href="database/newGame.php"><li>New Game</li></a>
                 <a href="database/resetDatabase.php"><li>Reset Database</li></a>
