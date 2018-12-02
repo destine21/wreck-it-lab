@@ -24,7 +24,7 @@
                 <a href="ch3.php"><li>HTTP POST Request <i class="fas fa-check check_color check3"></i></li></a>
                 <a href="ch4.php"><li>Insecure Direct Object Reference <i class="fas fa-check check_color check4"></i></li></a>
                 <a href="ch5.php"><li>Privilege Escalation <i class="fas fa-check check_color check5"></i></li></a>
-                <a href="ch6.php"><li>Directory Listing <i class="fas fa-check check_color check6"></i></li></a>
+                <a href="ch6.php"><li>Directory Indexing <i class="fas fa-check check_color check6"></i></li></a>
                 <a href="ch7.php"><li>Weak Cryptography <i class="fas fa-check check_color check7"></i></li></a>
                 <a href="ch8.php"><li>Local File Inclusion <i class="fas fa-check check_color check8"></i></li></a>
                 <a href="ch9.php"><li>SQL Injection <i class="fas fa-check check_color check9"></i></li></a>

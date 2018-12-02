@@ -18,7 +18,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Directory Listing&nbsp;<span>(15 points)</span></h1>
+                        <h1>Directory Indexing&nbsp;<span>(15 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             <li>
                                 <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - Directory listing คืออะไร?, รูปถูกเก็บอยู่ที่ไหน ?
+                                - Directory Indexing คืออะไร?, รูปถูกเก็บอยู่ที่ไหน ?
                                 </div>    
                             </li>
                             <li>
