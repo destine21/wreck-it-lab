@@ -1,0 +1,262 @@
+body {
+    background-color: #e8ebee;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.navbar{
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+ul.profile-side li{
+    align-self: center;
+    padding: 0 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li input{
+    border: 1px solid #3b5998;
+    border-radius:3px;
+    padding: 0 48px 0px 5px;
+    min-width: 144px;
+    width: 100%;
+}
+ul li button{
+    color: #4b5666;
+    background: #f5f6f7;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    padding: 0 16px;
+    position: absolute;
+    text-align: center;
+    right: 1px;
+    bottom: 1px;
+    top: 1px;
+}
+input:focus,button:focus{
+    outline: none;
+}
+
+.logo{
+    line-height: 1;
+    font-size: 1.25em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.logo i{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-right: 0.25rem;
+}
+.profile-side .border-right,.profile-side .border-left{
+    border-color: #305ea5 !important;
+}
+.profile-g:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+.noti-g{
+    color: #172949;
+}
+.noti-g .fa-bell{
+    font-size: 1.125rem;
+}
+.noti-g:hover{
+    color: #0c1425;
+}
+.profile-head{
+    padding: 3px;
+    padding-left: 0.125rem;
+    /* font-size: 0.875em; */
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+}
+.profile-head img{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.75em;
+}
+.left-side table {
+    /* font-size: 0.875rem; */
+    width: 100%
+}
+.left-side tr{
+    cursor: pointer;
+    line-height: 28px;
+}
+.left-side table i{
+    font-size: 1.325rem;
+    color: #314d84;
+}
+.left-side table td:first-child{
+    line-height: 1;
+    width: 20px;
+    text-align: center;
+    padding-right: 0.6em;
+}
+.profile-head:hover, table tr:hover{
+    background-color: #f5f6f7;
+    outline: 1px solid #dddfe2;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.post-head ul{
+    font-size: 0.875em;
+    padding: 8px 0;
+}
+.post-head ul li{
+    padding: 0 10px;
+}
+.post-form textarea{
+    padding: 8px 12px 14px 60px;
+    border: none;
+    border-bottom: 1px solid #e9ebee;
+
+}
+.post-form textarea:focus{
+    outline: none;
+}
+.profile-post img{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+.post-box,.post,.stories-box {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dddfe2;
+}
+.post-box ul li{
+    cursor: pointer;
+}
+.post-head {
+    color: #2b599e;
+    border-radius:  4px 4px 0 0;
+    background-color: #f5f6f7;
+    border-bottom: 1px solid #dcdfe2;
+}
+.post-head i{
+    color: #4a4f57;
+}
+.post-head .active{
+    color: #4a4f57;
+    position: relative;
+}
+.post-head .active::after{
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: '';
+    left: 50%;
+    position: absolute;
+    bottom: -9px;
+}
+
+.post-form,.post{
+    padding: 10px 15px 7px;
+}
+
+.post-button ul li,.post-button button{
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #f5f6f7;
+    font-size: 0.875em;
+    color: #4e535a;
+    cursor: pointer;
+}
+.post-button button{
+    width: 100px;
+    background-color: #3668b8;
+    font-weight: bold;
+    color: #fff;
+}
+
+.post-button i{
+    font-size: 1.25em;
+}
+
+.post .profile-post img{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.75em;
+}
+
+.header-post h6{
+    margin: 0;
+    cursor: pointer;
+    color: #2b599e;
+    font-weight: bold;
+}
+.header-post h6:hover{
+    text-decoration: underline;
+}
+.header-post p{
+    font-size: 0.75em;
+    color: #616770;
+}
+.comment{
+    border-top: 1px solid #e5e5e5;
+}
+.comment >div{
+    font-size: 0.875em;
+}
+.comment i{
+    font-size: 1.25em;
+}
+.comment >div:hover{
+    cursor: pointer;
+    background-color: rgba(29, 33, 41, .04);
+}
+
+.stories-box{
+    padding: 12px;
+}
+.stories-box >div{
+    cursor: pointer;
+}
+.stories-box h5{
+    font-size: 0.875rem;
+    color: #626973;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.add-story i{
+    background-color: #f5f6f7;
+    border: 1px solid #dadde1;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    font-size: 1.25em;
+    color: #007bff;
+} 
+.stories .profile-story img{
+    width: 55px;
+    height: 55px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px #007bff;
+}
+.load-more{
+
+    font-size: 0.825rem;
+    color: #365899;
+}
