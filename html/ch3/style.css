@@ -9,9 +9,6 @@ body{
 .container{
     position: relative;
 }
-.score-box{
-  width: 200px
-}
 .score{
     width: fit-content;
     margin: auto;
@@ -162,6 +159,9 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
     /* transform: translate(-55%,45%); */
 }
 
+.score-box{
+  width: 200px;
+}
 .wrong-score{
     background: url(images/point-wrong.png) center center;
     background-size: cover;
