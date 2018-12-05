@@ -113,16 +113,14 @@
                         <?php 
                     }
                 } else {
-                    echo "0 results";
+                    echo '<div class="post container my-2">
+                            <div class="content-post">
+                                <h5>No post yet</h5>
+                            </div>
+                        </div>';
                 }
                 $conn->close();
             ?>
-
-                <!-- <div class="post container w-50 my-3 border">
-                    <h2>Tester</h2>
-                    <p>Lorem </p>
-                    <small>times</small>
-                </div> -->
             </div>
         </div>
         <div class="right-side col">
