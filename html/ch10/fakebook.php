@@ -86,7 +86,7 @@
                     die("Connection failed: " . $conn->connect_error);
                 } 
         
-                $sql = "SELECT * FROM `posts`";
+                $sql = "SELECT * FROM `posts` ORDER BY time DESC";
                 $result = $conn->query($sql);
         
                 if ($result->num_rows > 0) {
