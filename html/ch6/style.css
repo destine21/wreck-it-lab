@@ -100,10 +100,9 @@ body{
 }
 
 .footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position:fixed; 
+    bottom:0; 
+    width:100%; 
     padding: 0.625rem;
     color: #333333;
     background-color: #efefef;
