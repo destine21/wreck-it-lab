@@ -1,3 +1,7 @@
+<?php
+	global $page;
+?>
+
 <?php require_once('header.php') ?>
 <?php require_once('database/checker.php');?>
 <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
@@ -19,7 +23,7 @@
     <div class="d-flex">
         <div class="sidebar-banner d-block">
             <ul>
-                <a href="ch1.php"><li>Client-side Authentication <i class="fas fa-check check_color check1"></i> </li></a> 
+                <a href="ch1.php"><li class="<?php echo(($page=='ch1')?'active':'')?>">Client-side Authentication <i class="fas fa-check check_color check1"></i> </li></a> 
                 <a href="ch2.php"><li>Open Redirect <i class="fas fa-check check_color check2"></i></li></a> 
                 <a href="ch3.php"><li>HTTP POST Request <i class="fas fa-check check_color check3"></i></li></a>
                 <a href="ch4.php"><li>Insecure Direct Object Reference <i class="fas fa-check check_color check4"></i></li></a>

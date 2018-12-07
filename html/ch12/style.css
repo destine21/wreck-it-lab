@@ -1,30 +1,23 @@
 .browser{
-    margin: 3rem;
-    border: 1px solid blue;
+    margin: 2rem 3rem;
+    border: 1px solid #dee1e6;
     border-radius: 5px;
     min-height: 80vh;
+    background-color: #fff;
 }
-
+body{
+    background-color: #fff;
+}
 .browser-content{
     /* padding: 1rem; */
-    border-top: 1px solid blue;
+    border-top: 1px solid #dee1e6;
 }
-
-.bookmark-bar{
-    border-top: 1px solid blue;
-}
-
-.url-bar{
-    margin: 5px;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-
 li {
     float: left;
 }
@@ -35,4 +28,121 @@ li {
     text-align: center;
     padding: 6px;
     text-decoration: none;
+}
+.tab-bar{
+    border-radius: 5px 5px 0 0;
+    background: #dee1e6;
+}
+.icon-bar{
+    border-radius: 0 0 10px 0;
+    padding: 0.3em 0.6em;
+}
+.icon-bar >div{
+    width: 14px;
+    height: 14px;
+    font-size: 0.7em;
+    background: #ff504f;
+    color: #333333bd;
+    border-radius: 50%;
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid #f0a2aa;
+    margin: 0 0.25em;
+}
+.icon-bar >div:nth-child(2){
+    background: #ffb400;
+    border: 1px solid #e7ca9e;
+}
+.icon-bar >div:nth-child(3){
+    background: #00c902;
+    border: 1px solid #c0d7c0;
+    transform: rotate(35deg);
+}
+.icon-bar i{
+    opacity: 0;
+}
+.icon-bar:hover i{
+    opacity: 1;
+}
+.tab-name{
+    font-size: 0.875em;
+    padding: 6px 8px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    width: 200px;
+}
+.tab-name i{
+    color: #7b8083;
+}
+
+.add-tab,.add-tab img{
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    font-size: 0.875em;
+    color: #7b8083;
+    transition: all 0.3s ease;
+}
+.tab-bar .add-tab{
+    width: 31px;
+    height: 31px;
+    font-size: 1em;
+}
+.add-tab img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.add-tab:hover{
+    background-color: #f1f2f3;
+}
+.url-form input{
+    font-size: 0.825em;
+    padding: 4px 10px;
+    line-height: 1;
+    border-radius: 15px;
+    color:#7f868d;
+    background-color:#f0f3f4;
+    border: 1.5px solid #f0f3f4;
+}
+.url-form input:focus{
+    outline: none;
+    border-color: #9bc4ff;
+    background-color: #fff;
+    color: #000000;
+}
+.bookmark-bar a{
+    color: #75797d;
+    font-size: 0.75em;
+    cursor: default;
+}
+.bookmark-bar i{
+    color: #75797d;
+    font-size: 1.5em;
+    vertical-align: -2px;
+}
+i.fa-facebook{
+    color: #3668b8;
+}
+i.fa-github{
+    color: #333333;
+}
+i.fa-file{
+    color: #333333;
+    font-size: 1.35em;
+}
+.bookmark-bar >div{
+    border-radius: 15px;
+    padding: 5px 6px;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+.bookmark-bar >div:hover{
+    background-color: #f1f2f3;
+
 }

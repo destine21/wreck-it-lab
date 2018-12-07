@@ -22,7 +22,6 @@
             margin:0;
         }
     </style>
-    <title>WRECK-IT-LAB</title>
 </head>
 <body>
     <div class="mainHead">

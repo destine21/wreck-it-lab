@@ -1,4 +1,5 @@
 <?php require_once('../header_ch.php') ?>
+<title>Fakebook</title>
 <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
 <div class="navbar">
     <div class="container">

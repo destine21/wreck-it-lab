@@ -1,7 +1,7 @@
 <?php require_once('../header_ch.php'); ?>
 <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
-
-<div class="container mt-5 pt-3">
+<title>Amazing</title>
+<div class="container my-5 py-3">
 
     <div class="rotate-container">
         <div class="card front-card">

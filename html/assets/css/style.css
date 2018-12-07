@@ -70,7 +70,7 @@ a:hover {
       padding: 15px 20px;
       color: #5AB1BB;
       text-shadow: 0px 0px 1px #5AB1BB; }
-      .sidebar-banner ul li:hover {
+      .sidebar-banner ul li:hover,.sidebar-banner ul li.active {
         background-color:#007e8c;
         color: #ffffff;
         text-shadow: 0px 0px 1px #ffffff; 
