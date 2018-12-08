@@ -1,3 +1,4 @@
+<?php $page = 'ch4';?>
 <?php
         if(isset($_POST["en_pass"])){
         $flag = $_POST["en_pass"];
@@ -52,7 +53,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>2 related ressource(s)</h5>
+                        <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
                             <li><a href="#">HTTP Header</a></li>
                             <li><a href="#">HTTP reqeust response</a></li>

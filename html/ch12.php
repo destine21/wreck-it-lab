@@ -1,3 +1,4 @@
+<?php $page = 'ch12';?>
 <?php
         if(isset($_POST["en_pass"])){
         $flag = $_POST["en_pass"];
@@ -30,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch12/broowser.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch12/chroome.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -51,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>2 related ressource(s)</h5>
+                        <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
                             <li><a href="#">HTTP Header</a></li>
                             <li><a href="#">HTTP reqeust response</a></li>

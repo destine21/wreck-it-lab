@@ -6,7 +6,7 @@ if(isset($_GET['url'])){
     $url = urldecode($_GET['url']);
 }
 ?>
-<title>Broowser | The Ultimate online browser on the internet</title>
+<title>Chroome | The Ultimate online browser on the internet</title>
 
 <body>
     <div class="browser">
@@ -17,7 +17,7 @@ if(isset($_GET['url'])){
                 <div><i class="fas fa-sort"></i></div>
             </div>
             <div class="tab-name justify-content-between d-flex">
-                <div> New Tab</div><i class="fas fa-times align-self-center mr-1"></i>
+                <div> Chroome</div><i class="fas fa-times align-self-center mr-1"></i>
             </div>
             <div class="add-tab mx-2">
                 <i class="fas fa-plus"></i>

@@ -24,18 +24,18 @@
         <div class="sidebar-banner d-block">
             <ul>
                 <a href="ch1.php"><li class="<?php echo(($page=='ch1')?'active':'')?>">Client-side Authentication <i class="fas fa-check check_color check1"></i> </li></a> 
-                <a href="ch2.php"><li>Open Redirect <i class="fas fa-check check_color check2"></i></li></a> 
-                <a href="ch3.php"><li>HTTP POST Request <i class="fas fa-check check_color check3"></i></li></a>
-                <a href="ch4.php"><li>Insecure Direct Object Reference <i class="fas fa-check check_color check4"></i></li></a>
-                <a href="ch5.php"><li>Privilege Escalation <i class="fas fa-check check_color check5"></i></li></a>
-                <a href="ch6.php"><li>Directory Indexing <i class="fas fa-check check_color check6"></i></li></a>
-                <a href="ch7.php"><li>Weak Cryptography <i class="fas fa-check check_color check7"></i></li></a>
-                <a href="ch8.php"><li>Local File Inclusion <i class="fas fa-check check_color check8"></i></li></a>
-                <a href="ch9.php"><li>SQL Injection <i class="fas fa-check check_color check9"></i></li></a>
-                <a href="ch10.php"><li>Cross Site Scripting (XSS) <i  class="fas fa-check check_color check10"></i></li></a>
-                <a href="ch11.php"><li>Insecure File Upload <i  class="fas fa-check check_color check11"></i></li></a>
-                <a href="ch12.php"><li>OS Command Injection <i  class="fas fa-check check_color check12"></i></li></a>
-                <a href="ch13.php"><li>Insecure Deserialization <i  class="fas fa-check check_color check13"></i></li></a>
+                <a href="ch2.php"><li class="<?php echo(($page=='ch2')?'active':'')?>">Open Redirect <i class="fas fa-check check_color check2"></i></li></a> 
+                <a href="ch3.php"><li class="<?php echo(($page=='ch3')?'active':'')?>">HTTP POST Request <i class="fas fa-check check_color check3"></i></li></a>
+                <a href="ch4.php"><li class="<?php echo(($page=='ch4')?'active':'')?>">Insecure Direct Object Reference <i class="fas fa-check check_color check4"></i></li></a>
+                <a href="ch5.php"><li class="<?php echo(($page=='ch5')?'active':'')?>">Privilege Escalation <i class="fas fa-check check_color check5"></i></li></a>
+                <a href="ch6.php"><li class="<?php echo(($page=='ch6')?'active':'')?>">Directory Indexing <i class="fas fa-check check_color check6"></i></li></a>
+                <a href="ch7.php"><li class="<?php echo(($page=='ch7')?'active':'')?>">Weak Cryptography <i class="fas fa-check check_color check7"></i></li></a>
+                <a href="ch8.php"><li class="<?php echo(($page=='ch8')?'active':'')?>">Local File Inclusion <i class="fas fa-check check_color check8"></i></li></a>
+                <a href="ch9.php"><li class="<?php echo(($page=='ch9')?'active':'')?>">SQL Injection <i class="fas fa-check check_color check9"></i></li></a>
+                <a href="ch10.php"><li class="<?php echo(($page=='ch10')?'active':'')?>">Cross Site Scripting (XSS) <i  class="fas fa-check check_color check10"></i></li></a>
+                <a href="ch11.php"><li class="<?php echo(($page=='ch11')?'active':'')?>">Insecure File Upload <i  class="fas fa-check check_color check11"></i></li></a>
+                <a href="ch12.php"><li class="<?php echo(($page=='ch12')?'active':'')?>">OS Command Injection <i  class="fas fa-check check_color check12"></i></li></a>
+                <a href="ch13.php"><li class="<?php echo(($page=='ch13')?'active':'')?>">Insecure Deserialization <i  class="fas fa-check check_color check13"></i></li></a>
             </ul>
         </div>
 
