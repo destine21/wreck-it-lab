@@ -1,5 +1,5 @@
-<?php require_once('../header_ch.php'); ?>
-
+<?php require_once '../header_ch.php'; ?>
+<title>Beat the high score</title>
 <div class="container mt-4">
   <div class="title p-1 position-absolute text-light f-bit">
     <h4>Beat the High Score !!!</h4>
@@ -10,20 +10,20 @@
       <div class="mt-5 ml-5 position-relative score-box">
         <?php 
             $score = 0;
-            if(isset($_POST["score"])){
-             $score = $_POST["score"];
-               if($_POST["score"] < 100){
-                  echo "<div class='wrong-score mt-5 position-absolute'><p>" ;
-                  echo $_POST["score"] ;
-                  echo "</p></div>" ;
-               }else{
-                  echo "<div class='pass-score mt-5'><p>";
-                  echo $_POST["score"];
-                  echo "</p> ";
-                  echo "<h1>Here is your flag : <strong>flag{Th1s_i5_H7TP_P0S7_R3que5t}</strong></h1> </div>";
-               }
-          }
-      
+            if (isset($_POST['score'])) {
+                $score = $_POST['score'];
+                if ($_POST['score'] < 100) {
+                    echo "<div class='wrong-score mt-5 position-absolute'><p>";
+                    echo $_POST['score'];
+                    echo '</p></div>';
+                } else {
+                    echo "<div class='pass-score mt-5'><p>";
+                    echo $_POST['score'];
+                    echo '</p> ';
+                    echo '<h1>Here is your flag : <strong>flag{Th1s_i5_H7TP_P0S7_R3que5t}</strong></h1> </div>';
+                }
+            }
+
           ?>
       </div>
       <div class="mt-3">
