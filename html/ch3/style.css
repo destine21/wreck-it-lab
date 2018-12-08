@@ -1,5 +1,6 @@
 body{
     background-color: #102e3f;
+    /* border: 3px dotted yellow; */
 }
 
 .title{
@@ -8,6 +9,8 @@ body{
 
 .container{
     position: relative;
+    border: 15px dotted #e6e600;
+    padding: 10px
 }
 .score{
     width: fit-content;
@@ -35,6 +38,7 @@ body{
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    font-weight: bold;
     background-color: #db3e2a;
     border: 1px solid #4abbab;
     color: #ffffff;

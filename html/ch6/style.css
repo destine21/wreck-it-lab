@@ -33,13 +33,15 @@ body {
 }
 
 .sub-navbar {
+    /* margin: 0 auto; */
     margin-top: 1.5em;
-    padding: 0 13%;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
 
 .sub-navbar ul {
+    /* width: 80%; */
+    margin: 0 auto;
     font-size: 0.825em;
     list-style-type: none;
     margin-bottom: 0;
@@ -76,8 +78,8 @@ body {
     background: url(images/pic1.jpeg) center no-repeat;
     background-size: contain;
     border: 1px solid #cd0033;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
 }
 
@@ -138,5 +140,8 @@ body {
 
     .gallery-list>div p {
         font-size: 1.125em;
+    }
+    .sub-navbar ul{
+        width: 940px;
     }
 }

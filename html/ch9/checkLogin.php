@@ -14,11 +14,10 @@ $result=mysqli_query($link,$sql);
 
 $count=mysqli_num_rows($result);
 
-if($count>=1){
+if($count == 1){
 
   echo '<script language="javascript">';
-  echo 'alert("Login successfully this is your flag{SQL_1s_4w3som3}");';
-  echo 'window.location.href="login.php";';
+  echo 'window.location.href="loggedin.php";';
   echo '</script>';
 
 }
