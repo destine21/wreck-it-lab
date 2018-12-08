@@ -1,9 +1,9 @@
 <?php require_once('../header_ch.php'); ?>
 
 <div class="container mt-4">
-  <div class="title p-1 position-absolute text-light">
-    <h1>Beat the High Score !!!</h1>
-    <h3>High Score : 100</h3>
+  <div class="title p-1 position-absolute text-light f-bit">
+    <h4>Beat the High Score !!!</h4>
+    <h6>High Score : 100</h6>
   </div>
   <div class="score">
     <div class="d-flex">
@@ -31,7 +31,7 @@
         <form action="" method="post" onsubmit="document.getElementsByName('score')[0].value = Math.floor(Math.random() * 99)"
           class="mt-3 text-center">
           <input type="hidden" name="score" value="-1" />
-          <input type="submit" name="generate" value="HIT!">
+          <input type="submit" name="generate" value="HIT!" class="f-bit">
         </form>
       </div>
       <div class="hammer">
