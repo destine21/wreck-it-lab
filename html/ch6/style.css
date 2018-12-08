@@ -1,11 +1,142 @@
-.container{
-    min-width: 1300px;
+body {
+    background-color: #fff;
 }
-.gallery img{
-    width: 400px;
+
+.container {
+    max-width: 1300px;
 }
-.img-thumbnail{
-    padding: 1.5em;
-    margin: 1em 0;
-    border: 7px solid #c77c4a;
+
+.main-navbar img {
+    height: 50px;
+}
+
+.search-box select {
+    font-size: 0.825em;
+}
+
+.search-box>div {
+    width: 20%;
+}
+
+.search-box input {
+    width: 70%;
+}
+
+.search-box button {
+    margin-left: 0.5em;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    background: #00509d;
+    border-color: #00509d;
+    width: 10%;
+}
+
+.sub-navbar {
+    margin-top: 1.5em;
+    padding: 0 13%;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.sub-navbar ul {
+    font-size: 0.825em;
+    list-style-type: none;
+    margin-bottom: 0;
+    color: #555;
+}
+
+.sub-navbar ul a {
+    color: #555;
+}
+
+.sub-navbar ul a:hover {
+    color: #0654ba;
+    text-decoration: underline;
+}
+
+.sub-navbar .active {
+    font-weight: bold;
+    border-bottom: solid;
+}
+
+.gallery-list>div {
+    cursor: pointer;
+}
+
+.gallery-list>div:hover>div {
+    box-shadow: 0px 0px 5px #686765;
+}
+
+.gallery-list>div:hover p {
+    text-decoration: underline;
+}
+
+.gallery-list>div>div {
+    background: url(images/pic1.jpeg) center no-repeat;
+    background-size: contain;
+    border: 1px solid #cd0033;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.gallery-list>div:nth-child(2)>div {
+    background: url(images/pic2.jpg) center no-repeat;
+    background-size: contain;
+    border: 1px solid #ed7e6c;
+}
+
+.gallery-list>div:nth-child(3)>div {
+    background: url(images/pic3.jpg) center no-repeat;
+    background-size: contain;
+    border: 1px solid #686765;
+}
+
+.gallery-list>div:nth-child(4)>div {
+    background: url(images/pic4.jpg) center no-repeat;
+    background-size: contain;
+    border: 1px solid #7a9ba2;
+}
+
+.gallery-list>div:nth-child(5)>div {
+    background: url(images/pic5.png) center no-repeat;
+    background-size: contain;
+    border: 1px solid #d8ac95;
+}
+
+.gallery-list>div:nth-child(6)>div {
+    background: url(images/pic6.png) center no-repeat;
+    background-size: contain;
+    border: 1px solid #1b223b;
+}
+
+.gallery-list>div p {
+    margin-top: 0.75em;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.625rem;
+    color: #333333;
+    background-color: #efefef;
+    font-size: 0.825em;
+    text-align: center;
+}
+
+/* media query */
+@media only screen and (min-width:1281px) {
+    .gallery-list>div>div {
+        width: 190px;
+        height: 190px;
+    }
+
+    .gallery-list>div p {
+        font-size: 1.125em;
+    }
 }

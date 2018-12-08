@@ -1,3 +1,17 @@
+<?php $page = 'ch10';?>
+<?php
+        if(isset($_POST["en_pass"])){
+        $flag = $_POST["en_pass"];
+            if($flag == "flag{F4k3Bo0k_1s_Not_Fac3B0ok}"){
+                $isPass = true;
+                $ch = 10;
+                require_once('database/setState.php');
+            }
+            else {
+                $isPass = false;
+            }
+        }
+?>
 <?php require_once('header.php') ?>
 <?php require_once('header_home.php') ?>
     <div class="bg-main">
@@ -22,13 +36,14 @@
                     <div>
                         <h5>Validation</h5>
                         <?php
-                             if(isset($_POST["en_pass"])){
-                               $flag = $_POST["en_pass"];
-                                 if($flag == "flag{Th4t_F4k3Bo0k_1s_in5an3}"){
-                                      echo '<div class="alert alert-success">Well Done!</div>';
-                                 }
-                                 else echo'<div class="alert alert-danger">Nahh Try it again.</div>';
-                             }
+                            if(isset($isPass)){
+                                if($isPass){
+                                    echo '<div class="alert alert-success">Well Done!</div>';
+                                }
+                                else {
+                                    echo'<div class="alert alert-danger">Nahh Try it again.</div>';
+                                }
+                            }
                         ?>
                         <form action="" method="POST">
                             <label for="en_pass">Enter flag :</label>
@@ -37,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>2 related ressource(s)</h5>
+                        <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
                             <li><a href="#">HTTP Header</a></li>
                             <li><a href="#">HTTP reqeust response</a></li>
@@ -48,13 +63,36 @@
                             <li>
                                 <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vitae nemo. Repellat ipsam architecto, ut aliquam culpa eius reiciendis, molestias ipsum hic explicabo placeat quibusdam ratione ex autem delectus ea!
+                                - ทำให้ admin ส่ง Cookie ของเขามาเว็บเราผ่านทาง URL โดยใช้ JS ดูสิ !
                                 </div>    
                             </li>
                             <li>
                                 <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">
-                                    -
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
+                                     <!-- Button trigger modal -->
+                                     <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                    Are you sure ?
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            //Solution Here
+                                        
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>    
                             </li>
                         </ul>                        

@@ -7,20 +7,20 @@
   </div>
   <div class="score">
     <div class="d-flex">
-      <div class="m-5">
+      <div class="mt-5 ml-5 position-relative score-box">
         <?php 
             $score = 0;
             if(isset($_POST["score"])){
              $score = $_POST["score"];
                if($_POST["score"] < 100){
-                  echo "<div class='wrong-score mt-5'><p>" ;
+                  echo "<div class='wrong-score mt-5 position-absolute'><p>" ;
                   echo $_POST["score"] ;
                   echo "</p></div>" ;
                }else{
                   echo "<div class='pass-score mt-5'><p>";
                   echo $_POST["score"];
                   echo "</p> ";
-                  echo "<h1>Here is your flag : <strong>Th1s_i5_H7TP_P0S7_R3que5t</strong></h1> </div>";
+                  echo "<h1>Here is your flag : <strong>flag{Th1s_i5_H7TP_P0S7_R3que5t}</strong></h1> </div>";
                }
           }
       

@@ -159,14 +159,15 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[
     /* transform: translate(-55%,45%); */
 }
 
+.score-box{
+  width: 200px;
+}
 .wrong-score{
     background: url(images/point-wrong.png) center center;
     background-size: cover;
     height: 120px;
     width: 150px;
     /* position: absolute; */
-    left: 18em;
-    top: 14em;
     transform: rotate(-20deg);
 }
 .wrong-score p{
