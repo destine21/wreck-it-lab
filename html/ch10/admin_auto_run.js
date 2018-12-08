@@ -1,4 +1,4 @@
-//while sleep 10; do phantomjs --ignore-ssl-errors=true --local-to-remote-url-access=true --web-security=false --ssl-protocol=any /var/www/html/ch10/auto_run.js; done;
+//while sleep 10; do phantomjs --ignore-ssl-errors=true --local-to-remote-url-access=true --web-security=false --ssl-protocol=any /var/www/html/ch10/admin_auto_run.js; done;
 
 var page = require('webpage').create();
 var host = "127.0.0.1";
@@ -12,7 +12,8 @@ phantom.addCookie({
     'httponly': false
 });
 page.onNavigationRequested = function(url, type, willNavigate, main) {
-    console.log("[URL] URL="+url);  
+    // console.log("[URL] URL="+url);  
+    console.log("[ADMIN] Checking Fakebook page");  
 };
 page.settings.resourceTimeout = timeout;
 page.onResourceTimeout = function(e) {
