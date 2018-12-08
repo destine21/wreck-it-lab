@@ -84,7 +84,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
 </head>
 <body>
     
@@ -107,7 +107,7 @@
                         <form name="login" method="POST" action>
                             <input type="username" name="username" class="form-control rounded-0 mt-3" placeholder="Username">
                             <input type="password" name="password" class="form-control rounded-0 mt-2" placeholder="Password">
-                            <button onclick="authentication()" class="rounded btn-primary w-50 mt-4">LOGIN</button>
+                            <button onclick="authentication()" class="rounded btn-primary mt-4"><i class="fas fa-sign-in-alt"></i> LOGIN </button>
                         </form>
                     </div>
                  </div>
