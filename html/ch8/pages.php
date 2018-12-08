@@ -1,28 +1,54 @@
-<!doctype html>
-<?php $flag = "test"; ?>
+<!DOCTYPE html>
 <html lang="en">
+  <?php require_once('../header_ch.php') ?>
+  
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  </head>
-  <body>
-
-  <h1>File</h1>&nbsp;|&nbsp;
-  <a href="?page=home.php">Home</a>&nbsp;|&nbsp;
-  <a href="?page=about.php">About</a>&nbsp;|&nbsp;
-  <a href="?page=contact.php">Contact</a>&nbsp;|&nbsp;
-  
-  <?php
-  if(isset($_GET['page'])){
-    $page = $_GET['page'];
-    include($page); 
-  }
-  ?>
+    <meta name="description" content="">
+    <meta name="author" content="">
     
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    
+  </head>
+  
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger">File</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="?page=home.php">Home</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="?page=about.php">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="?page=contact.php">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   </body>
+
 </html>
+
+      
+      <?php
+      if(isset($_GET['page'])){
+        $page = $_GET['page'];
+        include($page); 
+      }
+?>
