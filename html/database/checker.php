@@ -16,14 +16,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+    echo '<style type="text/css">';
     while($row = $result->fetch_assoc()) {
-        echo '<style type="text/css">';
         echo '.check'.$row['chapter'].' {';
         echo 'opacity:1 ;}';
-        echo ' </style>';
     }
+    echo ' </style>';
 } else {
-    echo "0 results";
+    // echo "0 results";
 }
 $conn->close();
 ?>
