@@ -14,8 +14,8 @@
             <ul>
                 <a href="index.php"><li>Home</li></a>
                 <a href="#"><li>Tools</li></a>
-                <a href="database/newGame.php"><li>New Game</li></a>
-                <a href="database/resetDatabase.php"><li>Reset Database</li></a>
+                <a href="database/newGame.php" onclick="return confirm('Are you sure you want to restart the new game ?')"><li>New Game</li></a>
+                <a href="database/resetDatabase.php" onclick="return confirm('Are you sure you want to reset the database ?')"><li>Reset Database</li></a>
             </ul>
             <div class="point"><strong><?php require_once('database/sumScore.php') ?></strong> points</div>
         </div>
@@ -28,7 +28,7 @@
                 <a href="ch3.php"><li class="<?php echo(($page=='ch3')?'active':'')?>">HTTP POST Request <i class="fas fa-check check_color check3"></i></li></a>
                 <a href="ch4.php"><li class="<?php echo(($page=='ch4')?'active':'')?>">Insecure Direct Object Reference <i class="fas fa-check check_color check4"></i></li></a>
                 <a href="ch5.php"><li class="<?php echo(($page=='ch5')?'active':'')?>">Privilege Escalation <i class="fas fa-check check_color check5"></i></li></a>
-                <a href="ch6.php"><li class="<?php echo(($page=='ch6')?'active':'')?>">Directory Indexing <i class="fas fa-check check_color check6"></i></li></a>
+                <a href="ch6.php"><li class="<?php echo(($page=='ch6')?'active':'')?>">Directory Listing <i class="fas fa-check check_color check6"></i></li></a>
                 <a href="ch7.php"><li class="<?php echo(($page=='ch7')?'active':'')?>">Weak Cryptography <i class="fas fa-check check_color check7"></i></li></a>
                 <a href="ch8.php"><li class="<?php echo(($page=='ch8')?'active':'')?>">Local File Inclusion <i class="fas fa-check check_color check8"></i></li></a>
                 <a href="ch9.php"><li class="<?php echo(($page=='ch9')?'active':'')?>">SQL Injection <i class="fas fa-check check_color check9"></i></li></a>

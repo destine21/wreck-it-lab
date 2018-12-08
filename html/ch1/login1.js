@@ -7,3 +7,14 @@ function authentication(){
 	    alert("Username or password are incorrect!"); 
 	}
 }
+
+$(document).ready(function(){
+  
+	$('.Page1').click(function(){
+	  $('.Page1').animate({'top' : '-200vh'}, 500);
+	});
+	
+	
+  });
+
+  
