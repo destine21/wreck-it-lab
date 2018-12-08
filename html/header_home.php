@@ -14,8 +14,8 @@
             <ul>
                 <a href="index.php"><li>Home</li></a>
                 <a href="#"><li>Tools</li></a>
-                <a href="database/newGame.php"><li>New Game</li></a>
-                <a href="database/resetDatabase.php"><li>Reset Database</li></a>
+                <a href="database/newGame.php" onclick="return confirm('Are you sure you want to restart the new game ?')"><li>New Game</li></a>
+                <a href="database/resetDatabase.php" onclick="return confirm('Are you sure you want to reset the database ?')"><li>Reset Database</li></a>
             </ul>
             <div class="point"><strong><?php require_once('database/sumScore.php') ?></strong> points</div>
         </div>
