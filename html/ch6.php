@@ -1,3 +1,4 @@
+<?php $page = 'ch6';?>
 <?php
         if(isset($_POST["en_pass"])){
         $flag = $_POST["en_pass"];
