@@ -52,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>2 related ressource(s)</h5>
+                        <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
                             <li><a href="#">HTTP Header</a></li>
                             <li><a href="#">HTTP reqeust response</a></li>
