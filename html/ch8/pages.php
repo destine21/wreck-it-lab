@@ -12,7 +12,7 @@
   <!-- Custom fonts for this template -->
   <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
   <!-- Custom styles for this template -->
-  <link href="css/freelancer.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
 </head>
 
