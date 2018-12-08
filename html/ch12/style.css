@@ -46,16 +46,16 @@ li {
     border-radius: 50%;
     line-height: 1.2;
     text-align: center;
-    border: 1px solid #f0a2aa;
+    border: 1px solid #ff6f6f;
     margin: 0 0.25em;
 }
 .icon-bar >div:nth-child(2){
     background: #ffb400;
-    border: 1px solid #e7ca9e;
+    border: 1px solid #f4be58;
 }
 .icon-bar >div:nth-child(3){
     background: #00c902;
-    border: 1px solid #c0d7c0;
+    border: 1px solid #4ecd72;
     transform: rotate(45deg);
 }
 .icon-bar i{
