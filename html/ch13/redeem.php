@@ -85,6 +85,7 @@ p.small{
     font-size: 8px;
 }
 </style>
+<title>Redeem Item</title>
 <body>
     <form action="" method="GET">
     <div class="card mt-5">
