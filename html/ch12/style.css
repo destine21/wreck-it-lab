@@ -56,7 +56,7 @@ li {
 .icon-bar >div:nth-child(3){
     background: #00c902;
     border: 1px solid #c0d7c0;
-    transform: rotate(35deg);
+    transform: rotate(40deg);
 }
 .icon-bar i{
     opacity: 0;
