@@ -32,7 +32,7 @@ body{
 .subhook-line{
     position: relative;
     z-index: 2;
-    width: 25px;
+    width: 26px;
     height: 22px;
     background-color: #c3c4c7;
     border: 1px solid #ceced1;
@@ -59,7 +59,7 @@ body{
     border-radius: 0 0 8px 8px;
 }
 .detail-box .title .head-detail{
-    width: 45px;
+    width: 44px;
     height: 12px;
     border: 1px solid #b9b8b8;
     border-radius: 5px;
