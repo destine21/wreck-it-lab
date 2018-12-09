@@ -6,85 +6,11 @@
     }
 ?>
 <?php require_once '../header_ch.php'; ?>
-<style>
-    h6{
-        color: #dfe2de;
-    }
-    p{
-        color:#a8a8a8;
-    }
-    body{
-        background-image: url("img/rag.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-.fill-color{
-    color:#a8a8a8;
-}
-a.fill-color:hover{
-    color:#525252;
-}
-.card{
-    width: 35%;
-    height:600px;
-    display: flex;
-    justify-content: center;
-    margin:auto;
-    background-color:#1d2227;
-}
-.card-body{
-    margin: 10px;
-    margin-bottom: 0px;
-    background-image: linear-gradient(#1d2126,#393939);
-}
-.card-header{
-    padding: 0px;
-    display: inline-block;
-}
 
-.btn-circle {
-  width: 15px;
-  height: 15px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border: 0px;
-  border-radius: 15px;
-}
-.red{
-    background-image: linear-gradient(#b30005,#ffa4a4);
-    margin-left: 10px;
-}
-
-.yellow{
-    background-image: linear-gradient(#cf5e1e,#fee255);
-}
-
-.green{
-    background-image: linear-gradient(#5cac32,#ace05c);
-}
-.btn-redeem{
-     background-color:#414141;
-     color:#dfdfd6;
-     border-radius:0px;
-     box-shadow: 1px 1px #414141;
-     float:right;
-}
-.btn-redeem:hover{
-    background-color:#525252;
-}
-textarea{
-    background-color:#27292c !important;
-    border-radius: 0px !important;
-    color:#dfe2de !important;
-}
-p.small{
-    font-size: 8px;
-}
-</style>
+<title>Redeem Item</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
     <form action="" method="GET">
     <div class="card mt-5">

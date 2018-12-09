@@ -1,5 +1,5 @@
 <?php require_once('../header_ch.php'); ?>
-<!-- <div class="bg-main"> -->
+<title>Login</title>
 <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
 <div class="wrapper">
     <div class="Page1">
@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="Page2 pt-5">
-        <div class="userLogo mt-2"><img src="Felix.jpg" /></div>
+        <div class="userLogo mt-2"><img src="img/Felix.jpg" /></div>
         <div class="userEmail">
             <div class="container">
                 <div class="ch1-wrapper mt-4 pt-2">
