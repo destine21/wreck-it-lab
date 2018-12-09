@@ -14,12 +14,10 @@ $result=mysqli_query($link,$sql);
 
 $count=mysqli_num_rows($result);
 
-if($count == 1){
-
+if($count != 0){
   echo '<script language="javascript">';
   echo 'window.location.href="loggedin.php";';
   echo '</script>';
-
 }
 else {
   echo '<script language="javascript">';

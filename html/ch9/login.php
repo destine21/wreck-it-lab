@@ -34,11 +34,11 @@
 
 				<form class="login100-form validate-form" method="POST" action="checkLogin.php">
 					<span class="login100-form-title">
-						Email Login
+						Email - Sign in
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="uname" placeholder="Email">
+						<input class="input100" type="text" name="uname" placeholder="Username">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
