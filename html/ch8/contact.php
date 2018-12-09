@@ -7,7 +7,7 @@
         <p class="lead">
           Email : wreckEveryThing@mail.com<br>
           CEO : Mr.Wreck <br>
-          Phone : 0XXXXXXXXX <br>
+          Phone : 098-765-4321 <br>
           Fax : We don't need it. Cause it's not cool. <br>
           Location : Somewhere in this continent
         </p>
