@@ -41,7 +41,7 @@ body{
 }
 
 .detail-box {
-    width: 270px;
+    width: 290px;
     border: 2px solid #c3c3c3;
     border-radius: 10px;
     margin-top: -12px;
@@ -69,4 +69,7 @@ body{
 
 .table-detail{
     border-top: 1px solid #0078c3;
+}
+table td:first-child{
+    font-weight: bold;
 }

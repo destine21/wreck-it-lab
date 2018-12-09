@@ -50,16 +50,16 @@
                     <table>
                         <tbody>
                             <tr>
-                                <td>Username:</td>
-                                <td><?php echo $row['username'] ?></td>
+                                <td>Username :</td>
+                                <td>&nbsp;<?php echo $row['username'] ?></td>
                             </tr>
                             <tr>
-                                <td>Email:</td>
-                                <td><?php echo $row['email'] ?></td>
+                                <td>Email :</td>
+                                <td>&nbsp;<?php echo $row['email'] ?></td>
                             </tr>
                             <tr>
-                                <td>Phone:</td>
-                                <td><?php echo $row['phone'] ?></td>
+                                <td>Phone :</td>
+                                <td>&nbsp;<?php echo $row['phone'] ?></td>
                             </tr>
                         </tbody>
                     </table>
