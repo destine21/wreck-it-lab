@@ -19,7 +19,7 @@
                         <input type="username" name="username" class="form-control rounded-0 " placeholder="Username">
                         <div class="d-flex mt-3">
                             <input type="password" name="password" class="form-control rounded-0 pr-5"placeholder="Password">
-                            <button type="button" onclick="authentication()"><i class="fas fa-arrow-right"></i></button>
+                            <button onclick="authentication()"><i class="fas fa-arrow-right"></i></button>
                         </div>
                     </form>
                 </div>

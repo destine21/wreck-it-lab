@@ -13,9 +13,7 @@ $(document).ready(function(){
   
 	$('.Page1').click(function(){
 	  $(this).animate({'top' : '-200vh'}, 500);
-	});
-	
-	
+	});	
   });
 
   
