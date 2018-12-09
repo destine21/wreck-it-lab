@@ -11,7 +11,7 @@ function authentication(){
 $(document).ready(function(){
   
 	$('.Page1').click(function(){
-	  $('.Page1').animate({'top' : '-200vh'}, 500);
+	  $(this).animate({'top' : '-200vh'}, 500);
 	});
 	
 	

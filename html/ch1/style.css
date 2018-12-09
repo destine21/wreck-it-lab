@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Open Sans;
+    overflow: hidden;
+}
+
+.Page1 {
+    /* display: none; */
+    z-index: 2;
+    position: absolute;
+    background: url("Fixit.jpeg") center;
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.Page1 h1 {
+    position: relative;
+    color: #FFF;
+    font-size: 5em;
+    font-family: Open Sans;
+    top: 70vh;
+    margin-left: 0.25em;
+}
+
+.Page2 {
+    z-index: 1;
+    position: relative;
+    background: url("fixit_bg.jpg") no-repeat;
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    /* top: -100vh; */
+}
+
+.userLogo {
+    width: 15em;
+    height: 15em;
+    position: relative;
+    margin: 0em auto;
+    display: block;
+}
+
+.userLogo img {
+    width: 15em;
+    height: 15em;
+    border-radius: 10em;
+}
+
+.form-control{
+    padding: 0px 10px;
+    background-color: rgba(0,14,27,0.75);
+    border-color: #576074;
+    color: #c4e9f2;
+}
+.form-control:focus{
+    background-color: rgba(0,14,27,0.75);
+    border-color: #576074;
+    color: #c4e9f2;
+    box-shadow: 0 0 0 3px rgba(85,96,118,.25)
+}
+
+.passwordInput {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    font-size: 2em;
+    width: 10em;
+    outline: none;
+    border: rgba(204, 204, 204, 0.7) solid;
+}
+
+.ch1-wrapper form {
+    width: 350px;
+}
+.ch1-wrapper form >div{
+    position: relative;
+}
+.ch1-wrapper form {
+    width: 350px;
+}
+
+.ch1-wrapper form button{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 0;
+    background-color: rgba(37,89,120,0.625);
+    color: #c4e9f2;
+    border: none;
+    font-size: 1.25em;
+    /* padding: 0 10px; */
+}
+.ch1-wrapper form button:focus{
+    box-shadow: none;
+    outline: none;
+}
+.switch{
+    width: fit-content;
+    font-size: 0.825em;
+    color: #c4e9f2;
+    cursor: pointer;
+}
+.switch:hover{
+    text-decoration: underline;
+}
