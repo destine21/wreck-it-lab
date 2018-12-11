@@ -18,7 +18,7 @@ a.fill-color:hover{
 color:#525252;
 }
 .card{
-width: 35%;
+width: 500px;
 height:600px;
 display: flex;
 justify-content: center;
@@ -34,12 +34,22 @@ background-image: linear-gradient(#1d2126,#393939);
 padding: 0px;
 display: inline-block;
 }
-
+i{
+    display: block;
+    opacity: 0;
+    line-height: 1;
+}
+.icon{
+    width: fit-content;
+}
+.icon:hover i{
+    opacity: 1;
+}
 .btn-circle {
 width: 15px;
 height: 15px;
 text-align: center;
-padding: 6px 0;
+/* padding: 6px 0; */
 font-size: 12px;
 line-height: 1.428571429;
 border: 0px;
@@ -47,15 +57,22 @@ border-radius: 15px;
 }
 .red{
 background-image: linear-gradient(#b30005,#ffa4a4);
+/* padding: 2px; */
+margin: 0 4px;
 margin-left: 10px;
 }
 
 .yellow{
 background-image: linear-gradient(#cf5e1e,#fee255);
+/* padding: 2px; */
+margin: 0 4px;
 }
 
 .green{
 background-image: linear-gradient(#5cac32,#ace05c);
+/* padding: 2px; */
+margin: 0 4px;
+transform: rotate(45deg);
 }
 .btn-redeem{
  background-color:#414141;
@@ -67,16 +84,21 @@ background-image: linear-gradient(#5cac32,#ace05c);
 .btn-redeem:hover{
 background-color:#525252;
 }
-textarea{
+input{
 background-color:#27292c !important;
 border-radius: 0px !important;
 color:#dfe2de !important;
+padding: 3px 8px !important;
+}
+input[type="text"]:focus{
+    border-color: #9a9a9a;
+    box-shadow: 0 0 0 0.2rem rgba(73,80,87,0.5);
 }
 p.small{
-font-size: 8px;
+font-size: 12px;
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
     body{
         background-repeat: repeat-y;
     }
@@ -94,4 +116,4 @@ font-size: 8px;
        margin-top: 5px !important;
    }
 
-  }
+  } */

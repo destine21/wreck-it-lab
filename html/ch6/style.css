@@ -29,7 +29,7 @@ body {
     border-radius: 0.25rem;
     background: #00509d;
     border-color: #00509d;
-    width: 10%;
+    /* width: 10%; */
 }
 
 .sub-navbar {
@@ -73,14 +73,18 @@ body {
 .gallery-list>div:hover p {
     text-decoration: underline;
 }
+.gallery-list>div{
+    padding: 0 10px;
+}
 
 .gallery-list>div>div {
     background: url(images/pic1.jpeg) center no-repeat;
     background-size: contain;
     border: 1px solid #cd0033;
-    width: 130px;
-    height: 130px;
+    width: 186px;
+    height: 186px;
     border-radius: 50%;
+    margin: auto;
 }
 
 .gallery-list>div:nth-child(2)>div {
@@ -133,11 +137,6 @@ body {
 
 /* media query */
 @media only screen and (min-width:1281px) {
-    .gallery-list>div>div {
-        width: 190px;
-        height: 190px;
-    }
-
     .gallery-list>div p {
         font-size: 1.125em;
     }

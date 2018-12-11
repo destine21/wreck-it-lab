@@ -44,7 +44,7 @@ body{
     color: #ffffff;
 }
 form input:focus{
-    outline-color: none !important;
+    outline: none !important;
 }
 
 /* Slider *

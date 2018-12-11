@@ -13,7 +13,7 @@
         </div>
         <div>
             <ul class="profile-side">
-                <li class="profile-g pl-0">
+                <li class="profile-g pl-1">
                     <div class="profile-img"><img src="images/Incognito_logo.png" alt="">&nbsp;&nbsp;Dummyboy</div>
                 </li>
                 <li class="border-right border-left profile-g">Home</li>
@@ -25,7 +25,7 @@
 </div>
 <div class="container">
     <div class="row mt-2">
-        <div class="left-side col-2 pr-0">
+        <div class="left-side col-3 col-lg-2 pr-0">
             <div class="profile-head profile-img"><img src="images/Incognito_logo.png" alt="" class="rounded-circle">Dummyboy</div>
             <table>
                 <tr>
@@ -50,7 +50,7 @@
                 </tr>
             </table>
         </div>
-        <div class="middle-side col-6 pr-0">
+        <div class="middle-side col col-lg-6 pr-0">
             <div class="post-box">
                 <div class="post-head">
                     <ul>
@@ -124,7 +124,7 @@
             ?>
             </div>
         </div>
-        <div class="right-side col">
+        <div class="right-side col d-none d-lg-block">
             <div class="stories-box">
                 <h5>Stories</h5>
                 <div class="stories header-post d-flex my-2">
