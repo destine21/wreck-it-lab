@@ -1,0 +1,31 @@
+body{
+    
+}
+.upload-img{
+    background-color: #fff;
+    width: 600px;
+    color: #333333;
+    outline: 3px dashed #808080;
+    outline-offset: -7px;
+}
+.upload-img i{
+    font-size: 7em;
+    color: #00bcf4;
+}
+form input[type="file"]{
+    color: #333333;
+}
+form input[type="file"]:focus{
+    outline: none;
+}
+form h6{
+    color: red;
+    margin-top: .25em;
+}
+form input[type="submit"]{
+    color: #fff;
+    font-weight: bold;
+    background-color: #39b757;
+    border: 1px solid #479a5c;
+    padding: 5px;
+}
