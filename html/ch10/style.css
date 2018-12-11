@@ -1,7 +1,9 @@
 body {
     background-color: #e8ebee;
 }
-
+.container{
+    /* max-width: 600px; */
+}
 .profile-img img{
     border-radius: 50%;
     width: 30px;
@@ -259,4 +261,9 @@ input:focus,button:focus{
 
     font-size: 0.825rem;
     color: #365899;
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 600px;
+    }
 }

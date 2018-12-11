@@ -10,11 +10,11 @@ section{
     right: 0;
 }
 .sign {
-    padding-top: 6em;
-    width: 60vw;
+    padding-top: 7em;
+    width: fit-content;
 }
 .sign >div{
-    width: 40%;
+    width: 45%;
     box-shadow: 2px 2px 15px #444444;
     border-radius: 15px;
 }
@@ -29,13 +29,15 @@ section{
     /* font-size: 1.5em; */
     text-align: center;
     white-space: nowrap;
-    margin-top: 1.75em;
+    margin: 0 auto;
+    margin-top: 1.325em;
+    width: fit-content;
 }
 .sign h2 span{
     font-size: 0.5em;
 }
 .cornhub{
-    padding-top: 6em;
+    padding-top: 5em;
 }
 .cornhub p{
     font-weight: bold;

@@ -7,6 +7,7 @@
 }
 body{
     background-color: #fff;
+    font-family: 'ChakraPetch', sans-serif !important;
 }
 .browser-content{
     /* padding: 1rem; */
@@ -35,19 +36,19 @@ li {
 }
 .icon-bar{
     border-radius: 0 0 10px 0;
-    padding: 0.3em 0.6em;
+    padding: 4.8px 9.6px;
 }
 .icon-bar >div{
     width: 14px;
     height: 14px;
-    font-size: 0.7em;
+    font-size: 11.2px;
     background: #ff504f;
     color: #333333bd;
     border-radius: 50%;
     line-height: 1.2;
     text-align: center;
     border: 1px solid #ff6f6f;
-    margin: 0 0.25em;
+    margin: 0 2.8px;
 }
 .icon-bar >div:nth-child(2){
     background: #ffb400;
@@ -65,7 +66,7 @@ li {
     opacity: 1;
 }
 .tab-name{
-    font-size: 0.875em;
+    font-size: 14px;
     padding: 6px 8px;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
@@ -83,14 +84,14 @@ li {
     border-radius: 50%;
     position: relative;
     display: flex;
-    font-size: 0.875em;
+    font-size: 16px;
     color: #7b8083;
     transition: all 0.3s ease;
 }
 .tab-bar .add-tab{
     width: 31px;
     height: 31px;
-    font-size: 1em;
+    font-size: 16px;
 }
 .add-tab img{
     width: 20px;
@@ -102,7 +103,7 @@ li {
     background-color: #f1f2f3;
 }
 .url-form input{
-    font-size: 0.825em;
+    font-size: 13.2px;
     padding: 4px 10px;
     line-height: 1;
     border-radius: 15px;
@@ -118,12 +119,12 @@ li {
 }
 .bookmark-bar a{
     color: #75797d;
-    font-size: 0.75em;
+    font-size: 12px;
     cursor: default;
 }
 .bookmark-bar i{
     color: #75797d;
-    font-size: 1.5em;
+    font-size: 18px;
     vertical-align: -2px;
 }
 i.fa-facebook{
@@ -134,7 +135,7 @@ i.fa-github{
 }
 i.fa-file{
     color: #333333;
-    font-size: 1.35em;
+    font-size: 16.2px;
 }
 .bookmark-bar >div{
     border-radius: 15px;
