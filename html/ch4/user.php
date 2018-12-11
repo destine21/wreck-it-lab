@@ -31,7 +31,11 @@
             // Check connection
             if (isset($id)) {
                 if (!is_numeric($id)) {
-                    echo 'What are you doing?';
+                    ?>
+                    <div class="footer-card">
+                        What are u doing hacker?!
+                    </div>
+                    <?php
                     die;
                 }
             }
@@ -69,7 +73,11 @@
                 </div>
             <?php }
             } else {
-                echo '0 results';
+                ?>
+                <div class="footer-card">
+                    ID : No Employee Found
+                </div>
+                <?php
             }
                 $conn->close();
             ?>                   
