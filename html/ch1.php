@@ -19,7 +19,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Client-side Authentication&nbsp;<span>(15 points)</span></h1>
+                        <h1>Client-side Authentication&nbsp;<span>(10 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>

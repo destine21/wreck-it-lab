@@ -19,7 +19,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>OS Command Injection&nbsp;<span>(15 points)</span></h1>
+                        <h1>OS Command Injection&nbsp;<span>(150 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -54,8 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Command_Injection">Command Injection</a></li>
                         </ul>
                     </div>
                     <div>
@@ -75,23 +74,23 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - หน้านี้จะมีการนำชื่อ URL ไปรันคำสั่ง curl ซึ่งหากนำไปต่อ string แล้วรัน command ก็จะเกิดช่องโหว่ขึ้น โดยสามารถใส่ ;, &, &&, | เป็นต้น แล้วตามด้วย os command ต่าง ๆ (ในที่นี้คือ Linux command) เช่น<br>
+                                                    "https://www.facebook.com/;ls" ก็จะรัน command "ls" หรือ จะตัดให้เหลือแค่
+                                                    ";ls" ก็จะรัน command "ls" เหมือนกัน<br>
+                                                    คราวนี้ จะพบว่ามี folder flag อยู่เข้าไปก็จะต้อง ls -a ถึงจะเจอไฟล์ .flag.txt
+                                                    ให้ cat flag/.flag.txt ออกมาก็จะพบกับ flag ของข้อนี้<br>
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - การใช้ คำสั่ง system() หรือ คำสั่งใด ๆ ที่สมารถรัน OS command สิ่งที่ต้องห้ามก็คือ การนำ user input มาเป็น argument ใน ฟังก์ชั่นโดยไม่ทำการ validate input เพราะว่าจะทำให้เกิดช่องโหว่ OS command injection ได้ วิธีแก้ไข คือ หลีกเลี่ยงการใช้ฟังก์ชันที่รัน OS command โดยตรง หรือถ้าเลี่ยงไม่ได้ ให้ทำการ Escape input หรือ ทำ input validation เพื่อที่จะป้องกัน การใส่คำสั่งแปลกปลอมเข้ามา
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>

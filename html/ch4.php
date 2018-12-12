@@ -55,8 +55,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004)">Testing for Insecure Direct Object References</a></li>
                         </ul>
                     </div>
                     <div>
@@ -76,23 +75,19 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - จากการสังเกตที่ URL เราจะพบว่ามี parameter id อยู่ซึ่งเป็นตัวเลข ลองคิดดูว่าถ้าเราเปลี่ยนเป็นเลขอื่นจะเกิดอะไรขึ้น !? เราก็จะเห็น User infomation ของ user อื่นได้ คราวนี้ลองไล่ดูไปเรื่อย ๆ ก็จะพบข้อมูลของ admin ที่ id = 1 แล้วจะพบ flag ใน email ของ admin
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - IDOR เกิดจากการที่กำหนด ID ของ Object ด้วยการไล่เลขเพิ่มขึ้นไปเรื่อย ๆ ซึ่งทำให้คาดเดาได้ง่าย วิธีแก้ไข คือ การกำหนดสิทธิ์ ในการเข้าถึงให้เฉพาะ เจ้าของเท่านั้นที่สามารถดูข้อมูลของตนเองได้ และ ใช้ ID ที่คาดเดาได้ยาก เช่น UUID เป็นต้น
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>
