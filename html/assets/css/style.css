@@ -15,6 +15,16 @@ body{
 .f-bit{
   font-family: 'Press2Start', sans-serif;
 }
+
+.p-content{
+  text-indent: 2.5em;
+}
+
+.highlight{
+  color: #148d96;
+  font-size: 1.2em;
+}
+
 .content-wrapper {
   padding: 50px; }
 
@@ -89,7 +99,7 @@ a:hover {
   text-shadow: 0px 0px 2px #5AB1BB; }
 .intro-page p {
   color: #86acaa;
-  margin-bottom: 3em; }
+  margin-bottom: 2em; }
 
 .content-banner h1 {
   color: #5AB1BB;
