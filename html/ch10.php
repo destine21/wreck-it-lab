@@ -20,17 +20,17 @@
                 <div class="header-score">
                     <div>
                         <h1>Cross Site Scripting (XSS)&nbsp;<span>(200 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>The Fakebook</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>ท่านได้รับคำสั่งให้มาทำการทดสอบเจาะระบบ Social Media เจ้าหนึ่งที่กำลังอยู่ในช่วงทดสอบระบบ Post ข้อความ โดยเว็บนี้จะมี Admin คอยเข้ามาดูแลความเรียบร้อยของระบบทุก ๆ 1 นาที ภารกิจของท่าน คือการขโมย Cookie ของ Admin คนนั้นมาให้ได้ !!</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ขโมย Cookie ของ Admin ระบบนี้</p>
                         <a href="ch10/fakebook.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
