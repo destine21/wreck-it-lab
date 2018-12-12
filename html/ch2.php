@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>ทำให้หน้าเว็บไซต์นี้ Redirect ไปที่ https://www.evil.c0m เพื่อทดสอบว่ามีช่องโหว่อยู่จริงตามที่ท่านสัมผัสได้รึเปล่า</p>
+                        <p>ทำให้หน้าเว็บไซต์นี้มุ่งไปที่ https://www.evil.c0m ให้ได้เพื่อทดสอบว่ามีช่องโหว่อยู่จริงตามที่ท่านสัมผัสได้รึเปล่า</p>
                         <a href="ch2/contact.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
