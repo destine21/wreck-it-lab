@@ -54,8 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet">Unvalidated Redirects and Forwards Cheat Sheet</a></li>
                         </ul>
                     </div>
                     <div>
@@ -75,23 +74,19 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - จะสังเกตได้ว่าเมื่อกดที่ปุ่ม facebook, twitter, youtube จะถูกพาไปยัง /redirect.php?url=... โดยหากเราเปลี่ยน parameter url จะทำให้ redirect ไปที่ URL ที่เราต้องการได้ จากโจทย์ให้ redirect ไปที่ "https://www.evil.c0m" เมื่อใส่ใน parameter url ก็จะพบกับ flag
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - ไม่นำ user input มาทำการ redirect แต่หากมีความจำเป็นต้องทำ ก็ให้ทำการ whitelist เฉพาะ URL ที่อนุญาตเท่านั้น ไม่ให้ทำการรับ user input แล้วนำมาทำการ redirect ตรง ๆ เพราะจะเกิดเป็นช่องโหว่ Open redirect ได้
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>

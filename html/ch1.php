@@ -53,8 +53,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_whereto.asp">JavaScript Where To</a></li>
                         </ul>
                     </div>
                     <div>
@@ -74,24 +73,19 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <!-- <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div> -->
-                                        <div class="modal-body m-3 pb-0">
-                                        <h5 class="mb-2">Solution</h5>
-                                              - เมื่อใช้ developer tools จะเห็นว่าเมื่อกดปุ่ม login จะไปเรียกฟังก์ชัน authenticate ในไฟล์ /login.js จะเห็นว่ามีการเช็ค username, password ที่ฝังอยู่ใน JavaScript เมื่อนำไปใช้ จะได้ flag ออกมา
-                                        <h5 class="mt-3 mb-2">Recommendation</h5>
-                                              - การทำการ authentication ด้วย JavaScript เป็นการทำฝั่ง Client-side ซึ่ง code ทุกอย่างจะสามารถดูได้จากฝั่ง user ทำให้ใครที่เข้าถึงหน้านั้น ๆ ได้ก็จะสามารถ Bypass authentication นั้น ๆ ได้ วิธีแก้ไขคือการทำการ authentication ที่ฝั่ง server จะต่อกับฐานข้อมูลหรือไม่ก็ได้ ซึ่ง code ที่เขียนและรัน จะอยู่ฝั่ง server เท่านั้น user ทั่วไปจะไม่สามารถเข้าถึง code การทำงานในส่วนนั้นได้
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - เมื่อใช้ developer tools จะเห็นว่าเมื่อกดปุ่ม login จะไปเรียกฟังก์ชัน authenticate ในไฟล์ /login.js จะเห็นว่ามีการเช็ค username, password ที่ฝังอยู่ใน JavaScript เมื่อนำไปใช้ จะได้ flag ออกมา
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - การทำการ authentication ด้วย JavaScript เป็นการทำฝั่ง Client-side ซึ่ง code ทุกอย่างจะสามารถดูได้จากฝั่ง user ทำให้ใครที่เข้าถึงหน้านั้น ๆ ได้ก็จะสามารถ Bypass authentication นั้น ๆ ได้ วิธีแก้ไขคือการทำการ authentication ที่ฝั่ง server จะต่อกับฐานข้อมูลหรือไม่ก็ได้ ซึ่ง code ที่เขียนและรัน จะอยู่ฝั่ง server เท่านั้น user ทั่วไปจะไม่สามารถเข้าถึง code การทำงานในส่วนนั้นได้
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer mt-0 pt-2 px-4">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>
