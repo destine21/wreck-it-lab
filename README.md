@@ -9,7 +9,7 @@ docker run -it -p 8080:80 --name wreck-it-lab destine21/wreck-it-lab-alpha:0.1
 3. After a few seconds go to [localhost](http://localhost:8080)
 
 ## Stop wreck-it-lab container
-You can stop the container with (Ctrl+C ,CMD+C) or run this command
+You can stop the container with this command
 ```
 docker stop wreck-it-lab
 ```

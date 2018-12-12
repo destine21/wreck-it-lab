@@ -1,19 +1,18 @@
-<?php $page = 'ch1';?>
+<?php $page = 'ch1'; ?>
 <?php
-        if(isset($_POST["en_pass"])){
-        $flag = $_POST["en_pass"];
-            if($flag == "flag{Javascr1pt_is_s0_s3cure}"){
+        if (isset($_POST['en_pass'])) {
+            $flag = $_POST['en_pass'];
+            if ($flag == 'flag{Javascr1pt_is_s0_s3cure}') {
                 $isPass = true;
                 $ch = 1;
-                require_once('database/setState.php');
-            }
-            else {
+                require_once 'database/setState.php';
+            } else {
                 $isPass = false;
             }
         }
 ?>
-<?php require_once('header.php') ?>
-<?php require_once('header_home.php') ?>
+<?php require_once 'header.php'; ?>
+<?php require_once 'header_home.php'; ?>
 
     <div class="bg-main">
         <div class="content-wrapper mx-0">
@@ -37,11 +36,10 @@
                     <div>
                         <h5>Validation</h5>
                         <?php
-                            if(isset($isPass)){
-                                if($isPass){
+                            if (isset($isPass)) {
+                                if ($isPass) {
                                     echo '<div class="alert alert-success">Well Done!</div>';
-                                }
-                                else {
+                                } else {
                                     echo'<div class="alert alert-danger">Nahh Try it again.</div>';
                                 }
                             }
@@ -79,14 +77,16 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            //Solution Here
-                                        
+                                        <h5>Solution</h5>
+                                              - เมื่อใช้ developer tools จะเห็นว่าเมื่อกดปุ่ม login จะไปเรียกฟังก์ชัน authenticate ในไฟล์ /login.js จะเห็นว่ามีการเช็ค username, password ที่ฝังอยู่ใน JavaScript เมื่อนำไปใช้ จะได้ flag ออกมา
+                                        <h5 class="mt-3">Recommendation</h5>
+                                              - การทำการ authentication ด้วย JavaScript เป็นการทำฝั่ง Client-side ซึ่ง code ทุกอย่างจะสามารถดูได้จากฝั่ง user ทำให้ใครที่เข้าถึงหน้านั้น ๆ ได้ก็จะสามารถ Bypass authentication นั้น ๆ ได้ วิธีแก้ไขคือการทำการ authentication ที่ฝั่ง server จะต่อกับฐานข้อมูลหรือไม่ก็ได้ ซึ่ง code ที่เขียนและรัน จะอยู่ฝั่ง server เท่านั้น user ทั่วไปจะไม่สามารถเข้าถึง code การทำงานในส่วนนั้นได้
+                                        <a href="https://www.w3schools.com/js/js_whereto.asp" target="_blank" ><h6>https://www.w3schools.com/js/js_whereto.asp</h6></a>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
