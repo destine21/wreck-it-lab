@@ -1,19 +1,18 @@
-<?php $page = 'ch2';?>
+<?php $page = 'ch2'; ?>
 <?php
-        if(isset($_POST["en_pass"])){
-        $flag = $_POST["en_pass"];
-            if($flag == "flag{It's_a_0pen_Redir3ct}"){
+        if (isset($_POST['en_pass'])) {
+            $flag = $_POST['en_pass'];
+            if ($flag == "flag{It's_a_0pen_Redir3ct}") {
                 $isPass = true;
                 $ch = 2;
-                require_once('database/setState.php');
-            }
-            else {
+                require_once 'database/setState.php';
+            } else {
                 $isPass = false;
             }
         }
 ?>
-<?php require_once('header.php') ?>
-<?php require_once('header_home.php') ?>
+<?php require_once 'header.php'; ?>
+<?php require_once 'header_home.php'; ?>
     <div class="bg-main">
         <div class="content-wrapper mx-0">
             <div class="content-banner">
@@ -26,21 +25,29 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
+<<<<<<< HEAD
                         <p>ท่านได้พบกับ นามบัตรอิเล็กทรอนิกส์ของบริษัทชื่อดังแห่งหนึ่ง เมื่อพลิกดูก็พบกับ ข้อมูลเพื่อติดต่อกับ บริษัทนั้น ๆ ภารกิจที่ท่านได้รับมอบหมาย คือการทำให้ ข้อมูลบางส่วนในนามบัตรอิเล็กทรอนิกส์ชี้ไปยัง "https://www.evil.c0m" แทนของเดิมที่มีอยู่</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
                         <p>ทำให้ redirect ไปยัง "https://www.evil.c0m"</p>
+=======
+                        <p>วันหนึ่งท่านได้มีโอกาสพบเจอกับประธานบริษัท Amazing บริษัทยักษ์ใหญ่ที่เปิดเว็บไซต์ขายของออนไลน์ ระหว่างคุยกันนั้นประธานบริษัทรู้สึกถูกใจในตัวท่านมาก หลังคุยเสร็จท่านเองก็สนใจอยากจะลองสมัครงานที่บริษัทแห่งนี้ในตำแหน่ง Web Developer ดู ท่านเลยขอนามบัตรของประธานบริษัทมาเพื่อหวังจะใช้เส้นสายในการฝากตัวเข้าทำงาน แต่ทว่านามบัตรของประธานบริษัทหมดพอดี 
+                        ท่านเลยได้นามบัตรออนไลน์มาแทน ด้วยจิตวิญญาณแห่งการเป็น Web Developer ขั้นเทพของท่าน ท่านสัมผัสได้ว่านามบัตรออนไลน์นี้มีช่องโหว่อยู่ </p>
+                    </div>
+                    <div>
+                        <h5>Goal</h5>
+                        <p>ทำให้หน้าเว็บไซต์นี้ Redirect ไปที่ https://www.evil.c0m เพื่อทดสอบว่ามีช่องโหว่อยู่จริงตามที่ท่านสัมผัสได้รึเปล่า</p>
+>>>>>>> ef788e8ee6f71056a57c7e367118838fbd66d983
                         <a href="ch2/contact.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
                         <?php
-                            if(isset($isPass)){
-                                if($isPass){
+                            if (isset($isPass)) {
+                                if ($isPass) {
                                     echo '<div class="alert alert-success">Well Done!</div>';
-                                }
-                                else {
+                                } else {
                                     echo'<div class="alert alert-danger">Nahh Try it again.</div>';
                                 }
                             }
