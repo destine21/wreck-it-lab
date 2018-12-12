@@ -14,6 +14,7 @@ body{
 }
 .score{
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
     padding: 30px;
 }
@@ -124,7 +125,7 @@ input[type='range']::-ms-track {
 }
 
 /* ### Slider::-thumb */
-input[type='range']::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb,input[type='range']::-moz-range-thumb {
   margin: .05em;
   padding: 0;
   height: 20em;

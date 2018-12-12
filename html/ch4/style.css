@@ -71,5 +71,6 @@ body{
     border-top: 1px solid #0078c3;
 }
 table td:first-child{
+    white-space: nowrap;
     font-weight: bold;
 }

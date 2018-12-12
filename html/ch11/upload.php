@@ -1,6 +1,6 @@
 <?php require_once('../header_ch.php'); ?>
 <link rel="stylesheet" href="../assets/fontAwesome/css/all.css">
-
+<title>Upload</title>
 <div class="pt-3">
     <div class="upload-img text-center mx-auto p-4 my-5">
         <div><i class="fas fa-cloud-upload-alt"></i></div>
@@ -34,7 +34,7 @@
         // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], substr($target_file, 0, 8+40))) {
-                echo "The file <span class='font-weight-bold'>". basename( $_FILES["fileToUpload"]["name"]). "</span> has been uploaded.";
+                echo "The file <strong>". basename( $_FILES["fileToUpload"]["name"]). "</strong> has been uploaded.";
                 echo "<a href=".$target_file."> Here!</a>";
             } else {
                 echo "Sorry, there was an error uploading your file.";

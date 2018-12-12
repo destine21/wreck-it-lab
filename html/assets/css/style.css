@@ -64,6 +64,7 @@ a:hover {
   margin: 10px;}
   .sidebar-banner ul {
     width: max-content;
+    width: -moz-max-content;
     padding: 0em; }
     .sidebar-banner ul li {
       list-style-type: none;

@@ -33,7 +33,7 @@
             </div>
             <p class="card-text mt-2 mb-1">Example code: </p>
             <p class="card-text small">Tzo0OiJJdGVtIjo0OntzOjI6ImlkIjtzOjQ6IkkwMDMiO3M6NDoibmFtZSI7czoxMjoiTHVuYXRpYyBDYXJkIjtzOjExOiJkZXNjcmlwdGlvbiI7czo0NToiTFVLICsgMSwgQ3JpdGljYWwgUmF0ZSArIDEsIFBlcmZlY3QgRG9kZ2UgKyAxIjtzOjU6InByaWNlIjtpOjEwO30=</p>
-            <p class="card-text mt-3 mb-0">Redeemed Item</p>
+            <p class="card-text mt-4 mb-0">Redeemed Item</p>
             <ul>
                 <?php
                 $path = './inventory';

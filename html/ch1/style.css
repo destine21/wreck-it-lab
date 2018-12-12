@@ -105,6 +105,7 @@ html {
 }
 .switch{
     width: fit-content;
+    width: -moz-fit-content;
     font-size: 0.825em;
     color: #c4e9f2;
     cursor: pointer;
