@@ -53,7 +53,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.w3schools.com/js/js_whereto.asp">JavaScript Where To</a></li>
+                            <li><a target="_blank" href="https://www.w3schools.com/js/js_whereto.asp">JavaScript Where To</a></li>
                         </ul>
                     </div>
                     <div>

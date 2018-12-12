@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a></li>
-                            <li><a href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Caesar_cipher">Caesar cipher</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
                         </ul>
                     </div>
                     <div>

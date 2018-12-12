@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross-site Scripting (XSS)</a></li>
-                            <li><a href="https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)">Testing for Stored Cross site scripting</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross-site Scripting (XSS)</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)">Testing for Stored Cross site scripting</a></li>
                         </ul>
                     </div>
                     <div>

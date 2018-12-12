@@ -54,7 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.acunetix.com/blog/web-security-zone/directory-listing-information-disclosure/">Directory Listing and Information Disclosure</a></li>
+                            <li><a target="_blank" href="https://www.acunetix.com/blog/web-security-zone/directory-listing-information-disclosure/">Directory Listing and Information Disclosure</a></li>
                         </ul>
                     </div>
                     <div>

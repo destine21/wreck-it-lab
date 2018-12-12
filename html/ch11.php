@@ -54,7 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Unrestricted_File_Upload">Unrestricted File Upload</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Unrestricted_File_Upload">Unrestricted File Upload</a></li>
                         </ul>
                     </div>
                     <div>

@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/SQL_Injection">SQL Injection</a></li>
-                            <li><a href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">Top 10 2013-A1-Injection</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/SQL_Injection">SQL Injection</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">Top 10 2013-A1-Injection</a></li>
                         </ul>
                     </div>
                     <div>

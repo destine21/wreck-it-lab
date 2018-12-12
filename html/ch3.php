@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST (HTTP)</a></li>
-                            <li><a href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST (HTTP)</a></li>
+                            <li><a target="_blank" href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
                         </ul>
                     </div>
                     <div>
@@ -63,7 +63,7 @@
                             <li>
                                 <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - ลองใช้ โปรแกรม Burp Suite Community Edition เพื่อดัก HTTP request ที่ถูกส่งออกไปดูสิ (ref Burp tutorial)
+                                - ลองใช้ โปรแกรม Burp Suite Community Edition เพื่อดัก HTTP request ที่ถูกส่งออกไปดูสิ <a href="/how-to.php?tool=burpSuite">How to use Burp Suite</a>
                                 </div>    
                             </li>
                             <li>

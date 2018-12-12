@@ -54,7 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet">Unvalidated Redirects and Forwards Cheat Sheet</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet">Unvalidated Redirects and Forwards Cheat Sheet</a></li>
                         </ul>
                     </div>
                     <div>

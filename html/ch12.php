@@ -54,7 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Command_Injection">Command Injection</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Command_Injection">Command Injection</a></li>
                         </ul>
                     </div>
                     <div>

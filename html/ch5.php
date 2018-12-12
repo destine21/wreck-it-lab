@@ -54,9 +54,9 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.w3schools.com/php/php_cookies.asp">PHP 5 Cookies</a></li>
-                            <li><a href="https://www.owasp.org/index.php/Session_Management_Cheat_Sheet">Session Management Cheat Sheet</a></li>
-                            <li><a href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
+                            <li><a target="_blank" href="https://www.w3schools.com/php/php_cookies.asp">PHP 5 Cookies</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Session_Management_Cheat_Sheet">Session Management Cheat Sheet</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
                         </ul>
                     </div>
                     <div>

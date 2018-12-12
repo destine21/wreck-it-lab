@@ -55,7 +55,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004)">Testing for Insecure Direct Object References</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Testing_for_Insecure_Direct_Object_References_(OTG-AUTHZ-004)">Testing for Insecure Direct Object References</a></li>
                         </ul>
                     </div>
                     <div>
