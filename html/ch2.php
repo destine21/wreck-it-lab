@@ -1,19 +1,18 @@
-<?php $page = 'ch2';?>
+<?php $page = 'ch2'; ?>
 <?php
-        if(isset($_POST["en_pass"])){
-        $flag = $_POST["en_pass"];
-            if($flag == "flag{It's_a_0pen_Redir3ct}"){
+        if (isset($_POST['en_pass'])) {
+            $flag = $_POST['en_pass'];
+            if ($flag == "flag{It's_a_0pen_Redir3ct}") {
                 $isPass = true;
                 $ch = 2;
-                require_once('database/setState.php');
-            }
-            else {
+                require_once 'database/setState.php';
+            } else {
                 $isPass = false;
             }
         }
 ?>
-<?php require_once('header.php') ?>
-<?php require_once('header_home.php') ?>
+<?php require_once 'header.php'; ?>
+<?php require_once 'header_home.php'; ?>
     <div class="bg-main">
         <div class="content-wrapper mx-0">
             <div class="content-banner">
@@ -26,21 +25,21 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>วันหนึ่งท่านได้มีโอกาสพบเจอกับประธานบริษัท Amazing บริษัทยักษ์ใหญ่ที่เปิดเว็บไซต์ขายของออนไลน์ ระหว่างคุยกันนั้นประธานบริษัทรู้สึกถูกใจในตัวท่านมาก หลังคุยเสร็จท่านเองก็สนใจอยากจะลองสมัครงานที่บริษัทแห่งนี้ในตำแหน่ง Web Developer ดู ท่านเลยขอนามบัตรของประธานบริษัทมาเพื่อหวังจะใช้เส้นสายในการฝากตัวเข้าทำงาน แต่ทว่านามบัตรของประธานบริษัทหมดพอดี 
+                        ท่านเลยได้นามบัตรออนไลน์มาแทน ด้วยจิตวิญญาณแห่งการเป็น Web Developer ขั้นเทพของท่าน ท่านสัมผัสได้ว่านามบัตรออนไลน์นี้มีช่องโหว่อยู่ </p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ทำให้หน้าเว็บไซต์นี้ Redirect ไปที่ https://www.evil.c0m เพื่อทดสอบว่ามีช่องโหว่อยู่จริงตามที่ท่านสัมผัสได้รึเปล่า</p>
                         <a href="ch2/contact.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
                         <?php
-                            if(isset($isPass)){
-                                if($isPass){
+                            if (isset($isPass)) {
+                                if ($isPass) {
                                     echo '<div class="alert alert-success">Well Done!</div>';
-                                }
-                                else {
+                                } else {
                                     echo'<div class="alert alert-danger">Nahh Try it again.</div>';
                                 }
                             }
