@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>ท่านได้พบกับ นามบัตรอิเล็กทรอนิกส์ของบริษัทชื่อดังแห่งหนึ่ง เมื่อพลิกดูก็พบกับ ข้อมูลเพื่อติดต่อกับ บริษัทนั้น ๆ ภารกิจที่ท่านได้รับมอบหมาย คือการทำให้ ข้อมูลบางส่วนในนามบัตรอิเล็กทรอนิกส์ชี้ไปยัง "https://www.evil.c0m" แทนของเดิมที่มีอยู่</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ทำให้ redirect ไปยัง "https://www.evil.c0m"</p>
                         <a href="ch2/contact.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>

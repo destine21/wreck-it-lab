@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>ท่านได้ถูกมอบหมาย ให้เข้าไปสำรวจเว็บไซต์หนึ่ง แต่เมื่อท่านได้สำรวจไปสักระยะ ก็พบว่าเว็บไซต์นั้นไม่ได้ทำการติดต่อกับ Server เลย ท่านจึงรีบกด f12 แล้วเริ่มทำการเจาะระบบ Login ของหน้าเว็บไซต์นั้นทันที</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>เข้าสู่ระบบให้ได้</p>
                         <a href="ch1/login1.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>

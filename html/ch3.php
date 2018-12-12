@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>มีคำร่ำลือจากประชาชน เกี่ยวกับเกมในตำนานที่ไม่สามารถเอาชนะได้ เนื่องจากหัวหน้าของท่านก็หัวร้อนจากการพ่ายแพ้เกมที่ว่านี้มาเหมือนกัน ดังนั้นภารกิจของท่านจึงมีหน้าที่ไปตรวจสอบ และเอาชนะเกมที่ไม่มีใครเอาชนะได้!</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>เอาชนะเกมในตำนาน ที่ไม่มีใครเอาชนะได้</p>
                         <a href="ch3/score.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
