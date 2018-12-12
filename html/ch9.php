@@ -1,19 +1,18 @@
-<?php $page = 'ch9';?>
+<?php $page = 'ch9'; ?>
 <?php
-        if(isset($_POST["en_pass"])){
-        $flag = $_POST["en_pass"];
-            if($flag == "flag{SQL_1s_4w3som3}"){
+        if (isset($_POST['en_pass'])) {
+            $flag = $_POST['en_pass'];
+            if ($flag == 'flag{SQL_1s_4w3som3}') {
                 $isPass = true;
                 $ch = 9;
-                require_once('database/setState.php');
-            }
-            else {
+                require_once 'database/setState.php';
+            } else {
                 $isPass = false;
             }
         }
 ?>
-<?php require_once('header.php') ?>
-<?php require_once('header_home.php') ?>
+<?php require_once 'header.php'; ?>
+<?php require_once 'header_home.php'; ?>
     <div class="bg-main">
         <div class="content-wrapper mx-0">
             <div class="content-banner">
@@ -26,21 +25,22 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>เว็บไซต์สมัครรับแอดมิดชุ่ยของประเทศแห่งหนึ่งมีข่าวฉาวออกมาบ่อยๆว่า มีผู้ใช้งานหลายรายถูกเข้าไปแก้คณะในระบบแอดมิดชุ่ยทำให้เสียหายต่ออนาคตเป็นอย่างมาก
+                        คนธรรมดาทั่วไปเชื่อว่าผู้ใช้งานอาจถูกเพื่อนแกล้งเพราะผู้ใช้งานหลายรายที่ผ่านมาชอบเผลอบอกรหัสให้เพื่อนตนเองรู้จึงเป็นเหตุให้โดนแฮค แต่ทว่าตัวท่านได้ยินชื่อเสียงของ
+                        หน่วยงานที่จ้างทำเว็บไซต์นี้ขึ้นมาเป็นอย่างดี ท่านจึงไม่เชื่อว่าทั้งหมดเป็นความผิดพลาดของผู้ใช้เเละตัวการต้องเป็นหน้าล็อคอินแน่ๆ</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>หาความผิดปกติของหน้าล็อคอินนี้ให้ได้</p>
                         <a href="ch9/login.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
                         <?php
-                            if(isset($isPass)){
-                                if($isPass){
+                            if (isset($isPass)) {
+                                if ($isPass) {
                                     echo '<div class="alert alert-success">Well Done!</div>';
-                                }
-                                else {
+                                } else {
                                     echo'<div class="alert alert-danger">Nahh Try it again.</div>';
                                 }
                             }
