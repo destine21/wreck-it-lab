@@ -166,3 +166,6 @@ a.btn {
 .solution:hover, .solution.active {
   background-color: #08737F !important;
   border: 1px solid #08737F !important; }
+.modal-title, .modal-body{
+  font-size:medium !important;
+}
