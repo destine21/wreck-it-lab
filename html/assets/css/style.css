@@ -169,4 +169,8 @@ a.btn {
   border: 1px solid #08737F !important; }
 .modal-title, .modal-body{
   font-size:medium !important;
+  color: #1C1E29!important;
+}
+.modal-title h5, .modal-body h5{
+  color: #076872;
 }
