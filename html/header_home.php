@@ -13,9 +13,20 @@
         <div class="nav-banner px-5 justify-content-between d-flex">
             <ul>
                 <a href="index.php"><li>Home</li></a>
-                <a href="/how_to/burp.html"><li>Tools</li></a>
-                <a href="database/newGame.php" onclick="return confirm('Are you sure you want to restart the new game ?')"><li>New Game</li></a>
-                <a href="database/resetDatabase.php" onclick="return confirm('Are you sure you want to reset the database ?')"><li>Reset Database</li></a>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">How to</a>
+                    <div class="dropdown-content">
+                    <a href="/how-to.php?tool=burpSuite">Burp Suite</a>
+                    <a href="/how-to.php?tool=cyberChef">Cyber Chef</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Operation</a>
+                    <div class="dropdown-content">
+                    <a href="database/newGame.php" onclick="return confirm('Are you sure you want to restart the new game ?')">New Game</a>
+                    <a href="database/resetDatabase.php" onclick="return confirm('Are you sure you want to reset the database ?')">Reset Database</a>
+                    </div>
+                </li>
             </ul>
             <div class="point"><strong><?php require_once 'database/sumScore.php'; ?></strong> points</div>
         </div>
