@@ -20,7 +20,7 @@
                 <div class="header-score">
                     <div>
                         <h1>Open Redirect&nbsp;<span>(15 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>E-Business Card</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">

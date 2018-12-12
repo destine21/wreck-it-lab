@@ -20,7 +20,7 @@
                 <div class="header-score">
                     <div>
                         <h1>Insecure Deserialization&nbsp;<span>(175 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>Redeem Item Code</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">

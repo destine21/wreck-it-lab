@@ -20,7 +20,7 @@
                 <div class="header-score">
                     <div>
                         <h1>Privilege Escalation&nbsp;<span>(50 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>Blocked Website</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">

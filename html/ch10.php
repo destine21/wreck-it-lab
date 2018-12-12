@@ -20,7 +20,7 @@
                 <div class="header-score">
                     <div>
                         <h1>Cross Site Scripting (XSS)&nbsp;<span>(200 points)</span></h1>
-                        <h4>The Fakebook</h4>
+                        <h4>The Social Media</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
