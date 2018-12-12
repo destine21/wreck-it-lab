@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>ท่านเป็น tester อยู่ที่บริษัทแห่งหนึ่งเเละในตอนนี้กำลังทดสอบระบบเพื่อค้นหา bug ต่าง ๆ อยู่แต่ทว่า Developer ลืมให้ id และ password มา เบอร์ติดต่อก็ไม่มีโชคยังดีที่ท่านเคยได้ยินพวก Developer คุยกันตอนออกไปพักกลางวันว่าระบบล็อคอินมีช่องโหว่อยู่แต่ไม่ทันได้แก้ไขก็ต้องส่งให้พวก tester มาทดสอบระบบก่อน</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ทำการค้นหา id เเละ password ที่ซ่อนอยู่เเละล็อคอินเข้าสู่ระบบให้ได้</p>
                         <a href="ch1/login1.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
