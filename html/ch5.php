@@ -19,7 +19,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Privilege Escalation&nbsp;<span>(15 points)</span></h1>
+                        <h1>Privilege Escalation&nbsp;<span>(50 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -54,8 +54,9 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.w3schools.com/php/php_cookies.asp">PHP 5 Cookies</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Session_Management_Cheat_Sheet">Session Management Cheat Sheet</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
                         </ul>
                     </div>
                     <div>
@@ -75,23 +76,19 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดีๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64 encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64 encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - สาเหตุของช่องโหว่ในข้อนี้เกิดจากการที่ web server เชื่อ cookie มากเกินไป ทำให้ role ถูกแก้ไขมาจากการ set-cookie ฝั่ง client ได้ โดยทั่วไปแล้ว วิธีแก้ก็คือ web server จะทำการ set-cookie เพียง session ID ที่ผูกไว้กับ user นั้น ๆ และจะ ดึงข้อมูลต่าง ๆ ของ user คนนั้น รวมถึง role ออกมาได้
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>

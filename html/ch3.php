@@ -19,7 +19,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>HTTP POST Request&nbsp;<span>(15 points)</span></h1>
+                        <h1>HTTP POST Request&nbsp;<span>(30 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST (HTTP)</a></li>
+                            <li><a href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
                         </ul>
                     </div>
                     <div>
@@ -75,23 +75,19 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - เมื่อดัก HTTP request ด้วย Burp จะเห็นว่ามี parameter score ถูกส่งออกไปใน body ของ request เมื่อทำการแก้ค่า parameter score ให้มากกว่า 100 แล้ว ส่งออกไป จะทำให้ได้ flag ของข้อนี้
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - สำหรับโจทย์ ข้อนี้ จะเป็นช่องโหว่ด้านการ Design, การใช้ HTTP Post reqeust นั้นถึงแม้ว่า parameter จะไม่แสดงใน URL แต่ก็ยังสามารถถูกแก้ไขได้แม้ว่าจะ hidden input ก็ตาม ดังนั้นหากมีการคำนวณ หรือ logic ต่าง ๆ ให้ทำที่ฝั่ง server เช่นในข้อนี้ มีการใช้ Math.random() ซึ่งเป็นการสุ่มคะแนนส่งไปจากฝั่ง client วิธีแก้ คือให้ทำการสุ่่มคะแนนทางฝั่ง server จะทำให้ไม่สามารถแก้ไขโกงค่าคะแนนได้
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>

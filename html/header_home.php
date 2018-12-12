@@ -16,15 +16,15 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">How to</a>
                     <div class="dropdown-content">
-                    <a href="/how-to.php?tool=burpSuite">Burp Suite</a>
-                    <a href="/how-to.php?tool=cyberChef">Cyber Chef</a>
+                        <a href="/how-to.php?tool=burpSuite">Burp Suite</a>
+                        <a href="/how-to.php?tool=cyberChef">Cyber Chef</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Operation</a>
                     <div class="dropdown-content">
-                    <a href="database/newGame.php" onclick="return confirm('Are you sure you want to restart the new game ?')">New Game</a>
-                    <a href="database/resetDatabase.php" onclick="return confirm('Are you sure you want to reset the database ?')">Reset Database</a>
+                        <a href="database/newGame.php" onclick="return confirm('Are you sure you want to restart the new game ?')">New Game</a>
+                        <a href="database/resetDatabase.php" onclick="return confirm('Are you sure you want to reset the database ?')">Reset Database</a>
                     </div>
                 </li>
             </ul>

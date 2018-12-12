@@ -125,7 +125,7 @@ a:hover {
     .content-banner .detail-cha ul.accordion li h5 {
       font-size: 1.25em;
       margin-bottom: 0; }
-    .content-banner .detail-cha ul.accordion li div {
+    .content-banner .detail-cha ul.accordion li >div {
       margin-top: 1em;
       color: #86acaa;
       font-size: 0.875em; }
@@ -173,6 +173,12 @@ a.btn {
 }
 .modal-title h5, .modal-body h5{
   color: #076872;
+}
+.modal-body a{
+  color: #148d96;
+}
+.modal-body a:hover{
+  color: #0f5d63;
 }
 
 /* ---- */

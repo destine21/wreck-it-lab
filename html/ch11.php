@@ -19,7 +19,7 @@
             <div class="content-banner">
                 <div class="header-score">
                     <div>
-                        <h1>Insecure File Upload&nbsp;<span>(15 points)</span></h1>
+                        <h1>Insecure File Upload&nbsp;<span>(150 points)</span></h1>
                         <h4>Login with Javascript</h4>
                     </div>
                 </div>
@@ -54,8 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="#">HTTP Header</a></li>
-                            <li><a href="#">HTTP reqeust response</a></li>
+                            <li><a href="https://www.owasp.org/index.php/Unrestricted_File_Upload">Unrestricted File Upload</a></li>
                         </ul>
                     </div>
                     <div>
@@ -75,23 +74,23 @@
                                     </button>
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Solution</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body m-3 pb-0">
+                                                    <h5 class="mb-2">Solution</h5>
+                                                    - ข้อนี้มีการอัพโหลดไฟล์อยู่ เมื่อกดอัพโหลด ก็จะอัพโหลดได้แต่รูป แต่นั่นคือฝั่ง client เราจึงต้องดัก request upload ใน Burp แก้ไข filename และ content ให้เป็น php shell เช่น<br><br>
+                                                    //shell.php<br>
+                                                    &lt;?php system($_GET['cmd']); ?&gt;<br><br>
+                                                    แต่ก็ยังติดที่นามสกุลไฟล์ไม่ใช่ไฟล์รูป กลับไปดูโจทย์ดี ๆ อีกรอบ เมื่อเราสังเกตดู หน้าเว็บบอกว่าชื่อไฟล์จำกัดแค่ 40 ตัว ถ้าอัพมากกว่านั้นจะทำให้ชื่อไฟล์ที่เกินถูกตัดออก!! มาถึงตรงนี้บางคนอาจจะคิดออกแล้ว นั่นคือ อัพไฟล์ ที่มีชื่อ เกิน 40 ตัวและให้ตัดนามสกุลที่เป็น ของรูปออก แล้วก็เหลือไว้แค่ .php เช่น "123456789012345678901234567890123456.php.png" เป็นต้น<br>
+                                                    หลังจากนั้นก็เข้าไป รัน os command เพื่อดูว่า flag อยู่ไหน จะพบว่าอยู่ที่ path ../flag_ch11.txt แล้ว cat ../flag_ch11.txt file อ่านมันออกมา จบ ง่าย ๆ ใช่ไหม ^^
+                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
+                                                    - การทำ feature Upload file ให้ปลอดภัยจำเป็นที่จะต้องตรวจสอบสิ่งที่ผู้ใช้อัพมาให้ดี ต้องทำการตรวจสอบชนิดของไฟล์ หากเป็นไฟล์รูปให้ใช้ ฟังก์ชัน เพื่อตรวจสอบว่าเป็นรุปจริงไหม เช่น getimagesize() ใน PHP และต้องทำการ ตรวจสอบนามสกุลไฟล์ ตรวจสอบขนาดไฟล์ และ ควรที่จะเปลี่ยนชื่อ หลังจากการ อัพโหลดแล้วด้วย และ อาจเพิ่ม security header เช่น "Content-Disposition: Attachment" และ "X-Content-Type-Options: nosniff" ให้ response จาก server เป็น static file เป็นต้น
+                                                </div>
+                                                <div class="modal-footer mt-0 pt-2 px-4">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="modal-body">
-                                            //Solution Here
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>    
                             </li>
