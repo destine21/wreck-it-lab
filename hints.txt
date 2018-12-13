@@ -68,7 +68,7 @@ link
 hint
     - substitution cipher
 solution
-    - จากโจทย์ จะให้ c3ludHszYVBlbGNnXzFmXzRfem5UdnB9 มาเมื่อนำไป Base64 decode จะได้ synt{3aPelcg_1f_4_znTvp} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
+    - จากโจทย์ จะให้ c3ludHtSYVB5MmxjZ18xZl80anJmMHozfQ== มาเมื่อนำไป Base64 decode จะได้ synt{RaPy2lcg_1f_4jrf0z3} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
 recommendation
     - การเข้ารหัส (Encryption) ที่แข็งแรงจะต้องใช้ Algorithm ที่เป็นที่ยอมรับ เช่น AES, RSA เป็นต้น ทั้งยังจำเป็นที่จะต้องใช้ key ที่มีความยาวที่ไม่น้อยเกินไปอีกด้วย แต่การเข้ารหัสในข้อนี้ เป็นการใช้ ROT13 ซึ่งไม่จำเป็นจะต้องมี key ซึ่งสามารถ crack ออกมาได้ง่าย
 link

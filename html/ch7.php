@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>เช้าวันหนึ่งมีชายร่างสูงสูบไปป์ ชายคนนั้นอ้างตัวว่าเป็นนักสืบชื่อดังแห่งถนนเบอร์เกอร์สตรีท เขาเข้ามาพบท่านแล้วเล่าถึง ข่าวการโจรกรรมอาวุธระเบิดนิวเคลียร์ และ ฆาตกรรมนักวิจัยโดยผู้ก่อการร้าย ณ ประเทศห่างไกล ก่อนที่นักวิจัยคนนั้นจะสิ้นลมเขาได้ทิ้งข้อความบางอย่างเอาไว้ พร้อมบอกว่าเป็นรหัสที่จะหยุดอาวุธนิวเคลียร์ได้ นักสืบคนนั้นยื่นกระดาษที่จดรหัสลับอะไรสักอย่างให้ พร้อมกับขอร้องให้ท่านช่วยถอดรหัสลับนี้ให้เขา ก่อนที่ผู้ก่อการร้ายจะถอดรหัสนี้ได้</p><p>รหัสลับ : <span class="highlight">c3ludHtSYVB5MmxjZ18xZl80anJmMHozfQ==</span> </p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ช่วยนักสืบถอดรหัสลับอาวุธนิวเคลียร์ก่อนที่จะสายเกินไป</p>
                         <a href="ch7/encrypt.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
@@ -79,7 +79,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-body m-3 pb-0">
                                                     <h5 class="mb-2">Solution</h5>
-                                                    - จากโจทย์ จะให้ c3ludHszYVBlbGNnXzFmXzRfem5UdnB9 มาเมื่อนำไป Base64 decode จะได้ synt{3aPelcg_1f_4_znTvp} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
+                                                    - จากโจทย์ จะให้ c3ludHtSYVB5MmxjZ18xZl80anJmMHozfQ== มาเมื่อนำไป Base64 decode จะได้ synt{RaPy2lcg_1f_4jrf0z3} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
                                                     <h5 class="mt-3 mb-2">Recommendation</h5>
                                                     - การเข้ารหัส (Encryption) ที่แข็งแรงจะต้องใช้ Algorithm ที่เป็นที่ยอมรับ เช่น AES, RSA เป็นต้น ทั้งยังจำเป็นที่จะต้องใช้ key ที่มีความยาวที่ไม่น้อยเกินไปอีกด้วย แต่การเข้ารหัสในข้อนี้ เป็นการใช้ ROT13 ซึ่งไม่จำเป็นจะต้องมี key ซึ่งสามารถ crack ออกมาได้ง่าย
                                                 </div>
