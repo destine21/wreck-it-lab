@@ -13,10 +13,14 @@
         <div class="detail-box mx-auto">
             <div class="title">
                 <div class="head-detail mx-auto mb-2"></div>
-                NOBITA COMPANY
+                SUGAR RUSH COMPANY
             </div>
             <div class="mx-auto w-75 my-3">
-                <img src="images/suneo.png" class="w-100" alt="">
+                <?php if($_GET['id'] <= 6 && $_GET['id'] > 0) {?>
+                    <img src="images/<?php echo $_GET['id'] ?>.png" class="w-100" alt="">
+                <?php }else {?>
+                    <img src="images/99.png" class="w-100" alt="">
+                <?php } ?>
             </div>
             <?php
             error_reporting(0);
