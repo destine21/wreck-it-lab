@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>บริษัทรับจ้างพัฒนาเว็บไซต์แห่งหนึ่ง คิดว่าการทำการทดสอบเจาะระบบเป็นสิ่งที่ไร้สาระ ไม่จำเป็นต้องทำก็ได้ เพราะไม่ได้ทำเว็บเกี่ยวกับธนาคารหรือการเงินใด ๆ ไม่ถูกแฮกหรอก ถ้าแฮกได้เอาไปเลย ล้านนึง คุณซึ่งเป็น Penetration tester กำลังช็อตเงินอยู่พอดี ได้ยินแบบนี้จึงไม่ปล่อยโอกาสนี้ไว้ รีบเปิดเว็บบริษัทแล้วจัดการทันที</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>อ่านข้อมูลจาก flag_ch8.txt ออกมาให้ได้</p>
                         <a href="ch8/pages.php?page=home.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
