@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>ท่านได้รับ Code Item สุดเทพมาจากงานเกมประจำปี ท่านจึงรีบเข้าเว็บไซต์ของเกม เพื่อทำการ Redeem Code Item นั้น หลังจาก Redeem เสร็จท่านได้สังเกตเห็นว่ามี Error แปลก ๆ ออกมาจากเว็บเมื่อเราใส่ Code Item ผิดรูปแบบลงไป เหมือนจะมีช่องโหว่! และผู้ให้บริการเกมนี้ก็มีรางวัลเป็น Item ในเกมให้กับผู้ที่พบช่องโหว่แล้วรายงานให้เขาอีกด้วย รู้ดังนี้แล้วสายเลือด Pentester ได้ ปะทุขึ้นพร้อมลุยเพื่อของรางวัล</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ยึดเครื่องเซิร์ฟเวอร์ แล้วอ่าน flag ออกมาจากระบบ</p>
                         <a href="ch13/redeem.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
