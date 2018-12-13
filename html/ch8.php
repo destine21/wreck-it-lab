@@ -20,18 +20,18 @@
                 <div class="header-score">
                     <div>
                         <h1>Local File Inclusion&nbsp;<span>(75 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>WRECK IT DOWN COMPANY</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>บริษัทรับจ้างพัฒนาเว็บไซต์แห่งหนึ่ง คิดว่าการทำการทดสอบเจาะระบบเป็นสิ่งที่ไร้สาระ ไม่จำเป็นต้องทำก็ได้ เพราะไม่ได้ทำเว็บเกี่ยวกับธนาคารหรือการเงินใด ๆ ไม่ถูกแฮกหรอก ถ้าแฮกได้เอาไปเลย ล้านนึง คุณซึ่งเป็น Penetration tester กำลังช็อตเงินอยู่พอดี ได้ยินแบบนี้จึงไม่ปล่อยโอกาสนี้ไว้ รีบเปิดเว็บบริษัทแล้วจัดการทันที</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
-                        <a href="ch8/pages.php?page=home.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <p>อ่านข้อมูลจาก flag_ch8.txt ออกมาให้ได้</p>
+                        <a href="ch8/pages.php?page=home.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -54,7 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion">Testing for Local File Inclusion</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion">Testing for Local File Inclusion</a></li>
                         </ul>
                     </div>
                     <div>

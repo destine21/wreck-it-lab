@@ -9,7 +9,7 @@ echo '[+] Starting apache'
 service apache2 start
 
 #XSS admin bot every 10 sec
-while sleep 10; do phantomjs --ignore-ssl-errors=true --local-to-remote-url-access=true --web-security=false --ssl-protocol=any /var/www/html/ch10/admin_auto_run.js; done &
+while sleep 60; do phantomjs --ignore-ssl-errors=true --local-to-remote-url-access=true --web-security=false --ssl-protocol=any /var/www/html/ch10/admin_auto_run.js; done &
 
 while true
 do

@@ -16,8 +16,8 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">How to</a>
                     <div class="dropdown-content">
-                        <a href="/how-to.php?tool=burpSuite">Burp Suite</a>
-                        <a href="/how-to.php?tool=cyberChef">Cyber Chef</a>
+                    <a href="/how-to.php?tool=burpSuite">Burp Suite</a>
+                    <a href="/how-to.php?tool=cyberChef">CyberChef</a>
                     </div>
                 </li>
                 <li class="dropdown">

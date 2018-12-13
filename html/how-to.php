@@ -5,10 +5,10 @@
             <div class="content-banner">
                 <?php 
                     if(isset($_GET['tool'])){
-                        if($_GET['tool'] != "burpSuite"){
-                            require_once('how-to/cyberChef.html');
-                        }else{
+                        if($_GET['tool'] != "cyberChef"){
                             require_once('how-to/burp.html');
+                        }else{
+                            require_once('how-to/cyberChef.html');
                         }
                     }
                 ?>

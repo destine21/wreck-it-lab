@@ -20,18 +20,18 @@
                 <div class="header-score">
                     <div>
                         <h1>Cross Site Scripting (XSS)&nbsp;<span>(200 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>The Social Media</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>ท่านได้รับคำสั่งให้มาทำการทดสอบเจาะระบบ Social Media เจ้าหนึ่งที่กำลังอยู่ในช่วงทดสอบระบบ Post ข้อความ โดยเว็บนี้จะมี Admin คอยเข้ามาดูแลความเรียบร้อยของระบบทุก ๆ 1 นาที ภารกิจของท่าน คือการขโมย Cookie ของ Admin คนนั้นมาให้ได้ !!</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
-                        <a href="ch10/fakebook.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <p>ขโมย Cookie ของ Admin ระบบนี้</p>
+                        <a href="ch10/fakebook.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross-site Scripting (XSS)</a></li>
-                            <li><a href="https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)">Testing for Stored Cross site scripting</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">Cross-site Scripting (XSS)</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)">Testing for Stored Cross site scripting</a></li>
                         </ul>
                     </div>
                     <div>

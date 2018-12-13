@@ -5,11 +5,9 @@
 		
 	</body>
 <div class="container">
-  <div class="encrypt p-5">
+  <div class="encrypt p-5 text-center">
     <h1>Encryptor</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum eaque
-      debitis rem sapiente! Ea, tempore. Architecto nesciunt, quam officiis saepe, commodi nulla
-      asperiores vel maxime praesentium fugit voluptas? Harum!</p>
+    <p>I am The Super Duper Encryptor in the internet. I can encrypt everything that you want. No one can crack my cipher !!</p>
     <div class="output-box m-auto">
       <form method="POST" action="#" class="text-center d-flex mb-2">
         <input type="text" name="cypher" value="<?php echo isset($_POST['cypher']) ? $_POST['cypher'] : ''; ?>" class="w-100">

@@ -20,7 +20,7 @@
                 <div class="header-score">
                     <div>
                         <h1>OS Command Injection&nbsp;<span>(150 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>RAM Eater Browser</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch12/chroome.php?url=https%3A%2F%2Fwww.facebook.com" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch12/chroome.php?url=https%3A%2F%2Fwww.facebook.com" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -54,7 +54,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.owasp.org/index.php/Command_Injection">Command Injection</a></li>
+                            <li><a target="_blank" href="https://www.owasp.org/index.php/Command_Injection">Command Injection</a></li>
                         </ul>
                     </div>
                     <div>

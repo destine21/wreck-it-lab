@@ -20,18 +20,18 @@
                 <div class="header-score">
                     <div>
                         <h1>Client-side Authentication&nbsp;<span>(10 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>Login page with JS</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>เพื่อนของท่านที่เป็น tester อยู่ที่บริษัทแห่งหนึ่งเเละในตอนนี้กำลังทดสอบระบบเพื่อค้นหา bug ต่าง ๆ อยู่แต่ทว่า Developer ลืมให้ id และ password มา เบอร์ติดต่อก็ไม่มี โชคยังดีที่เพื่อนของท่านเคยได้ยินพวก Developer คุยกันตอนออกไปพักกลางวันว่าระบบล็อคอินมีช่องโหว่อยู่แต่ไม่ทันได้แก้ไขก็ต้องส่งให้พวก tester มาทดสอบระบบก่อน จึงเป็นหน้าที่ของท่านที่ต้องช่วยเหลือเพื่อน tester คนนี้</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
-                        <a href="ch1/login1.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <p>ทำการค้นหา id เเละ password ที่ซ่อนอยู่เเละล็อคอินเข้าสู่ระบบให้ได้</p>
+                        <a href="ch1/login1.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -53,7 +53,7 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://www.w3schools.com/js/js_whereto.asp">JavaScript Where To</a></li>
+                            <li><a target="_blank" href="https://www.w3schools.com/js/js_whereto.asp">JavaScript Where To</a></li>
                         </ul>
                     </div>
                     <div>

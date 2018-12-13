@@ -20,18 +20,18 @@
                 <div class="header-score">
                     <div>
                         <h1>HTTP POST Request&nbsp;<span>(30 points)</span></h1>
-                        <h4>Login with Javascript</h4>
+                        <h4>King of Hammer</h4>
                     </div>
                 </div>
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>มีคำร่ำลือจากประชาชน เกี่ยวกับเกมในตำนานที่ไม่สามารถเอาชนะได้ เนื่องจากหัวหน้าของท่านก็หัวร้อนจากการพ่ายแพ้เกมที่ว่านี้มาเหมือนกัน ดังนั้นภารกิจของท่านจึงมีหน้าที่ไปตรวจสอบ และเอาชนะเกมที่ไม่มีใครเอาชนะได้!</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
-                        <a href="ch3/score.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <p>เอาชนะเกมในตำนาน ที่ไม่มีใครเอาชนะได้</p>
+                        <a href="ch3/score.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -54,8 +54,8 @@
                     <div>
                         <h5>Related ressource(s)</h5>
                         <ul class="resource"> 
-                            <li><a href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST (HTTP)</a></li>
-                            <li><a href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST (HTTP)</a></li>
+                            <li><a target="_blank" href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
                         </ul>
                     </div>
                     <div>
@@ -63,7 +63,7 @@
                             <li>
                                 <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - ลองใช้ โปรแกรม Burp Suite Community Edition เพื่อดัก HTTP request ที่ถูกส่งออกไปดูสิ (ref Burp tutorial)
+                                - ลองใช้ โปรแกรม Burp Suite Community Edition เพื่อดัก HTTP request ที่ถูกส่งออกไปดูสิ <a href="/how-to.php?tool=burpSuite">How to use Burp Suite</a>
                                 </div>    
                             </li>
                             <li>
