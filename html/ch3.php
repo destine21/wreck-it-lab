@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>เอาชนะเกมในตำนาน ที่ไม่มีใครเอาชนะได้</p>
-                        <a href="ch3/score.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch3/score.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>Bypass login and access to the webpage.</p>
-                        <a href="ch12/chroome.php?url=https%3A%2F%2Fwww.facebook.com" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch12/chroome.php?url=https%3A%2F%2Fwww.facebook.com" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

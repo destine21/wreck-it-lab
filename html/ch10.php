@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>ขโมย Cookie ของ Admin ระบบนี้</p>
-                        <a href="ch10/fakebook.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch10/fakebook.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

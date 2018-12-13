@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>หาช่องโหว่และอ่านข้อมูลของ Admin ออกมา</p>
-                        <a href="ch4/user.php?id=5" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch4/user.php?id=5" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>ค้นหาไฟล์แปลกปลอมที่ซ่อนอยู่ให้ได้</p>
-                        <a href="ch6/gallery.html" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch6/gallery.html" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>อ่านข้อมูลจาก flag_ch8.txt ออกมาให้ได้</p>
-                        <a href="ch8/pages.php?page=home.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch8/pages.php?page=home.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

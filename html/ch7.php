@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>ช่วยนักสืบถอดรหัสลับอาวุธนิวเคลียร์ก่อนที่จะสายเกินไป</p>
-                        <a href="ch7/encrypt.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch7/encrypt.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

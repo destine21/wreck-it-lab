@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>หาทางเข้าเว็บไซต์เพื่อการศึกษานี้ให้ได้</p>
-                        <a href="ch5/cornhub.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch5/cornhub.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

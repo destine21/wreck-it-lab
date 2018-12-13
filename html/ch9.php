@@ -32,7 +32,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>หาความผิดปกติของหน้าล็อคอินนี้ให้ได้</p>
-                        <a href="ch9/login.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch9/login.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>

@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>ทำการค้นหา id เเละ password ที่ซ่อนอยู่เเละล็อคอินเข้าสู่ระบบให้ได้</p>
-                        <a href="ch1/login1.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch1/login1.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
