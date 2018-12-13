@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="switch mx-auto mt-2">
+        <div class="switch mx-auto mt-2" onclick="alert('This feature is under development.');">
             Forget Password?
         </div>
     </div>
