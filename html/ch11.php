@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>ยึดระบบให้ได้ แล้วอ่าน flag ออกมาจากระบบ</p>
+                        <p>ยึดเครื่องเซิร์ฟเวอร์ แล้วอ่าน flag ออกมาจากระบบ</p>
                         <a href="ch11/upload.php" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>

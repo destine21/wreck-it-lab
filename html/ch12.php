@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>บริษัท Startup หน้าใหม่ได้พัฒนาสุดยอด Web Browser ที่อยู่ใน Web Browser อีกทีนึงขึ้นมา และเคลมว่า Web Browser ของตนนั้นเป็นที่สุดแล้วในโลกของ Internet ภารกิจที่ท่านได้รับมา คือทำการทดสอบเจาะระบบ Web Browser ที่พูดถึงนี้</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ยึดเครื่องเซิร์ฟเวอร์ แล้วอ่าน flag ออกมาจากระบบ</p>
                         <a href="ch12/chroome.php?url=https%3A%2F%2Fwww.facebook.com" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
