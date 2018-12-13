@@ -26,11 +26,11 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam inventore, quaerat nisi ad pariatur distinctio doloribus ut, deserunt debitis, excepturi tempora dignissimos nemo a. Aliquid et eum esse sed?</p>
+                        <p>รุ่นน้องปี 3 ที่กำลังเรียน Web programming ได้ทำโปรเจคเกี่ยวกับเว็บฝากรูป รุ่นน้องคนนี้เอางานมาอวดท่าน และต้องการให้ท่านเป็นคน test ระบบให้หน่อย แต่ระหว่างที่ท่านกำลังทดลองใช้ ก็พบจุดที่เว็บนี้อาจจะมีช่องโหว่ จึงรีบทำการทดสอบตามที่คิดไว้ทันที</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
-                        <p>Bypass login and access to the webpage.</p>
+                        <p>ยึดระบบให้ได้ แล้วอ่าน flag ออกมาจากระบบ</p>
                         <a href="ch11/upload.php" target="blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
