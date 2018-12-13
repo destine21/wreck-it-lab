@@ -4,9 +4,9 @@
 1. Install [Docker](https://www.docker.com/get-started)
 2. Run following command in terminal
 ```
-docker run -it -p 8080:80 --name wreck-it-lab destine21/wreck-it-lab-alpha:0.1
+docker run -it -p 80:80 --name wreck-it-lab destine21/wreck-it-lab-alpha
 ```
-3. After a few seconds go to [localhost](http://localhost:8080)
+3. After a few seconds go to [localhost](http://localhost)
 
 ## Stop wreck-it-lab container
 You can stop the container with this command
