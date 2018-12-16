@@ -7,8 +7,6 @@ $dbname = '';
 //set cookie for ch5
 setcookie('user', 'UmFscGg6Z3Vlc3Q=', time() + (86400 * 30), '/ch5');
 
-system('rm /var/www/html/ch13/inventory/I003');
-
 connecttodb($servername, $dbname, $dbusername, $dbpassword);
 function connecttodb($servername, $dbname, $dbusername, $dbpassword)
 {
