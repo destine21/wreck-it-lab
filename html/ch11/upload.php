@@ -7,7 +7,7 @@
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <div class="mt-2"><input type="file" name="fileToUpload" id="fileToUpload" class="border-0 w-50" accept="image/*"></div>
             <h6>*filename should not be longer than 40 characters</h6>
-            <div class="mt-3 mb-2"><input type="submit" value="Upload Image" name="submit" class="w-50"></div>
+            <div class="mt-4 mb-2"><input type="submit" value="Upload Image" name="submit" class="w-50"></div>
         </form>
         <?php
         if(!isset($_FILES["fileToUpload"]))die;
@@ -16,7 +16,7 @@
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION)); ?>
         
-        <div class="pt-2 mt-3 border-top">
+        <div class="pt-2 mt-3 border-top break-word">
         <?php // Check file size
         if ($_FILES["fileToUpload"]["size"] > 500000) {
             echo "Sorry, your file is too large.";

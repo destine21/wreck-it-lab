@@ -104,9 +104,10 @@
                             </div>
                             <div class="content-post">
                                 <h3><?php echo $row["content"]?></h3>
+                                <div class="user-like mb-2"><i class="fas fa-thumbs-up mr-1"></i><?php echo $row["author"]?></div>
                             </div>
                             <div class="comment d-flex justify-content-between">
-                                <div class="w-100 text-center py-1 mt-1"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;Like</div>
+                                <div class="w-100 text-center py-1 mt-1 like"><i class="far fa-thumbs-up"></i><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Like</div>
                                 <div class="w-100 text-center py-1 mt-1"><i class="far fa-comment-alt"></i>&nbsp;&nbsp;Comment</div>
                                 <div class="w-100 text-center py-1 mt-1"><i class="far fa-share-square"></i>&nbsp;&nbsp;Share</div>
                             </div>
@@ -158,3 +159,15 @@
 </body>
 
 </html>
+
+<script>
+    $(".user-like").hide(); 
+    $('.like').click(function(){
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).closest(".post").find(".user-like").show();   
+        }else{
+            $(this).closest(".post").find(".user-like").hide();   
+        }
+    })
+</script>

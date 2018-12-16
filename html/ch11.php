@@ -66,7 +66,7 @@
                                 </div>    
                             </li>
                             <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
+                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
                                      <!-- Button trigger modal -->
                                      <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">

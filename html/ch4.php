@@ -26,7 +26,7 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>เพื่อนซี้ของท่านเล่าข่าวที่ว่า ในบริษัทที่เขาทำงานอยู่ มีข้อมูลพนักงานรั่วไหลและถูกนำไปขาย จึงมาไหว้วานให้ท่านช่วย ท่านซึ่งเป็นคนใจดีีมักเข้าไปช่วยเหลือผู้คนที่เดือดร้อน จึงได้เข้าไปที่ บริษัทเพื่อตรวจสอบหาช่องโหว่ที่ทำให้ข้อมูลพนักงานหลุดออกไป</p>
+                        <p>เพื่อนซี้ของท่านเล่าข่าวที่ว่า ในบริษัทที่เขาทำงานอยู่ มีข้อมูลพนักงานรั่วไหลและถูกนำไปขาย จึงมาไหว้วานให้ท่านช่วย ท่านซึ่งเป็นคนใจดีมักเข้าไปช่วยเหลือผู้คนที่เดือดร้อน จึงได้เข้าไปที่ บริษัทเพื่อตรวจสอบหาช่องโหว่ที่ทำให้ข้อมูลพนักงานหลุดออกไป</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
@@ -67,7 +67,7 @@
                                 </div>    
                             </li>
                             <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
+                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion"> 
                                      <!-- Button trigger modal -->
                                      <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">

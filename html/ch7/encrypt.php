@@ -18,7 +18,7 @@
           $cypher = $_POST['cypher'];
           $rot_13 = str_rot13($cypher);
           $base_64 = base64_encode($rot_13);
-          echo '<p>Ciphertext : '.$base_64.'</p>';
+          echo '<p class="text-left">Ciphertext : '.$base_64.'</p>';
       }
       ?>
 

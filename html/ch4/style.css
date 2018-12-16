@@ -3,23 +3,23 @@ body{
 }
 .line >div{
     width: 35px;
-    height: 300px;
-    background-color: #0078c3;
-    border: 1px solid #bee6f5;
+    height: 200px;
+    background-color: #DA757B;
+    border: 1px solid #EFB7B2;
     transform: rotate(-25deg);
 }
 .line >div:nth-child(2){
     transform: rotate(25deg);
 }
 .line{
-    width: 156px;
+    width: 114px;
 }
 .head-line{
     width: 40px;
-    height: 50px;
-    background-color: #0078c3;
-    border: 1px solid #bee6f5;
-    margin-top: -22px;
+    height: 45px;
+    background-color: #DA757B;
+    border: 1px solid #EFB7B2;
+    margin-top: -17px;
     position: relative;
 }
 .hook-line{
@@ -48,7 +48,7 @@ body{
 }
 .detail-box .title,.footer-card{
     padding: 6px;
-    background-color: #0078c3;
+    background-color: #DA757B;
     text-align: center;
     font-weight: bold;
     color: #fff;
@@ -68,7 +68,7 @@ body{
 }
 
 .table-detail{
-    border-top: 1px solid #0078c3;
+    border-top: 1px solid #DA757B;
 }
 table td:first-child{
     white-space: nowrap;

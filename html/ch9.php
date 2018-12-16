@@ -67,7 +67,7 @@
                                 </div>    
                             </li>
                             <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution</h5>
+                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
                                      <!-- Button trigger modal -->
                                      <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
@@ -79,9 +79,9 @@
                                             <div class="modal-content">
                                                 <div class="modal-body m-3 pb-0">
                                                     <h5 class="mb-2">Solution</h5>
-                                                    - หน้านี้เป็นหน้า login ที่มีการเชื่อมต่อกับฐานข้อมูล จึงทำการทดสอบด้วยการใส่ single qoute ' ไปใน input จะพบว่ามี error mysql เกิดขึ้น เมื่อทำการศึกษาต่อไป จะพบว่าเราสามารถ bypass authentication ได้ด้วยการใส่ ' or '1' = '1 หรือ ' or 1=1 -- - และเมื่อล็อคอินผ่านก็จะพบกับ flag ของข้อนี้
+                                                    - หน้านี้เป็นหน้า login ที่มีการเชื่อมต่อกับฐานข้อมูล จึงทำการทดสอบด้วยการใส่ single quote (') ไปใน input จะพบว่ามี error mysql เกิดขึ้น เมื่อทำการศึกษาต่อไป จะพบว่าเราสามารถ bypass authentication ได้ด้วยการใส่ ' or '1' = '1 หรือ ' or 1=1 -- - และเมื่อล็อคอินผ่านก็จะพบกับ flag ของข้อนี้
                                                     <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - ช่องโหว่ร้ายแรง SQL Injection เกิดขึ้นเพราะขาดการทำ input validation วิธีแก้มีหลากหลายแบบตาม OWASP ยกตัวอย่างเช่นการใช้ Use of Prepared Statements (with Parameterized Queries) โดยภาษา PHP ก็จะใช้ PDO with strongly typed parameterized queries โดยการใช้ bind_param() ดังตัวอย่างต่อไปนี้<br>
+                                                    - ช่องโหว่ร้ายแรง SQL Injection เกิดขึ้นเพราะขาดการทำ input validation วิธีแก้มีหลากหลายแบบตาม OWASP ยกตัวอย่างเช่น การใช้ Use of Prepared Statements (with Parameterized Queries) โดยภาษา PHP ก็จะใช้ PDO with strongly typed parameterized queries โดยการใช้ bind_param() ดังตัวอย่างต่อไปนี้<br>
                                                     <br>
                                                     // prepare and bind<br>
                                                     $stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)");<br>
