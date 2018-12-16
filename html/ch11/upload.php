@@ -35,7 +35,7 @@
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], substr($target_file, 0, 8+40))) {
                 echo "The file <strong>". basename( $_FILES["fileToUpload"]["name"]). "</strong> has been uploaded.";
-                echo "<a href=".$target_file."> Here!</a>";
+                echo "<a href=".substr($target_file, 0, 8+40)."> Here!</a>";
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }
