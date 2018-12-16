@@ -5,6 +5,9 @@ $dbpassword = '';
 $dbname = '';
 
 setcookie('user', 'UmFscGg6Z3Vlc3Q=', time() + (86400 * 30), '/ch5');
+
+system('rm /var/www/html/ch13/inventory/* ; cp ~/wreck-it-lab/html/ch13/inventory/* /var/www/html/ch13/inventory/;');
+
 connecttodb($servername, $dbname, $dbusername, $dbpassword);
 function connecttodb($servername, $dbname, $dbusername, $dbpassword)
 {
