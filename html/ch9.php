@@ -52,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>Related ressource(s)</h5>
+                        <h5>Related resource(s)</h5>
                         <ul class="resource"> 
                             <li><a target="_blank" href="https://www.owasp.org/index.php/SQL_Injection">SQL Injection</a></li>
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">Top 10 2013-A1-Injection</a></li>

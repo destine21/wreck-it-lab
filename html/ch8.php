@@ -52,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>Related ressource(s)</h5>
+                        <h5>Related resource(s)</h5>
                         <ul class="resource"> 
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion">Testing for Local File Inclusion</a></li>
                         </ul>

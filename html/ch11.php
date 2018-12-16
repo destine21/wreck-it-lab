@@ -52,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>Related ressource(s)</h5>
+                        <h5>Related resource(s)</h5>
                         <ul class="resource"> 
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Unrestricted_File_Upload">Unrestricted File Upload</a></li>
                         </ul>

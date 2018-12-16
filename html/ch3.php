@@ -52,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>Related ressource(s)</h5>
+                        <h5>Related resource(s)</h5>
                         <ul class="resource"> 
                             <li><a target="_blank" href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST (HTTP)</a></li>
                             <li><a target="_blank" href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>

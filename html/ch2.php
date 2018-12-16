@@ -51,7 +51,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>Related ressource(s)</h5>
+                        <h5>Related resource(s)</h5>
                         <ul class="resource"> 
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet">Unvalidated Redirects and Forwards Cheat Sheet</a></li>
                         </ul>

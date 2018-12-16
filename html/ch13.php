@@ -52,7 +52,7 @@
                         </form>
                     </div>
                     <div>
-                        <h5>Related ressource(s)</h5>
+                        <h5>Related resource(s)</h5>
                         <ul class="resource"> 
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Top_10-2017_A8-Insecure_Deserialization">Insecure Deserialization</a></li>
                             <li><a target="_blank" href="https://www.notsosecure.com/remote-code-execution-via-php-unserialize/">Remote code execution via PHP</a></li>
