@@ -7,6 +7,9 @@ $dbname = '';
 //set cookie for ch5
 setcookie('user', 'UmFscGg6Z3Vlc3Q=', time() + (86400 * 30), '/ch5');
 
+//ch 13 reset folder
+system('rm /var/www/html/ch13/inventory/* ; cp ~/wreck-it-lab/html/ch13/inventory/* /var/www/html/ch13/inventory/;');
+
 connecttodb($servername, $dbname, $dbusername, $dbpassword);
 function connecttodb($servername, $dbname, $dbusername, $dbpassword)
 {
