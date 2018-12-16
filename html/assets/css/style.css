@@ -139,6 +139,9 @@ a:hover {
       margin-top: 1em;
       color: #86acaa;
       font-size: 0.875em; }
+      .content-banner .detail-cha ul.accordion li >div a{
+        color: #2fa4ae;
+      }
 
 form label {
   color: #86acaa; }

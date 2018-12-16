@@ -31,7 +31,7 @@
                     <div>
                         <h5>Goal</h5>
                         <p>ยึดเครื่องเซิร์ฟเวอร์ แล้วอ่าน flag ออกมาจากระบบ</p>
-                        <a href="ch12/chroome.php?url=https%3A%2F%2Fwww.facebook.com" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
+                        <a href="ch12/chroome.php?url=https%3A%2F%2Fgithub.com" target="_blank" class="btn btn-primary" role="button">Start the Lab</a>            
                     </div>
                     <div>
                         <h5>Validation</h5>
@@ -79,12 +79,12 @@
                                                 <div class="modal-body m-3 pb-0">
                                                     <h5 class="mb-2">Solution</h5>
                                                     - หน้านี้จะมีการนำชื่อ URL ไปรันคำสั่ง curl ซึ่งหากนำไปต่อ string แล้วรัน command ก็จะเกิดช่องโหว่ขึ้น โดยสามารถใส่ ;, &, &&, | เป็นต้น แล้วตามด้วย os command ต่าง ๆ (ในที่นี้คือ Linux command) เช่น<br>
-                                                    "https://www.facebook.com/;ls" ก็จะรัน command "ls" หรือ จะตัดให้เหลือแค่
+                                                    "https://github.com/;ls" ก็จะรัน command "ls" หรือ จะตัดให้เหลือแค่
                                                     ";ls" ก็จะรัน command "ls" เหมือนกัน<br>
                                                     คราวนี้ จะพบว่ามี folder flag อยู่เข้าไปก็จะต้อง ls -a ถึงจะเจอไฟล์ .flag.txt
                                                     ให้ cat flag/.flag.txt ออกมาก็จะพบกับ flag ของข้อนี้<br>
                                                     <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - การใช้ คำสั่ง system() หรือ คำสั่งใด ๆ ที่สมารถรัน OS command สิ่งที่ต้องห้ามก็คือ การนำ user input มาเป็น argument ใน ฟังก์ชั่นโดยไม่ทำการ validate input เพราะว่าจะทำให้เกิดช่องโหว่ OS command injection ได้ วิธีแก้ไข คือ หลีกเลี่ยงการใช้ฟังก์ชันที่รัน OS command โดยตรง หรือถ้าเลี่ยงไม่ได้ ให้ทำการ Escape input หรือ ทำ input validation เพื่อที่จะป้องกัน การใส่คำสั่งแปลกปลอมเข้ามา
+                                                    - การใช้ คำสั่ง system() หรือ คำสั่งใด ๆ ที่สามารถรัน OS command สิ่งที่ต้องห้ามก็คือ การนำ user input มาเป็น argument ในฟังก์ชั่นโดยไม่ทำการ validate input เพราะว่าจะทำให้เกิดช่องโหว่ OS command injection ได้ วิธีแก้ไข คือ หลีกเลี่ยงการใช้ฟังก์ชันที่รัน OS command โดยตรง หรือถ้าเลี่ยงไม่ได้ ให้ทำการ Escape input หรือทำ input validation เพื่อที่จะป้องกันการใส่คำสั่งแปลกปลอมเข้ามา
                                                 </div>
                                                 <div class="modal-footer mt-0 pt-2 px-4">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -26,7 +26,7 @@
                 <div class="detail-cha mt-5">
                     <div class="description">
                         <h5>Description</h5>
-                        <p>ท่านได้รับ Code Item สุดเทพมาจากงานเกมประจำปี ท่านจึงรีบเข้าเว็บไซต์ของเกม เพื่อทำการ Redeem Code Item นั้น หลังจาก Redeem เสร็จท่านได้สังเกตเห็นว่ามี Error แปลก ๆ ออกมาจากเว็บเมื่อเราใส่ Code Item ผิดรูปแบบลงไป เหมือนจะมีช่องโหว่! และผู้ให้บริการเกมนี้ก็มีรางวัลเป็น Item ในเกมให้กับผู้ที่พบช่องโหว่แล้วรายงานให้เขาอีกด้วย รู้ดังนี้แล้วสายเลือด Pentester ได้ ปะทุขึ้นพร้อมลุยเพื่อของรางวัล</p>
+                        <p>ท่านได้รับ Code Item สุดเทพมาจากงานเกมประจำปี ท่านจึงรีบเข้าเว็บไซต์ของเกม เพื่อทำการ Redeem Code Item นั้น หลังจาก Redeem เสร็จท่านได้สังเกตเห็นว่ามี Error แปลก ๆ ออกมาจากเว็บเมื่อเราใส่ Code Item ผิดรูปแบบลงไป เหมือนจะมีช่องโหว่! และผู้ให้บริการเกมนี้ก็มีรางวัลเป็น Item ในเกมให้กับผู้ที่พบช่องโหว่แล้วรายงานให้เขาอีกด้วย รู้ดังนี้แล้วสายเลือด Pentester ได้ปะทุขึ้น พร้อมลุยเพื่อของรางวัล</p>
                     </div>
                     <div>
                         <h5>Goal</h5>
@@ -79,9 +79,9 @@
                                             <div class="modal-content">
                                                 <div class="modal-body m-3 pb-0">
                                                     <h5 class="mb-2">Solution</h5>
-                                                    - เมื่อเข้ามาถึงหน้านี้จะพบว่า เป็นหน้าที่ใช้สำหรับ Submit Redeem Code และมีตัวอย่างของโค้ดอยู่เมื่อใส่ไป จะเห็นว่ามี ลิสต์ I003 เพิ่มขึ้น เมื่อกดที่ลิ้ง จะพบว่าเป็นไฟล์ text ที่มีข้อมูลของ Item เก็บอยู่ ย้อนกลับมาส่วนของ Code เมื่อนำไป Base64 decode จะได้<br>
+                                                    - เมื่อเข้ามาถึงหน้านี้จะพบว่า เป็นหน้าที่ใช้สำหรับ Submit Redeem Code และมีตัวอย่างของโค้ดอยู่ เมื่อลองใส่ไปจะมีลิสต์ I003 เพิ่มขึ้น เมื่อกดที่ลิ้ง จะพบว่าเป็นไฟล์ text ที่มีข้อมูลของ Item เก็บอยู่ ย้อนกลับมาส่วนของ Code เมื่อนำไป Base64 decode จะได้<br>
                                                         "O:4:"Item":4:{s:2:"id";s:4:"I003";s:4:"name";s:12:"Lunatic Card";s:11:"description";s:45:"LUK + 1, Critical Rate + 1, Perfect Dodge + 1";s:5:"price";i:10;}"<br>
-                                                    ซึ่งเป็น string ของ php serialization โจทย์ข้อนี้จะทำการ Base64 decode และ unserialize และเขียน ข้อมูลของ object นั้นๆ ลงเป็นไฟล์ เมื่อรู้แบบนี้แล้วเราจะสามารถทำการ เขียน php shell ลงไปได้ โดยเริ่มจาก เขียนคลาส Item แล้วก็ attribute ข้างในตามโครงสร้าง จากนั้นก็ new object ,serialize(object) และ แสดง Base64 encode ของมันออกมา ดังโค้ดต่อไปนี้
+                                                    ซึ่งเป็น string ของ php serialization โจทย์ข้อนี้จะทำการ Base64 decode,unserialize และเขียนข้อมูลของ object นั้น ๆ ลงเป็นไฟล์ เมื่อรู้แบบนี้แล้วเราจะสามารถทำการเขียน php shell ลงไปได้ โดยเริ่มจากเขียนคลาส Item แล้วก็ attribute ข้างในตามโครงสร้าง จากนั้นก็ new object ,serialize(object) และ แสดง Base64 encode ของมันออกมา ดังโค้ดต่อไปนี้
                                                     <br><br>
                                                         &lt;?php<br>
                                                         <div class="ml-4">// solution<br>
@@ -97,9 +97,9 @@
                                                         echo base64_encode($s);</div>
                                                         ?&gt;<br><br>
 
-                                                    และจะได้ Redeem Code ออกมา เมื่อเอาไป redeem จะได้ไฟล์ php shell และ สามารถรัน os command ได้ ทำให้อ่าน ค่า flag ออกมาได้
+                                                    จะได้ Redeem Code ออกมา เมื่อนำไป redeem จะได้ไฟล์ php shell และสามารถรัน os command ได้ ทำให้อ่านค่า flag ออกมาได้
                                                     <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - การป้องกัน Insecure Deserialization คือการหลีกเลี่ยงการใช้ให้มากที่สุด หรือใช้ Library ที่มีการ Secure Deserialization ให้ หากจำเป็นต้องให้ ต้องมีการทำ Input validation หรือ การกำหนดให้สามารถ deserialization ได้เฉพาะ sign data เท่านั้น
+                                                    - การป้องกัน Insecure Deserialization คือการหลีกเลี่ยงการใช้ให้มากที่สุด หรือใช้ Library ที่มีการ Secure Deserialization ให้ หากจำเป็นต้องให้ ต้องมีการทำ Input validation หรือการกำหนดให้สามารถ deserialization ได้เฉพาะ sign data เท่านั้น
                                                 </div>
                                                 <div class="modal-footer mt-0 pt-2 px-4">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

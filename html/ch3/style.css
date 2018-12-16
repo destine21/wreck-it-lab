@@ -43,6 +43,7 @@ body{
     background-color: #db3e2a;
     border: 1px solid #4abbab;
     color: #ffffff;
+    cursor: pointer;
 }
 form input:focus{
     outline: none !important;
@@ -64,7 +65,6 @@ input[type='range'] {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  cursor: pointer;
   transition: box-shadow .2s linear;
   box-shadow: 0 0 0 0 transparent;
 }
@@ -94,13 +94,13 @@ input[type='range'][orient='90deg'], input[type='range'][orient='270deg'] {
   display: inline-block;
 }
 input[type='range'][orient='90deg']::-webkit-slider-thumb, input[type='range'][orient='270deg']::-webkit-slider-thumb {
-  cursor: ns-resize;
+  cursor: default;
 }
 input[type='range'][orient='90deg']::-moz-range-thumb, input[type='range'][orient='270deg']::-moz-range-thumb {
-  cursor: ns-resize;
+  cursor: default;
 }
 input[type='range'][orient='90deg']::-ms-thumb, input[type='range'][orient='270deg']::-ms-thumb {
-  cursor: ns-resize;
+  cursor: default;
 }
 
 /* ## Slider components */
@@ -134,7 +134,7 @@ input[type='range']::-webkit-slider-thumb {
   border: none;
   background-color: #fbebe9;
   box-shadow: -20em 0 0 0 #000000,-19em 0 0 0 #160604,-18em 0 0 0 #2c0c07,-17em 0 0 0 #41110b,-16em 0 0 0 #57170f,-15em 0 0 0 #6d1d12,-14em 0 0 0 #832316,-13em 0 0 0 #99291a,-12em 0 0 0 #ae2e1e,-11em 0 0 0 #c43421,-10em 0 0 0 #da3a25,-9em 0 0 0 #db3e2a, -8em 0 0 0 #de4e3b, -7em 0 0 0 #e16151, -6em 0 0 0 #e57566, -5em 0 0 0 #e9897c, -4em 0 0 0 #ed9d92, -3em 0 0 0 #f0b0a8, -2em 0 0 0 #f4c4be, -1em 0 0 0 #f8d8d3, 0em 0 0 0 #f9e6ff;
-  cursor: ew-resize;
+  cursor: default;
 }
 input[type='range']::-moz-range-thumb{
   margin: .05em;
@@ -145,7 +145,7 @@ input[type='range']::-moz-range-thumb{
   border: none;
   background-color: #fbebe9;
   box-shadow: -20em 0 0 0 #000000,-19em 0 0 0 #160604,-18em 0 0 0 #2c0c07,-17em 0 0 0 #41110b,-16em 0 0 0 #57170f,-15em 0 0 0 #6d1d12,-14em 0 0 0 #832316,-13em 0 0 0 #99291a,-12em 0 0 0 #ae2e1e,-11em 0 0 0 #c43421,-10em 0 0 0 #da3a25,-9em 0 0 0 #db3e2a, -8em 0 0 0 #de4e3b, -7em 0 0 0 #e16151, -6em 0 0 0 #e57566, -5em 0 0 0 #e9897c, -4em 0 0 0 #ed9d92, -3em 0 0 0 #f0b0a8, -2em 0 0 0 #f4c4be, -1em 0 0 0 #f8d8d3, 0em 0 0 0 #f9e6ff;
-  cursor: ew-resize;
+  cursor: default;
 }
 /* ## Browser tweaks */
 /* ### webkit */

@@ -81,7 +81,7 @@
                                                     <h5 class="mb-2">Solution</h5>
                                                     - เมื่อดัก HTTP request ด้วย Burp จะเห็นว่ามี parameter score ถูกส่งออกไปใน body ของ request เมื่อทำการแก้ค่า parameter score ให้มากกว่า 100 แล้ว ส่งออกไป จะทำให้ได้ flag ของข้อนี้
                                                     <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - สำหรับโจทย์ ข้อนี้ จะเป็นช่องโหว่ด้านการ Design, การใช้ HTTP Post reqeust นั้นถึงแม้ว่า parameter จะไม่แสดงใน URL แต่ก็ยังสามารถถูกแก้ไขได้แม้ว่าจะ hidden input ก็ตาม ดังนั้นหากมีการคำนวณ หรือ logic ต่าง ๆ ให้ทำที่ฝั่ง server เช่นในข้อนี้ มีการใช้ Math.random() ซึ่งเป็นการสุ่มคะแนนส่งไปจากฝั่ง client วิธีแก้ คือให้ทำการสุ่่มคะแนนทางฝั่ง server จะทำให้ไม่สามารถแก้ไขโกงค่าคะแนนได้
+                                                    - สำหรับโจทย์ ข้อนี้ จะเป็นช่องโหว่ด้านการ Design, การใช้ HTTP Post request นั้น ถึงแม้ว่า parameter จะไม่แสดงใน URL แต่ก็ยังสามารถถูกแก้ไขได้ แม้ว่าจะ hidden input ก็ตาม ดังนั้นหากมีการคำนวณ หรือ logic ต่าง ๆ ให้ทำที่ฝั่ง server เช่นในข้อนี้ มีการใช้ Math.random() ซึ่งเป็นการสุ่มคะแนนส่งไปจากฝั่ง client วิธีแก้ คือให้ทำการสุ่่มคะแนนทางฝั่ง server จะทำให้ไม่สามารถแก้ไขโกงค่าคะแนนได้
                                                 </div>
                                                 <div class="modal-footer mt-0 pt-2 px-4">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
