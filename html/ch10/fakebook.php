@@ -160,14 +160,15 @@
 
 </html>
 
-<script>
-    $(".user-like").hide(); 
+<script> 
     $('.like').click(function(){
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
-            $(this).closest(".post").find(".user-like").show();   
+            // $(this).closest(".post").find(".user-like").show();   
+            $(this).closest(".post").find(".user-like").css('display','flex');   
         }else{
-            $(this).closest(".post").find(".user-like").hide();   
+            // $(this).closest(".post").find(".user-like").hide();   
+            $(this).closest(".post").find(".user-like").css('display','none');   
         }
     })
 </script>
