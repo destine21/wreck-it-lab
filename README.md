@@ -1,4 +1,8 @@
 # Wreck-it Lab
+Wreck-it Lab is a vulnerable web application that contains 13 challenges about web application security. All these challenges are designed for beginner and also include some situation, hints, solutions, how to use tools (in Thai language).
+
+![screenshot0](https://github.com/destine21/wreck-it-lab/blob/master/screenshots/ss0.png)
+![screenshot0](https://github.com/destine21/wreck-it-lab/blob/master/screenshots/ss1.png)
 
 ## Installation (0.1 alpha version)
 1. Install [Docker](https://www.docker.com/get-started)
