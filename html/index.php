@@ -5,7 +5,7 @@
     <div class="container content-wrapper">
         <div class="intro-page">
             <div class="first-paragraph">
-                <h1>Welcome to Wreck-it Lab</h1>
+                <h1>Welcome to Wreck-it Lab Hardcore mode</h1>
                 <p class="p-content">ยินดีต้อนรับเหล่าผู้ฝึกหัดทั้งหลายเข้าสู่ <span class="highlight">Wreck-it Lab</span>
                     เว็บไซต์นี้จะมอบศาสตร์แห่ง Web Application Security ให้กับพวกท่าน
                     โดยพวกท่านจะได้เรียนรู้ผ่านการปฎิบัติจริง โดยท่านจะได้สวมบทบาท
