@@ -4,6 +4,15 @@ Wreck-it Lab is a vulnerable web application that contains 13 challenges about w
 ![screenshot0](https://github.com/destine21/wreck-it-lab/blob/master/screenshots/ss0.png)
 ![screenshot0](https://github.com/destine21/wreck-it-lab/blob/master/screenshots/ss1.png)
 
+## Activate Hardcore Mode
+```sh
+# On host
+docker exec -it wreck-it-lab /bin/bash
+
+# On container
+curl https://raw.githubusercontent.com/destine21/wreck-it-lab/hardcore/hardcore.sh | bash
+```
+
 ## Installation (0.1 alpha version)
 1. Install [Docker](https://www.docker.com/get-started)
 2. Run following command in terminal
