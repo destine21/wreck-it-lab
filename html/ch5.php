@@ -59,41 +59,6 @@
                             <li><a target="_blank" href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="accordion" id="investAccordion">
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - มีอะไรอยู่ใน Cookie หรือเปล่าน้า
-                                </div>    
-                            </li>
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion"> 
-                                     <!-- Button trigger modal -->
-                                     <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                    Are you sure ?
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body m-3 pb-0">
-                                                    <h5 class="mb-2">Solution</h5>
-                                                    - หน้าเว็บของด่านนี้จะแทบไม่มีอะไรเลย แต่เมื่อสังเกตดี ๆ จะเห็นว่ามี Cookie ชื่อว่า user อยู่ มีค่าเป็น UmFscGg6Z3Vlc3Q= ซึ่งหากดูจาก format แล้วน่าจะเป็น Base64 encoding เมื่อ decode ออกมาจะได้ Ralph:guest จากข้อความหน้าเว็บก็จะเดาได้ว่าต้องเป็น role admin ถึงจะเข้าถึงหน้านี้ได้ โดยให้เปลี่ยนจาก guest > admin ดังนี้ Ralph:guest > Ralph:admin แล้วนำไป Base64 encoding และ set Cookie user เมื่อเข้าหน้าเว็บด้วย Cookie ใหม่ก็จะพบกับ flag
-                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - สาเหตุของช่องโหว่ในข้อนี้เกิดจากการที่ web server เชื่อ cookie มากเกินไป ทำให้ role ถูกแก้ไขมาจากการ set-cookie ฝั่ง client ได้ โดยทั่วไปแล้ว วิธีแก้ก็คือ web server จะทำการ set-cookie เพียง session ID ที่ผูกไว้กับ user นั้น ๆ และจะ ดึงข้อมูลต่าง ๆ ของ user คนนั้น รวมถึง role ออกมาได้
-                                                </div>
-                                                <div class="modal-footer mt-0 pt-2 px-4">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </li>
-                        </ul>                        
-                    </div>
                 </div>
             </div>    
         </div>

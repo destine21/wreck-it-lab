@@ -56,41 +56,6 @@
                             <li><a target="_blank" href="https://www.acunetix.com/blog/web-security-zone/directory-listing-information-disclosure/">Directory Listing and Information Disclosure</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="accordion" id="investAccordion">
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - Directory Listing คืออะไร?, รูปถูกเก็บอยู่ที่ไหน ?
-                                </div>    
-                            </li>
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
-                                     <!-- Button trigger modal -->
-                                     <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                    Are you sure ?
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body m-3 pb-0">
-                                                    <h5 class="mb-2">Solution</h5>
-                                                    - หน้าเว็บจะมีรูปมากมายแสดงอยู่ เมื่อเราดูที่ path ของรูปจะเห็นว่าอยู่ใน /images และ เมื่อทำความเข้าใจกับ Directory Listing ก็จะพบว่าสามารถเข้าหน้า /images ได้และจะพบไฟล์ทั้งหมดที่อยู่ด้านใน จะเห็นว่ามีไฟล์ flag.txt ที่เก็บค่า flag ของข้อนี้อยู่
-                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - ช่องโหว่นี้อยู่ในหมวด Security Misconfiguration ซึ่ง Directory Listing มักจะเปิดไว้ทำให้สามารถ ดูข้อมูลต่าง ๆ ภายใน Folder ที่อยู่บน web server ได้ วิธีแก้ไข จะต้องทำการ ปิด Listing ตามวิธีการที่แตกต่างไปในแต่ละ web server engine
-                                                </div>
-                                                <div class="modal-footer mt-0 pt-2 px-4">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </li>
-                        </ul>                        
-                    </div>
                 </div>
             </div>    
         </div>

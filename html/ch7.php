@@ -58,41 +58,6 @@
                             <li><a target="_blank" href="https://en.wikipedia.org/wiki/Base64">Base64</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <ul class="accordion" id="investAccordion">
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Hint</h5>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#investAccordion">
-                                - substitution cipher
-                                </div>    
-                            </li>
-                            <li>
-                                <h5 class="invest-collapse collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Solution & Recommendation</h5>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#investAccordion">  
-                                     <!-- Button trigger modal -->
-                                     <button type="button" class="solution btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                    Are you sure ?
-                                    </button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body m-3 pb-0">
-                                                    <h5 class="mb-2">Solution</h5>
-                                                    - จากโจทย์ จะให้ c3ludHtSYVB5MmxjZ18xZl80anJmMHozfQ== มาเมื่อนำไป Base64 decode จะได้ synt{RaPy2lcg_1f_4jrf0z3} ซึ่งลักษณะคล้าย flag แต่ถูก encrypt ด้วย simple substitution ciphers ที่เรียกว่า Rot13 เป็นการ shift ตัวอักษรภาษาไป 13 ตัว เมื่อทำการ Base64 decode และ Rot13 ตามลำดับก็จะได้ flag ที่ซ่อนอยู่ออกมา
-                                                    <h5 class="mt-3 mb-2">Recommendation</h5>
-                                                    - การเข้ารหัส (Encryption) ที่แข็งแรงจะต้องใช้ Algorithm ที่เป็นที่ยอมรับ เช่น AES, RSA เป็นต้น ทั้งยังจำเป็นที่จะต้องใช้ key ที่มีความยาวที่ไม่น้อยเกินไปอีกด้วย แต่การเข้ารหัสในข้อนี้ เป็นการใช้ ROT13 ซึ่งไม่จำเป็นจะต้องมี key ทำให้ crack ออกมาได้ง่าย
-                                                </div>
-                                                <div class="modal-footer mt-0 pt-2 px-4">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </li>
-                        </ul>                        
-                    </div>
                 </div>
             </div>    
         </div>
